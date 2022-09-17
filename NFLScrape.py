@@ -1,29 +1,37 @@
 from bs4 import BeautifulSoup
 import requests
+import json
 
 html_text = requests.get("https://www.pro-football-reference.com/years/2022/games.htm").text
 soup = BeautifulSoup(html_text, 'html.parser')
 
+# grab the table from the page for processing
 table = soup.find('table').find('tbody')
 rows = table.find_all('tr')
 
-#iterate over each row on the page
+# we want to build a json object as we iterate and eventually save it out to a file
+
+
+# iterate over each row in the table
 for idx, row in enumerate(rows):
-    week_number = row.find('th').text
     columns = row.find_all('td')
-    day = columns[0].text
-    date = columns[1].text
-    time = columns[2].text
-    winner = columns[3].text
-    homeaway = "away" if (columns[4].text == "@") else "home"
-    loser = columns[5].text
-    status = columns[6].text
-    winner_points = columns[7].text
-    lower_points = columns[8].text
-    winner_yards = columns[9].text
-    winner_turnovers = columns[10].text
-    loser_yards = columns[11].text
-    loser_turnovers = columns[12].text
+    if len(columns) == 0:
+        continue
+    
+    matchup = {
+        "week"            : row.find('th').text,
+        "day"             : columns[0].text,
+        "date"            : columns[1].text,
+        "time"            : columns[2].text,
+        "home"            : columns[3].text,
+        "away"            : columns[5].text,
+        "home_points"     : columns[7].text,
+        "away_points"     : columns[8].text,
+        "home_yards"      : columns[9].text,
+        "home_turnovers"  : columns[10].text,
+        "away_yards"      : columns[11].text,
+        "away_turnovers"  : columns[12].text,
+    }
 
 
     
