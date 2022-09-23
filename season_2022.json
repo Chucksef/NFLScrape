@@ -1,258 +1,4231 @@
 {
-    "ARI":{
-        "location":"Arizona",
-        "nickname":"Cardinals",
-        "conference":"NFC",
-        "division":"West",
-        "colors":["#97233F","#000000","#FFB612"],
-        "schedule":[]
+    "ARI": {
+        "location": "Arizona",
+        "nickname": "Cardinals",
+        "conference": "NFC",
+        "division": "West",
+        "colors": [
+            "#97233F",
+            "#000000",
+            "#FFB612"
+        ],
+        "schedule": {
+            "week3": {
+                "opponent": "LAR",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-09-25",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week4": {
+                "opponent": "CAR",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-02",
+                "time": "4:05PM",
+                "status": "pregame"
+            },
+            "week5": {
+                "opponent": "PHI",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-09",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week6": {
+                "opponent": "SEA",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-16",
+                "time": "4:05PM",
+                "status": "pregame"
+            },
+            "week7": {
+                "opponent": "NO",
+                "home-away": "Home",
+                "day": "Thu",
+                "date": "2022-10-20",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week8": {
+                "opponent": "MIN",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-30",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week9": {
+                "opponent": "SEA",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-06",
+                "time": "4:05PM",
+                "status": "pregame"
+            },
+            "week10": {
+                "opponent": "LAR",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-13",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week11": {
+                "opponent": "SF",
+                "home-away": "Home",
+                "day": "Mon",
+                "date": "2022-11-21",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week12": {
+                "opponent": "LAC",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-27",
+                "time": "4:05PM",
+                "status": "pregame"
+            },
+            "week14": {
+                "opponent": "NE",
+                "home-away": "Home",
+                "day": "Mon",
+                "date": "2022-12-12",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week15": {
+                "opponent": "DEN",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-12-18",
+                "time": "4:05PM",
+                "status": "pregame"
+            },
+            "week16": {
+                "opponent": "TB",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-12-25",
+                "time": "8:20PM",
+                "status": "pregame"
+            },
+            "week17": {
+                "opponent": "ATL",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2023-01-01",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week18": {
+                "opponent": "SF",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2023-01-08",
+                "time": "1:00PM",
+                "status": "pregame"
+            }
+        }
     },
-    "ATL":{
-        "location":"Atlanta",
-        "nickname":"Falcons",
-        "conference":"NFC",
-        "division":"South",
-        "colors":["#A71930","#000000","#A5ACAF"],
-        "schedule":[]
+    "ATL": {
+        "location": "Atlanta",
+        "nickname": "Falcons",
+        "conference": "NFC",
+        "division": "South",
+        "colors": [
+            "#A71930",
+            "#000000",
+            "#A5ACAF"
+        ],
+        "schedule": {
+            "week3": {
+                "opponent": "SEA",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-09-25",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week4": {
+                "opponent": "CLE",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-02",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week5": {
+                "opponent": "TB",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-09",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week6": {
+                "opponent": "SF",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-16",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week7": {
+                "opponent": "CIN",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-23",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week8": {
+                "opponent": "CAR",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-30",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week9": {
+                "opponent": "LAC",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-06",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week10": {
+                "opponent": "CAR",
+                "home-away": "Away",
+                "day": "Thu",
+                "date": "2022-11-10",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week11": {
+                "opponent": "CHI",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-20",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week12": {
+                "opponent": "WAS",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-27",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week13": {
+                "opponent": "PIT",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-12-04",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week15": {
+                "opponent": "NO",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-12-18",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week16": {
+                "opponent": "BAL",
+                "home-away": "Away",
+                "day": "Sat",
+                "date": "2022-12-24",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week17": {
+                "opponent": "ARI",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2023-01-01",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week18": {
+                "opponent": "TB",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2023-01-08",
+                "time": "1:00PM",
+                "status": "pregame"
+            }
+        }
     },
-    "BAL":{
-        "location":"Baltimore",
-        "nickname":"Ravens",
-        "conference":"AFC",
-        "division":"North",
-        "colors":["#241773","#000000","#9E7C0C","#C60C30"],
-        "schedule":[]
+    "BAL": {
+        "location": "Baltimore",
+        "nickname": "Ravens",
+        "conference": "AFC",
+        "division": "North",
+        "colors": [
+            "#241773",
+            "#000000",
+            "#9E7C0C",
+            "#C60C30"
+        ],
+        "schedule": {
+            "week3": {
+                "opponent": "NE",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-09-25",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week4": {
+                "opponent": "BUF",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-02",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week5": {
+                "opponent": "CIN",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-09",
+                "time": "8:20PM",
+                "status": "pregame"
+            },
+            "week6": {
+                "opponent": "NYG",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-16",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week7": {
+                "opponent": "CLE",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-23",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week8": {
+                "opponent": "TB",
+                "home-away": "Away",
+                "day": "Thu",
+                "date": "2022-10-27",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week9": {
+                "opponent": "NO",
+                "home-away": "Away",
+                "day": "Mon",
+                "date": "2022-11-07",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week11": {
+                "opponent": "CAR",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-20",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week12": {
+                "opponent": "JAX",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-27",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week13": {
+                "opponent": "DEN",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-12-04",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week14": {
+                "opponent": "PIT",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-12-11",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week15": {
+                "opponent": "CLE",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-12-18",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week16": {
+                "opponent": "ATL",
+                "home-away": "Home",
+                "day": "Sat",
+                "date": "2022-12-24",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week17": {
+                "opponent": "PIT",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2023-01-01",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week18": {
+                "opponent": "CIN",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2023-01-08",
+                "time": "1:00PM",
+                "status": "pregame"
+            }
+        }
     },
-    "BUF":{
-        "location":"Buffalo",
-        "nickname":"Bills",
-        "conference":"NFC",
-        "division":"West",
-        "colors":["#00338D","#C60C30"],
-        "schedule":[]
+    "BUF": {
+        "location": "Buffalo",
+        "nickname": "Bills",
+        "conference": "NFC",
+        "division": "West",
+        "colors": [
+            "#00338D",
+            "#C60C30"
+        ],
+        "schedule": {
+            "week3": {
+                "opponent": "MIA",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-09-25",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week4": {
+                "opponent": "BAL",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-02",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week5": {
+                "opponent": "PIT",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-09",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week6": {
+                "opponent": "KC",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-16",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week8": {
+                "opponent": "GB",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-30",
+                "time": "8:20PM",
+                "status": "pregame"
+            },
+            "week9": {
+                "opponent": "NYJ",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-06",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week10": {
+                "opponent": "MIN",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-13",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week11": {
+                "opponent": "CLE",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-20",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week12": {
+                "opponent": "DET",
+                "home-away": "Away",
+                "day": "Thu",
+                "date": "2022-11-24",
+                "time": "12:30PM",
+                "status": "pregame"
+            },
+            "week13": {
+                "opponent": "NE",
+                "home-away": "Away",
+                "day": "Thu",
+                "date": "2022-12-01",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week14": {
+                "opponent": "NYJ",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-12-11",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week15": {
+                "opponent": "MIA",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-12-18",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week16": {
+                "opponent": "CHI",
+                "home-away": "Away",
+                "day": "Sat",
+                "date": "2022-12-24",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week17": {
+                "opponent": "CIN",
+                "home-away": "Away",
+                "day": "Mon",
+                "date": "2023-01-02",
+                "time": "8:30PM",
+                "status": "pregame"
+            },
+            "week18": {
+                "opponent": "NE",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2023-01-08",
+                "time": "1:00PM",
+                "status": "pregame"
+            }
+        }
     },
-    "CAR":{
-        "location":"Carolina",
-        "nickname":"Panthers",
-        "conference":"NFC",
-        "division":"South",
-        "colors":["#0085CA","#101820","#BFC0BF"],
-        "schedule":[]
+    "CAR": {
+        "location": "Carolina",
+        "nickname": "Panthers",
+        "conference": "NFC",
+        "division": "South",
+        "colors": [
+            "#0085CA",
+            "#101820",
+            "#BFC0BF"
+        ],
+        "schedule": {
+            "week3": {
+                "opponent": "NO",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-09-25",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week4": {
+                "opponent": "ARI",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-02",
+                "time": "4:05PM",
+                "status": "pregame"
+            },
+            "week5": {
+                "opponent": "SF",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-09",
+                "time": "4:05PM",
+                "status": "pregame"
+            },
+            "week6": {
+                "opponent": "LAR",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-16",
+                "time": "4:05PM",
+                "status": "pregame"
+            },
+            "week7": {
+                "opponent": "TB",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-23",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week8": {
+                "opponent": "ATL",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-30",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week9": {
+                "opponent": "CIN",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-06",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week10": {
+                "opponent": "ATL",
+                "home-away": "Home",
+                "day": "Thu",
+                "date": "2022-11-10",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week11": {
+                "opponent": "BAL",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-20",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week12": {
+                "opponent": "DEN",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-27",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week14": {
+                "opponent": "SEA",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-12-11",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week15": {
+                "opponent": "PIT",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-12-18",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week16": {
+                "opponent": "DET",
+                "home-away": "Home",
+                "day": "Sat",
+                "date": "2022-12-24",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week17": {
+                "opponent": "TB",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2023-01-01",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week18": {
+                "opponent": "NO",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2023-01-08",
+                "time": "1:00PM",
+                "status": "pregame"
+            }
+        }
     },
-    "CHI":{
-        "location":"Chicago",
-        "nickname":"Bears",
-        "conference":"NFC",
-        "division":"North",
-        "colors":["#0B162A","#C83803"],
-        "schedule":[]
+    "CHI": {
+        "location": "Chicago",
+        "nickname": "Bears",
+        "conference": "NFC",
+        "division": "North",
+        "colors": [
+            "#0B162A",
+            "#C83803"
+        ],
+        "schedule": {
+            "week3": {
+                "opponent": "HOU",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-09-25",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week4": {
+                "opponent": "NYG",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-02",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week5": {
+                "opponent": "MIN",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-09",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week6": {
+                "opponent": "WAS",
+                "home-away": "Home",
+                "day": "Thu",
+                "date": "2022-10-13",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week7": {
+                "opponent": "NE",
+                "home-away": "Away",
+                "day": "Mon",
+                "date": "2022-10-24",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week8": {
+                "opponent": "DAL",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-30",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week9": {
+                "opponent": "MIA",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-06",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week10": {
+                "opponent": "DET",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-13",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week11": {
+                "opponent": "ATL",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-20",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week12": {
+                "opponent": "NYJ",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-27",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week13": {
+                "opponent": "GB",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-12-04",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week15": {
+                "opponent": "PHI",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-12-18",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week16": {
+                "opponent": "BUF",
+                "home-away": "Home",
+                "day": "Sat",
+                "date": "2022-12-24",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week17": {
+                "opponent": "DET",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2023-01-01",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week18": {
+                "opponent": "MIN",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2023-01-08",
+                "time": "1:00PM",
+                "status": "pregame"
+            }
+        }
     },
-    "CIN":{
-        "location":"Cincinnati",
-        "nickname":"Bengals",
-        "conference":"AFC",
-        "division":"North",
-        "colors":["#FB4F14","#000000"],
-        "schedule":[]
+    "CIN": {
+        "location": "Cincinnati",
+        "nickname": "Bengals",
+        "conference": "AFC",
+        "division": "North",
+        "colors": [
+            "#FB4F14",
+            "#000000"
+        ],
+        "schedule": {
+            "week3": {
+                "opponent": "NYJ",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-09-25",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week4": {
+                "opponent": "MIA",
+                "home-away": "Home",
+                "day": "Thu",
+                "date": "2022-09-29",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week5": {
+                "opponent": "BAL",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-09",
+                "time": "8:20PM",
+                "status": "pregame"
+            },
+            "week6": {
+                "opponent": "NO",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-16",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week7": {
+                "opponent": "ATL",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-23",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week8": {
+                "opponent": "CLE",
+                "home-away": "Away",
+                "day": "Mon",
+                "date": "2022-10-31",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week9": {
+                "opponent": "CAR",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-06",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week11": {
+                "opponent": "PIT",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-20",
+                "time": "8:20PM",
+                "status": "pregame"
+            },
+            "week12": {
+                "opponent": "TEN",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-27",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week13": {
+                "opponent": "KC",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-12-04",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week14": {
+                "opponent": "CLE",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-12-11",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week15": {
+                "opponent": "TB",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-12-18",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week16": {
+                "opponent": "NE",
+                "home-away": "Away",
+                "day": "Sat",
+                "date": "2022-12-24",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week17": {
+                "opponent": "BUF",
+                "home-away": "Home",
+                "day": "Mon",
+                "date": "2023-01-02",
+                "time": "8:30PM",
+                "status": "pregame"
+            },
+            "week18": {
+                "opponent": "BAL",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2023-01-08",
+                "time": "1:00PM",
+                "status": "pregame"
+            }
+        }
     },
-    "CLE":{
-        "location":"Cleveland",
-        "nickname":"Browns",
-        "conference":"AFC",
-        "division":"North",
-        "colors":["#311D00","#FF3C00"],
-        "schedule":[]
+    "CLE": {
+        "location": "Cleveland",
+        "nickname": "Browns",
+        "conference": "AFC",
+        "division": "North",
+        "colors": [
+            "#311D00",
+            "#FF3C00"
+        ],
+        "schedule": {
+            "week4": {
+                "opponent": "ATL",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-02",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week5": {
+                "opponent": "LAC",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-09",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week6": {
+                "opponent": "NE",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-16",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week7": {
+                "opponent": "BAL",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-23",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week8": {
+                "opponent": "CIN",
+                "home-away": "Home",
+                "day": "Mon",
+                "date": "2022-10-31",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week10": {
+                "opponent": "MIA",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-13",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week11": {
+                "opponent": "BUF",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-20",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week12": {
+                "opponent": "TB",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-27",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week13": {
+                "opponent": "HOU",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-12-04",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week14": {
+                "opponent": "CIN",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-12-11",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week15": {
+                "opponent": "BAL",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-12-18",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week16": {
+                "opponent": "NO",
+                "home-away": "Home",
+                "day": "Sat",
+                "date": "2022-12-24",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week17": {
+                "opponent": "WAS",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2023-01-01",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week18": {
+                "opponent": "PIT",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2023-01-08",
+                "time": "1:00PM",
+                "status": "pregame"
+            }
+        }
     },
-    "DAL":{
-        "location":"Dallas",
-        "nickname":"Cowboys",
-        "conference":"NFC",
-        "division":"East",
-        "colors":["#041E42","#869397","#7F9695","#003594"],
-        "schedule":[]
+    "DAL": {
+        "location": "Dallas",
+        "nickname": "Cowboys",
+        "conference": "NFC",
+        "division": "East",
+        "colors": [
+            "#041E42",
+            "#869397",
+            "#7F9695",
+            "#003594"
+        ],
+        "schedule": {
+            "week3": {
+                "opponent": "NYG",
+                "home-away": "Away",
+                "day": "Mon",
+                "date": "2022-09-26",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week4": {
+                "opponent": "WAS",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-02",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week5": {
+                "opponent": "LAR",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-09",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week6": {
+                "opponent": "PHI",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-16",
+                "time": "8:20PM",
+                "status": "pregame"
+            },
+            "week7": {
+                "opponent": "DET",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-23",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week8": {
+                "opponent": "CHI",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-30",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week10": {
+                "opponent": "GB",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-13",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week11": {
+                "opponent": "MIN",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-20",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week12": {
+                "opponent": "NYG",
+                "home-away": "Home",
+                "day": "Thu",
+                "date": "2022-11-24",
+                "time": "4:30PM",
+                "status": "pregame"
+            },
+            "week13": {
+                "opponent": "IND",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-12-04",
+                "time": "8:20PM",
+                "status": "pregame"
+            },
+            "week14": {
+                "opponent": "HOU",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-12-11",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week15": {
+                "opponent": "JAX",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-12-18",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week16": {
+                "opponent": "PHI",
+                "home-away": "Home",
+                "day": "Sat",
+                "date": "2022-12-24",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week17": {
+                "opponent": "TEN",
+                "home-away": "Away",
+                "day": "Thu",
+                "date": "2022-12-29",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week18": {
+                "opponent": "WAS",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2023-01-08",
+                "time": "1:00PM",
+                "status": "pregame"
+            }
+        }
     },
-    "DEN":{
-        "location":"Denver",
-        "nickname":"Broncos",
-        "conference":"AFC",
-        "division":"West",
-        "colors":["#FB4F14","#002244"],
-        "schedule":[]
+    "DEN": {
+        "location": "Denver",
+        "nickname": "Broncos",
+        "conference": "AFC",
+        "division": "West",
+        "colors": [
+            "#FB4F14",
+            "#002244"
+        ],
+        "schedule": {
+            "week3": {
+                "opponent": "SF",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-09-25",
+                "time": "8:20PM",
+                "status": "pregame"
+            },
+            "week4": {
+                "opponent": "LV",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-02",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week5": {
+                "opponent": "IND",
+                "home-away": "Home",
+                "day": "Thu",
+                "date": "2022-10-06",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week6": {
+                "opponent": "LAC",
+                "home-away": "Away",
+                "day": "Mon",
+                "date": "2022-10-17",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week7": {
+                "opponent": "NYJ",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-23",
+                "time": "4:05PM",
+                "status": "pregame"
+            },
+            "week8": {
+                "opponent": "JAX",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-30",
+                "time": "9:30AM",
+                "status": "pregame"
+            },
+            "week10": {
+                "opponent": "TEN",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-13",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week11": {
+                "opponent": "LV",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-20",
+                "time": "4:05PM",
+                "status": "pregame"
+            },
+            "week12": {
+                "opponent": "CAR",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-27",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week13": {
+                "opponent": "BAL",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-12-04",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week14": {
+                "opponent": "KC",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-12-11",
+                "time": "8:20PM",
+                "status": "pregame"
+            },
+            "week15": {
+                "opponent": "ARI",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-12-18",
+                "time": "4:05PM",
+                "status": "pregame"
+            },
+            "week16": {
+                "opponent": "LAR",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-12-25",
+                "time": "4:30PM",
+                "status": "pregame"
+            },
+            "week17": {
+                "opponent": "KC",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2023-01-01",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week18": {
+                "opponent": "LAC",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2023-01-08",
+                "time": "1:00PM",
+                "status": "pregame"
+            }
+        }
     },
-    "DET":{
-        "location":"Detroit",
-        "nickname":"Lions",
-        "conference":"NFC",
-        "division":"North",
-        "colors":["#0076B6","#B0B7BC"],
-        "schedule":[]
+    "DET": {
+        "location": "Detroit",
+        "nickname": "Lions",
+        "conference": "NFC",
+        "division": "North",
+        "colors": [
+            "#0076B6",
+            "#B0B7BC"
+        ],
+        "schedule": {
+            "week3": {
+                "opponent": "MIN",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-09-25",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week4": {
+                "opponent": "SEA",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-02",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week5": {
+                "opponent": "NE",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-09",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week7": {
+                "opponent": "DAL",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-23",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week8": {
+                "opponent": "MIA",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-30",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week9": {
+                "opponent": "GB",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-06",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week10": {
+                "opponent": "CHI",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-13",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week11": {
+                "opponent": "NYG",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-20",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week12": {
+                "opponent": "BUF",
+                "home-away": "Home",
+                "day": "Thu",
+                "date": "2022-11-24",
+                "time": "12:30PM",
+                "status": "pregame"
+            },
+            "week13": {
+                "opponent": "JAX",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-12-04",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week14": {
+                "opponent": "MIN",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-12-11",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week15": {
+                "opponent": "NYJ",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-12-18",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week16": {
+                "opponent": "CAR",
+                "home-away": "Away",
+                "day": "Sat",
+                "date": "2022-12-24",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week17": {
+                "opponent": "CHI",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2023-01-01",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week18": {
+                "opponent": "GB",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2023-01-08",
+                "time": "1:00PM",
+                "status": "pregame"
+            }
+        }
     },
-    "GB":{
-        "location":"Green Bay",
-        "nickname":"Packers",
-        "conference":"NFC",
-        "division":"North",
-        "colors":["#203731","#FFB612"],
-        "schedule":[]
+    "GB": {
+        "location": "Green Bay",
+        "nickname": "Packers",
+        "conference": "NFC",
+        "division": "North",
+        "colors": [
+            "#203731",
+            "#FFB612"
+        ],
+        "schedule": {
+            "week3": {
+                "opponent": "TB",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-09-25",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week4": {
+                "opponent": "NE",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-02",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week5": {
+                "opponent": "NYG",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-09",
+                "time": "9:30AM",
+                "status": "pregame"
+            },
+            "week6": {
+                "opponent": "NYJ",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-16",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week7": {
+                "opponent": "WAS",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-23",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week8": {
+                "opponent": "BUF",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-30",
+                "time": "8:20PM",
+                "status": "pregame"
+            },
+            "week9": {
+                "opponent": "DET",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-06",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week10": {
+                "opponent": "DAL",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-13",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week11": {
+                "opponent": "TEN",
+                "home-away": "Home",
+                "day": "Thu",
+                "date": "2022-11-17",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week12": {
+                "opponent": "PHI",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-27",
+                "time": "8:20PM",
+                "status": "pregame"
+            },
+            "week13": {
+                "opponent": "CHI",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-12-04",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week15": {
+                "opponent": "LAR",
+                "home-away": "Home",
+                "day": "Mon",
+                "date": "2022-12-19",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week16": {
+                "opponent": "MIA",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-12-25",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week17": {
+                "opponent": "MIN",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2023-01-01",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week18": {
+                "opponent": "DET",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2023-01-08",
+                "time": "1:00PM",
+                "status": "pregame"
+            }
+        }
     },
-    "HOU":{
-        "location":"Houston",
-        "nickname":"Texans",
-        "conference":"AFC",
-        "division":"South",
-        "colors":["#03202F","#A71930"],
-        "schedule":[]
+    "HOU": {
+        "location": "Houston",
+        "nickname": "Texans",
+        "conference": "AFC",
+        "division": "South",
+        "colors": [
+            "#03202F",
+            "#A71930"
+        ],
+        "schedule": {
+            "week3": {
+                "opponent": "CHI",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-09-25",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week4": {
+                "opponent": "LAC",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-02",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week5": {
+                "opponent": "JAX",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-09",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week7": {
+                "opponent": "LV",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-23",
+                "time": "4:05PM",
+                "status": "pregame"
+            },
+            "week8": {
+                "opponent": "TEN",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-30",
+                "time": "4:05PM",
+                "status": "pregame"
+            },
+            "week9": {
+                "opponent": "PHI",
+                "home-away": "Home",
+                "day": "Thu",
+                "date": "2022-11-03",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week10": {
+                "opponent": "NYG",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-13",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week11": {
+                "opponent": "WAS",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-20",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week12": {
+                "opponent": "MIA",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-27",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week13": {
+                "opponent": "CLE",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-12-04",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week14": {
+                "opponent": "DAL",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-12-11",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week15": {
+                "opponent": "KC",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-12-18",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week16": {
+                "opponent": "TEN",
+                "home-away": "Away",
+                "day": "Sat",
+                "date": "2022-12-24",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week17": {
+                "opponent": "JAX",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2023-01-01",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week18": {
+                "opponent": "IND",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2023-01-08",
+                "time": "1:00PM",
+                "status": "pregame"
+            }
+        }
     },
-    "IND":{
-        "location":"Indianapolis",
-        "nickname":"Colts",
-        "conference":"AFC",
-        "division":"South",
-        "colors":["#002C5F","#A2AAAD"],
-        "schedule":[]
+    "IND": {
+        "location": "Indianapolis",
+        "nickname": "Colts",
+        "conference": "AFC",
+        "division": "South",
+        "colors": [
+            "#002C5F",
+            "#A2AAAD"
+        ],
+        "schedule": {
+            "week3": {
+                "opponent": "KC",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-09-25",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week4": {
+                "opponent": "TEN",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-02",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week5": {
+                "opponent": "DEN",
+                "home-away": "Away",
+                "day": "Thu",
+                "date": "2022-10-06",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week6": {
+                "opponent": "JAX",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-16",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week7": {
+                "opponent": "TEN",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-23",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week8": {
+                "opponent": "WAS",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-30",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week9": {
+                "opponent": "NE",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-06",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week10": {
+                "opponent": "LV",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-13",
+                "time": "4:05PM",
+                "status": "pregame"
+            },
+            "week11": {
+                "opponent": "PHI",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-20",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week12": {
+                "opponent": "PIT",
+                "home-away": "Home",
+                "day": "Mon",
+                "date": "2022-11-28",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week13": {
+                "opponent": "DAL",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-12-04",
+                "time": "8:20PM",
+                "status": "pregame"
+            },
+            "week15": {
+                "opponent": "MIN",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-12-18",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week16": {
+                "opponent": "LAC",
+                "home-away": "Home",
+                "day": "Mon",
+                "date": "2022-12-26",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week17": {
+                "opponent": "NYG",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2023-01-01",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week18": {
+                "opponent": "HOU",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2023-01-08",
+                "time": "1:00PM",
+                "status": "pregame"
+            }
+        }
     },
-    "JAX":{
-        "location":"Jacksonville",
-        "nickname":"Jaguars",
-        "conference":"AFC",
-        "division":"South",
-        "colors":["#006558","#D7A22A","#9F792C","#101820"],
-        "schedule":[]
+    "JAX": {
+        "location": "Jacksonville",
+        "nickname": "Jaguars",
+        "conference": "AFC",
+        "division": "South",
+        "colors": [
+            "#006558",
+            "#D7A22A",
+            "#9F792C",
+            "#101820"
+        ],
+        "schedule": {
+            "week3": {
+                "opponent": "LAC",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-09-25",
+                "time": "4:05PM",
+                "status": "pregame"
+            },
+            "week4": {
+                "opponent": "PHI",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-02",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week5": {
+                "opponent": "HOU",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-09",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week6": {
+                "opponent": "IND",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-16",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week7": {
+                "opponent": "NYG",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-23",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week8": {
+                "opponent": "DEN",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-30",
+                "time": "9:30AM",
+                "status": "pregame"
+            },
+            "week9": {
+                "opponent": "LV",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-06",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week10": {
+                "opponent": "KC",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-13",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week12": {
+                "opponent": "BAL",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-27",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week13": {
+                "opponent": "DET",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-12-04",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week14": {
+                "opponent": "TEN",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-12-11",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week15": {
+                "opponent": "DAL",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-12-18",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week16": {
+                "opponent": "NYJ",
+                "home-away": "Away",
+                "day": "Thu",
+                "date": "2022-12-22",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week17": {
+                "opponent": "HOU",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2023-01-01",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week18": {
+                "opponent": "TEN",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2023-01-08",
+                "time": "1:00PM",
+                "status": "pregame"
+            }
+        }
     },
-    "KC":{
-        "location":"Kansas City",
-        "nickname":"Chiefs",
-        "conference":"AFC",
-        "division":"West",
-        "colors":["#E31837","#FFB81C"],
-        "schedule":[]
+    "KC": {
+        "location": "Kansas City",
+        "nickname": "Chiefs",
+        "conference": "AFC",
+        "division": "West",
+        "colors": [
+            "#E31837",
+            "#FFB81C"
+        ],
+        "schedule": {
+            "week3": {
+                "opponent": "IND",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-09-25",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week4": {
+                "opponent": "TB",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-02",
+                "time": "8:20PM",
+                "status": "pregame"
+            },
+            "week5": {
+                "opponent": "LV",
+                "home-away": "Home",
+                "day": "Mon",
+                "date": "2022-10-10",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week6": {
+                "opponent": "BUF",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-16",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week7": {
+                "opponent": "SF",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-23",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week9": {
+                "opponent": "TEN",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-06",
+                "time": "8:20PM",
+                "status": "pregame"
+            },
+            "week10": {
+                "opponent": "JAX",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-13",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week11": {
+                "opponent": "LAC",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-20",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week12": {
+                "opponent": "LAR",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-27",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week13": {
+                "opponent": "CIN",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-12-04",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week14": {
+                "opponent": "DEN",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-12-11",
+                "time": "8:20PM",
+                "status": "pregame"
+            },
+            "week15": {
+                "opponent": "HOU",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-12-18",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week16": {
+                "opponent": "SEA",
+                "home-away": "Home",
+                "day": "Sat",
+                "date": "2022-12-24",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week17": {
+                "opponent": "DEN",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2023-01-01",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week18": {
+                "opponent": "LV",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2023-01-08",
+                "time": "1:00PM",
+                "status": "pregame"
+            }
+        }
     },
-    "LV":{
-        "location":"Las Vegas",
-        "nickname":"Raiders",
-        "conference":"AFC",
-        "division":"West",
-        "colors":["#A5ACAF","#000000"],
-        "schedule":[]
+    "LV": {
+        "location": "Las Vegas",
+        "nickname": "Raiders",
+        "conference": "AFC",
+        "division": "West",
+        "colors": [
+            "#A5ACAF",
+            "#000000"
+        ],
+        "schedule": {
+            "week3": {
+                "opponent": "TEN",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-09-25",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week4": {
+                "opponent": "DEN",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-02",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week5": {
+                "opponent": "KC",
+                "home-away": "Away",
+                "day": "Mon",
+                "date": "2022-10-10",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week7": {
+                "opponent": "HOU",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-23",
+                "time": "4:05PM",
+                "status": "pregame"
+            },
+            "week8": {
+                "opponent": "NO",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-30",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week9": {
+                "opponent": "JAX",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-06",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week10": {
+                "opponent": "IND",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-13",
+                "time": "4:05PM",
+                "status": "pregame"
+            },
+            "week11": {
+                "opponent": "DEN",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-20",
+                "time": "4:05PM",
+                "status": "pregame"
+            },
+            "week12": {
+                "opponent": "SEA",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-27",
+                "time": "4:05PM",
+                "status": "pregame"
+            },
+            "week13": {
+                "opponent": "LAC",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-12-04",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week14": {
+                "opponent": "LAR",
+                "home-away": "Away",
+                "day": "Thu",
+                "date": "2022-12-08",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week15": {
+                "opponent": "NE",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-12-18",
+                "time": "8:20PM",
+                "status": "pregame"
+            },
+            "week16": {
+                "opponent": "PIT",
+                "home-away": "Away",
+                "day": "Sat",
+                "date": "2022-12-24",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week17": {
+                "opponent": "SF",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2023-01-01",
+                "time": "4:05PM",
+                "status": "pregame"
+            },
+            "week18": {
+                "opponent": "KC",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2023-01-08",
+                "time": "1:00PM",
+                "status": "pregame"
+            }
+        }
     },
-    "LAC":{
-        "location":"Los Angeles",
-        "nickname":"Chargers",
-        "conference":"AFC",
-        "division":"West",
-        "colors":["#0080C6","#FFC20E"],
-        "schedule":[]
+    "LAC": {
+        "location": "Los Angeles",
+        "nickname": "Chargers",
+        "conference": "AFC",
+        "division": "West",
+        "colors": [
+            "#0080C6",
+            "#FFC20E"
+        ],
+        "schedule": {
+            "week3": {
+                "opponent": "JAX",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-09-25",
+                "time": "4:05PM",
+                "status": "pregame"
+            },
+            "week4": {
+                "opponent": "HOU",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-02",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week5": {
+                "opponent": "CLE",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-09",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week6": {
+                "opponent": "DEN",
+                "home-away": "Home",
+                "day": "Mon",
+                "date": "2022-10-17",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week7": {
+                "opponent": "SEA",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-23",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week9": {
+                "opponent": "ATL",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-06",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week10": {
+                "opponent": "SF",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-13",
+                "time": "8:20PM",
+                "status": "pregame"
+            },
+            "week11": {
+                "opponent": "KC",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-20",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week12": {
+                "opponent": "ARI",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-27",
+                "time": "4:05PM",
+                "status": "pregame"
+            },
+            "week13": {
+                "opponent": "LV",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-12-04",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week14": {
+                "opponent": "MIA",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-12-11",
+                "time": "4:05PM",
+                "status": "pregame"
+            },
+            "week15": {
+                "opponent": "TEN",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-12-18",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week16": {
+                "opponent": "IND",
+                "home-away": "Away",
+                "day": "Mon",
+                "date": "2022-12-26",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week17": {
+                "opponent": "LAR",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2023-01-01",
+                "time": "8:20PM",
+                "status": "pregame"
+            },
+            "week18": {
+                "opponent": "DEN",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2023-01-08",
+                "time": "1:00PM",
+                "status": "pregame"
+            }
+        }
     },
-    "LAR":{
-        "location":"Los Angeles",
-        "nickname":"Rams",
-        "conference":"NFC",
-        "division":"West",
-        "colors":["#003594","#FFA300","#FF8200","#FFD100"],
-        "schedule":[]
+    "LAR": {
+        "location": "Los Angeles",
+        "nickname": "Rams",
+        "conference": "NFC",
+        "division": "West",
+        "colors": [
+            "#003594",
+            "#FFA300",
+            "#FF8200",
+            "#FFD100"
+        ],
+        "schedule": {
+            "week3": {
+                "opponent": "ARI",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-09-25",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week4": {
+                "opponent": "SF",
+                "home-away": "Away",
+                "day": "Mon",
+                "date": "2022-10-03",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week5": {
+                "opponent": "DAL",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-09",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week6": {
+                "opponent": "CAR",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-16",
+                "time": "4:05PM",
+                "status": "pregame"
+            },
+            "week8": {
+                "opponent": "SF",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-30",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week9": {
+                "opponent": "TB",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-06",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week10": {
+                "opponent": "ARI",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-13",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week11": {
+                "opponent": "NO",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-20",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week12": {
+                "opponent": "KC",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-27",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week13": {
+                "opponent": "SEA",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-12-04",
+                "time": "4:05PM",
+                "status": "pregame"
+            },
+            "week14": {
+                "opponent": "LV",
+                "home-away": "Home",
+                "day": "Thu",
+                "date": "2022-12-08",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week15": {
+                "opponent": "GB",
+                "home-away": "Away",
+                "day": "Mon",
+                "date": "2022-12-19",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week16": {
+                "opponent": "DEN",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-12-25",
+                "time": "4:30PM",
+                "status": "pregame"
+            },
+            "week17": {
+                "opponent": "LAC",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2023-01-01",
+                "time": "8:20PM",
+                "status": "pregame"
+            },
+            "week18": {
+                "opponent": "SEA",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2023-01-08",
+                "time": "1:00PM",
+                "status": "pregame"
+            }
+        }
     },
-    "MIA":{
-        "location":"Miami",
-        "nickname":"Dolphins",
-        "conference":"AFC",
-        "division":"East",
-        "colors":["#008E97","#FC4C02","#005778"],
-        "schedule":[]
+    "MIA": {
+        "location": "Miami",
+        "nickname": "Dolphins",
+        "conference": "AFC",
+        "division": "East",
+        "colors": [
+            "#008E97",
+            "#FC4C02",
+            "#005778"
+        ],
+        "schedule": {
+            "week3": {
+                "opponent": "BUF",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-09-25",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week4": {
+                "opponent": "CIN",
+                "home-away": "Away",
+                "day": "Thu",
+                "date": "2022-09-29",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week5": {
+                "opponent": "NYJ",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-09",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week6": {
+                "opponent": "MIN",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-16",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week7": {
+                "opponent": "PIT",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-23",
+                "time": "8:20PM",
+                "status": "pregame"
+            },
+            "week8": {
+                "opponent": "DET",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-30",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week9": {
+                "opponent": "CHI",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-06",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week10": {
+                "opponent": "CLE",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-13",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week12": {
+                "opponent": "HOU",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-27",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week13": {
+                "opponent": "SF",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-12-04",
+                "time": "4:05PM",
+                "status": "pregame"
+            },
+            "week14": {
+                "opponent": "LAC",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-12-11",
+                "time": "4:05PM",
+                "status": "pregame"
+            },
+            "week15": {
+                "opponent": "BUF",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-12-18",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week16": {
+                "opponent": "GB",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-12-25",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week17": {
+                "opponent": "NE",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2023-01-01",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week18": {
+                "opponent": "NYJ",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2023-01-08",
+                "time": "1:00PM",
+                "status": "pregame"
+            }
+        }
     },
-    "MIN":{
-        "location":"Minnesota",
-        "nickname":"Vikings",
-        "conference":"NFC",
-        "division":"North",
-        "colors":["#4F2683","#FFC62F"],
-        "schedule":[]
+    "MIN": {
+        "location": "Minnesota",
+        "nickname": "Vikings",
+        "conference": "NFC",
+        "division": "North",
+        "colors": [
+            "#4F2683",
+            "#FFC62F"
+        ],
+        "schedule": {
+            "week3": {
+                "opponent": "DET",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-09-25",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week4": {
+                "opponent": "NO",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-02",
+                "time": "9:30AM",
+                "status": "pregame"
+            },
+            "week5": {
+                "opponent": "CHI",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-09",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week6": {
+                "opponent": "MIA",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-16",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week8": {
+                "opponent": "ARI",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-30",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week9": {
+                "opponent": "WAS",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-06",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week10": {
+                "opponent": "BUF",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-13",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week11": {
+                "opponent": "DAL",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-20",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week12": {
+                "opponent": "NE",
+                "home-away": "Home",
+                "day": "Thu",
+                "date": "2022-11-24",
+                "time": "8:20PM",
+                "status": "pregame"
+            },
+            "week13": {
+                "opponent": "NYJ",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-12-04",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week14": {
+                "opponent": "DET",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-12-11",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week15": {
+                "opponent": "IND",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-12-18",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week16": {
+                "opponent": "NYG",
+                "home-away": "Home",
+                "day": "Sat",
+                "date": "2022-12-24",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week17": {
+                "opponent": "GB",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2023-01-01",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week18": {
+                "opponent": "CHI",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2023-01-08",
+                "time": "1:00PM",
+                "status": "pregame"
+            }
+        }
     },
-    "NE":{
-        "location":"New England",
-        "nickname":"Patriots",
-        "conference":"AFC",
-        "division":"East",
-        "colors":["#002244","#C60C30","#B0B7BC"],
-        "schedule":[]
+    "NE": {
+        "location": "New England",
+        "nickname": "Patriots",
+        "conference": "AFC",
+        "division": "East",
+        "colors": [
+            "#002244",
+            "#C60C30",
+            "#B0B7BC"
+        ],
+        "schedule": {
+            "week3": {
+                "opponent": "BAL",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-09-25",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week4": {
+                "opponent": "GB",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-02",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week5": {
+                "opponent": "DET",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-09",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week6": {
+                "opponent": "CLE",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-16",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week7": {
+                "opponent": "CHI",
+                "home-away": "Home",
+                "day": "Mon",
+                "date": "2022-10-24",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week8": {
+                "opponent": "NYJ",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-30",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week9": {
+                "opponent": "IND",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-06",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week11": {
+                "opponent": "NYJ",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-20",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week12": {
+                "opponent": "MIN",
+                "home-away": "Away",
+                "day": "Thu",
+                "date": "2022-11-24",
+                "time": "8:20PM",
+                "status": "pregame"
+            },
+            "week13": {
+                "opponent": "BUF",
+                "home-away": "Home",
+                "day": "Thu",
+                "date": "2022-12-01",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week14": {
+                "opponent": "ARI",
+                "home-away": "Away",
+                "day": "Mon",
+                "date": "2022-12-12",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week15": {
+                "opponent": "LV",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-12-18",
+                "time": "8:20PM",
+                "status": "pregame"
+            },
+            "week16": {
+                "opponent": "CIN",
+                "home-away": "Home",
+                "day": "Sat",
+                "date": "2022-12-24",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week17": {
+                "opponent": "MIA",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2023-01-01",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week18": {
+                "opponent": "BUF",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2023-01-08",
+                "time": "1:00PM",
+                "status": "pregame"
+            }
+        }
     },
-    "NO":{
-        "location":"New Orleans",
-        "nickname":"Saints",
-        "conference":"NFC",
-        "division":"South",
-        "colors":["#D3BC8D","#101820"],
-        "schedule":[]
+    "NO": {
+        "location": "New Orleans",
+        "nickname": "Saints",
+        "conference": "NFC",
+        "division": "South",
+        "colors": [
+            "#D3BC8D",
+            "#101820"
+        ],
+        "schedule": {
+            "week3": {
+                "opponent": "CAR",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-09-25",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week4": {
+                "opponent": "MIN",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-02",
+                "time": "9:30AM",
+                "status": "pregame"
+            },
+            "week5": {
+                "opponent": "SEA",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-09",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week6": {
+                "opponent": "CIN",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-16",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week7": {
+                "opponent": "ARI",
+                "home-away": "Away",
+                "day": "Thu",
+                "date": "2022-10-20",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week8": {
+                "opponent": "LV",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-30",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week9": {
+                "opponent": "BAL",
+                "home-away": "Home",
+                "day": "Mon",
+                "date": "2022-11-07",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week10": {
+                "opponent": "PIT",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-13",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week11": {
+                "opponent": "LAR",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-20",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week12": {
+                "opponent": "SF",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-27",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week13": {
+                "opponent": "TB",
+                "home-away": "Away",
+                "day": "Mon",
+                "date": "2022-12-05",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week15": {
+                "opponent": "ATL",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-12-18",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week16": {
+                "opponent": "CLE",
+                "home-away": "Away",
+                "day": "Sat",
+                "date": "2022-12-24",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week17": {
+                "opponent": "PHI",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2023-01-01",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week18": {
+                "opponent": "CAR",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2023-01-08",
+                "time": "1:00PM",
+                "status": "pregame"
+            }
+        }
     },
-    "NYG":{
-        "location":"New York",
-        "nickname":"Giants",
-        "conference":"NFC",
-        "division":"East",
-        "colors":["#0B2265","#A71930","#A5ACAF"],
-        "schedule":[]
+    "NYG": {
+        "location": "New York",
+        "nickname": "Giants",
+        "conference": "NFC",
+        "division": "East",
+        "colors": [
+            "#0B2265",
+            "#A71930",
+            "#A5ACAF"
+        ],
+        "schedule": {
+            "week3": {
+                "opponent": "DAL",
+                "home-away": "Home",
+                "day": "Mon",
+                "date": "2022-09-26",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week4": {
+                "opponent": "CHI",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-02",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week5": {
+                "opponent": "GB",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-09",
+                "time": "9:30AM",
+                "status": "pregame"
+            },
+            "week6": {
+                "opponent": "BAL",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-16",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week7": {
+                "opponent": "JAX",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-23",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week8": {
+                "opponent": "SEA",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-30",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week10": {
+                "opponent": "HOU",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-13",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week11": {
+                "opponent": "DET",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-20",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week12": {
+                "opponent": "DAL",
+                "home-away": "Away",
+                "day": "Thu",
+                "date": "2022-11-24",
+                "time": "4:30PM",
+                "status": "pregame"
+            },
+            "week13": {
+                "opponent": "WAS",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-12-04",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week14": {
+                "opponent": "PHI",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-12-11",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week15": {
+                "opponent": "WAS",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-12-18",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week16": {
+                "opponent": "MIN",
+                "home-away": "Away",
+                "day": "Sat",
+                "date": "2022-12-24",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week17": {
+                "opponent": "IND",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2023-01-01",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week18": {
+                "opponent": "PHI",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2023-01-08",
+                "time": "1:00PM",
+                "status": "pregame"
+            }
+        }
     },
-    "NYJ":{
-        "location":"New York",
-        "nickname":"Jets",
-        "conference":"AFC",
-        "division":"East",
-        "colors":["#125740","#000000"],
-        "schedule":[]
+    "NYJ": {
+        "location": "New York",
+        "nickname": "Jets",
+        "conference": "AFC",
+        "division": "East",
+        "colors": [
+            "#125740",
+            "#000000"
+        ],
+        "schedule": {
+            "week3": {
+                "opponent": "CIN",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-09-25",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week4": {
+                "opponent": "PIT",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-02",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week5": {
+                "opponent": "MIA",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-09",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week6": {
+                "opponent": "GB",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-16",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week7": {
+                "opponent": "DEN",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-23",
+                "time": "4:05PM",
+                "status": "pregame"
+            },
+            "week8": {
+                "opponent": "NE",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-30",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week9": {
+                "opponent": "BUF",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-06",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week11": {
+                "opponent": "NE",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-20",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week12": {
+                "opponent": "CHI",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-27",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week13": {
+                "opponent": "MIN",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-12-04",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week14": {
+                "opponent": "BUF",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-12-11",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week15": {
+                "opponent": "DET",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-12-18",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week16": {
+                "opponent": "JAX",
+                "home-away": "Home",
+                "day": "Thu",
+                "date": "2022-12-22",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week17": {
+                "opponent": "SEA",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2023-01-01",
+                "time": "4:05PM",
+                "status": "pregame"
+            },
+            "week18": {
+                "opponent": "MIA",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2023-01-08",
+                "time": "1:00PM",
+                "status": "pregame"
+            }
+        }
     },
-    "PHI":{
-        "location":"Philadelphia",
-        "nickname":"Eagles",
-        "conference":"NFC",
-        "division":"East",
-        "colors":["#004C54","#A5ACAF","#000000"],
-        "schedule":[]
+    "PHI": {
+        "location": "Philadelphia",
+        "nickname": "Eagles",
+        "conference": "NFC",
+        "division": "East",
+        "colors": [
+            "#004C54",
+            "#A5ACAF",
+            "#000000"
+        ],
+        "schedule": {
+            "week3": {
+                "opponent": "WAS",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-09-25",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week4": {
+                "opponent": "JAX",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-02",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week5": {
+                "opponent": "ARI",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-09",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week6": {
+                "opponent": "DAL",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-16",
+                "time": "8:20PM",
+                "status": "pregame"
+            },
+            "week8": {
+                "opponent": "PIT",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-30",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week9": {
+                "opponent": "HOU",
+                "home-away": "Away",
+                "day": "Thu",
+                "date": "2022-11-03",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week10": {
+                "opponent": "WAS",
+                "home-away": "Home",
+                "day": "Mon",
+                "date": "2022-11-14",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week11": {
+                "opponent": "IND",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-20",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week12": {
+                "opponent": "GB",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-27",
+                "time": "8:20PM",
+                "status": "pregame"
+            },
+            "week13": {
+                "opponent": "TEN",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-12-04",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week14": {
+                "opponent": "NYG",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-12-11",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week15": {
+                "opponent": "CHI",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-12-18",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week16": {
+                "opponent": "DAL",
+                "home-away": "Away",
+                "day": "Sat",
+                "date": "2022-12-24",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week17": {
+                "opponent": "NO",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2023-01-01",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week18": {
+                "opponent": "NYG",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2023-01-08",
+                "time": "1:00PM",
+                "status": "pregame"
+            }
+        }
     },
-    "PIT":{
-        "location":"Pittsburgh",
-        "nickname":"Steelers",
-        "conference":"AFC",
-        "division":"North",
-        "colors":["#FFB612","#101820"],
-        "schedule":[]
+    "PIT": {
+        "location": "Pittsburgh",
+        "nickname": "Steelers",
+        "conference": "AFC",
+        "division": "North",
+        "colors": [
+            "#FFB612",
+            "#101820"
+        ],
+        "schedule": {
+            "week4": {
+                "opponent": "NYJ",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-02",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week5": {
+                "opponent": "BUF",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-09",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week6": {
+                "opponent": "TB",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-16",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week7": {
+                "opponent": "MIA",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-23",
+                "time": "8:20PM",
+                "status": "pregame"
+            },
+            "week8": {
+                "opponent": "PHI",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-30",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week10": {
+                "opponent": "NO",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-13",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week11": {
+                "opponent": "CIN",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-20",
+                "time": "8:20PM",
+                "status": "pregame"
+            },
+            "week12": {
+                "opponent": "IND",
+                "home-away": "Away",
+                "day": "Mon",
+                "date": "2022-11-28",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week13": {
+                "opponent": "ATL",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-12-04",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week14": {
+                "opponent": "BAL",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-12-11",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week15": {
+                "opponent": "CAR",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-12-18",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week16": {
+                "opponent": "LV",
+                "home-away": "Home",
+                "day": "Sat",
+                "date": "2022-12-24",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week17": {
+                "opponent": "BAL",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2023-01-01",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week18": {
+                "opponent": "CLE",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2023-01-08",
+                "time": "1:00PM",
+                "status": "pregame"
+            }
+        }
     },
-    "SF":{
-        "location":"San Francisco",
-        "nickname":"49ers",
-        "conference":"NFC",
-        "division":"West",
-        "colors":["#AA0000","#B3995D"],
-        "schedule":[]
+    "SF": {
+        "location": "San Francisco",
+        "nickname": "49ers",
+        "conference": "NFC",
+        "division": "West",
+        "colors": [
+            "#AA0000",
+            "#B3995D"
+        ],
+        "schedule": {
+            "week3": {
+                "opponent": "DEN",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-09-25",
+                "time": "8:20PM",
+                "status": "pregame"
+            },
+            "week4": {
+                "opponent": "LAR",
+                "home-away": "Home",
+                "day": "Mon",
+                "date": "2022-10-03",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week5": {
+                "opponent": "CAR",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-09",
+                "time": "4:05PM",
+                "status": "pregame"
+            },
+            "week6": {
+                "opponent": "ATL",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-16",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week7": {
+                "opponent": "KC",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-23",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week8": {
+                "opponent": "LAR",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-30",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week10": {
+                "opponent": "LAC",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-13",
+                "time": "8:20PM",
+                "status": "pregame"
+            },
+            "week11": {
+                "opponent": "ARI",
+                "home-away": "Away",
+                "day": "Mon",
+                "date": "2022-11-21",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week12": {
+                "opponent": "NO",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-27",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week13": {
+                "opponent": "MIA",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-12-04",
+                "time": "4:05PM",
+                "status": "pregame"
+            },
+            "week14": {
+                "opponent": "TB",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-12-11",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week15": {
+                "opponent": "SEA",
+                "home-away": "Away",
+                "day": "Thu",
+                "date": "2022-12-15",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week16": {
+                "opponent": "WAS",
+                "home-away": "Home",
+                "day": "Sat",
+                "date": "2022-12-24",
+                "time": "4:05PM",
+                "status": "pregame"
+            },
+            "week17": {
+                "opponent": "LV",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2023-01-01",
+                "time": "4:05PM",
+                "status": "pregame"
+            },
+            "week18": {
+                "opponent": "ARI",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2023-01-08",
+                "time": "1:00PM",
+                "status": "pregame"
+            }
+        }
     },
-    "SEA":{
-        "location":"Seattle",
-        "nickname":"Seahawks",
-        "conference":"NFC",
-        "division":"West",
-        "colors":["#002244","#69BE28","#A5ACAF"],
-        "schedule":[]
+    "SEA": {
+        "location": "Seattle",
+        "nickname": "Seahawks",
+        "conference": "NFC",
+        "division": "West",
+        "colors": [
+            "#002244",
+            "#69BE28",
+            "#A5ACAF"
+        ],
+        "schedule": {
+            "week3": {
+                "opponent": "ATL",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-09-25",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week4": {
+                "opponent": "DET",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-02",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week5": {
+                "opponent": "NO",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-09",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week6": {
+                "opponent": "ARI",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-16",
+                "time": "4:05PM",
+                "status": "pregame"
+            },
+            "week7": {
+                "opponent": "LAC",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-23",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week8": {
+                "opponent": "NYG",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-30",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week9": {
+                "opponent": "ARI",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-06",
+                "time": "4:05PM",
+                "status": "pregame"
+            },
+            "week10": {
+                "opponent": "TB",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-13",
+                "time": "9:30AM",
+                "status": "pregame"
+            },
+            "week12": {
+                "opponent": "LV",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-27",
+                "time": "4:05PM",
+                "status": "pregame"
+            },
+            "week13": {
+                "opponent": "LAR",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-12-04",
+                "time": "4:05PM",
+                "status": "pregame"
+            },
+            "week14": {
+                "opponent": "CAR",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-12-11",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week15": {
+                "opponent": "SF",
+                "home-away": "Home",
+                "day": "Thu",
+                "date": "2022-12-15",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week16": {
+                "opponent": "KC",
+                "home-away": "Away",
+                "day": "Sat",
+                "date": "2022-12-24",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week17": {
+                "opponent": "NYJ",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2023-01-01",
+                "time": "4:05PM",
+                "status": "pregame"
+            },
+            "week18": {
+                "opponent": "LAR",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2023-01-08",
+                "time": "1:00PM",
+                "status": "pregame"
+            }
+        }
     },
-    "TB":{
-        "location":"Tampa Bay",
-        "nickname":"Buccaneers",
-        "conference":"NFC",
-        "division":"South",
-        "colors":["#D50A0A","#FF7900","#0A0A08","#B1BABF","#34302B"],
-        "schedule":[]
+    "TB": {
+        "location": "Tampa Bay",
+        "nickname": "Buccaneers",
+        "conference": "NFC",
+        "division": "South",
+        "colors": [
+            "#D50A0A",
+            "#FF7900",
+            "#0A0A08",
+            "#B1BABF",
+            "#34302B"
+        ],
+        "schedule": {
+            "week3": {
+                "opponent": "GB",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-09-25",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week4": {
+                "opponent": "KC",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-02",
+                "time": "8:20PM",
+                "status": "pregame"
+            },
+            "week5": {
+                "opponent": "ATL",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-09",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week6": {
+                "opponent": "PIT",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-16",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week7": {
+                "opponent": "CAR",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-23",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week8": {
+                "opponent": "BAL",
+                "home-away": "Home",
+                "day": "Thu",
+                "date": "2022-10-27",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week9": {
+                "opponent": "LAR",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-06",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week10": {
+                "opponent": "SEA",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-13",
+                "time": "9:30AM",
+                "status": "pregame"
+            },
+            "week12": {
+                "opponent": "CLE",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-27",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week13": {
+                "opponent": "NO",
+                "home-away": "Home",
+                "day": "Mon",
+                "date": "2022-12-05",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week14": {
+                "opponent": "SF",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-12-11",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week15": {
+                "opponent": "CIN",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-12-18",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week16": {
+                "opponent": "ARI",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-12-25",
+                "time": "8:20PM",
+                "status": "pregame"
+            },
+            "week17": {
+                "opponent": "CAR",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2023-01-01",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week18": {
+                "opponent": "ATL",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2023-01-08",
+                "time": "1:00PM",
+                "status": "pregame"
+            }
+        }
     },
-    "TEN":{
-        "location":"Tennessee",
-        "nickname":"Titans",
-        "conference":"AFC",
-        "division":"South",
-        "colors":["#0C2340","#4B92DB","#8A8D8F","#54585A"],
-        "schedule":[]
+    "TEN": {
+        "location": "Tennessee",
+        "nickname": "Titans",
+        "conference": "AFC",
+        "division": "South",
+        "colors": [
+            "#0C2340",
+            "#4B92DB",
+            "#8A8D8F",
+            "#54585A"
+        ],
+        "schedule": {
+            "week3": {
+                "opponent": "LV",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-09-25",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week4": {
+                "opponent": "IND",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-02",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week5": {
+                "opponent": "WAS",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-09",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week7": {
+                "opponent": "IND",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-23",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week8": {
+                "opponent": "HOU",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-30",
+                "time": "4:05PM",
+                "status": "pregame"
+            },
+            "week9": {
+                "opponent": "KC",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-06",
+                "time": "8:20PM",
+                "status": "pregame"
+            },
+            "week10": {
+                "opponent": "DEN",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-13",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week11": {
+                "opponent": "GB",
+                "home-away": "Away",
+                "day": "Thu",
+                "date": "2022-11-17",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week12": {
+                "opponent": "CIN",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-27",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week13": {
+                "opponent": "PHI",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-12-04",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week14": {
+                "opponent": "JAX",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-12-11",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week15": {
+                "opponent": "LAC",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-12-18",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week16": {
+                "opponent": "HOU",
+                "home-away": "Home",
+                "day": "Sat",
+                "date": "2022-12-24",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week17": {
+                "opponent": "DAL",
+                "home-away": "Home",
+                "day": "Thu",
+                "date": "2022-12-29",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week18": {
+                "opponent": "JAX",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2023-01-08",
+                "time": "1:00PM",
+                "status": "pregame"
+            }
+        }
     },
-    "WAS":{
-        "location":"Washington",
-        "nickname":"Commanders",
-        "conference":"NFC",
-        "division":"East",
-        "colors":["#5A1414","#FFB612"],
-        "schedule":[]
-    }    
+    "WAS": {
+        "location": "Washington",
+        "nickname": "Commanders",
+        "conference": "NFC",
+        "division": "East",
+        "colors": [
+            "#5A1414",
+            "#FFB612"
+        ],
+        "schedule": {
+            "week3": {
+                "opponent": "PHI",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-09-25",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week4": {
+                "opponent": "DAL",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-02",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week5": {
+                "opponent": "TEN",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-09",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week6": {
+                "opponent": "CHI",
+                "home-away": "Away",
+                "day": "Thu",
+                "date": "2022-10-13",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week7": {
+                "opponent": "GB",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-10-23",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week8": {
+                "opponent": "IND",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-10-30",
+                "time": "4:25PM",
+                "status": "pregame"
+            },
+            "week9": {
+                "opponent": "MIN",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-06",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week10": {
+                "opponent": "PHI",
+                "home-away": "Away",
+                "day": "Mon",
+                "date": "2022-11-14",
+                "time": "8:15PM",
+                "status": "pregame"
+            },
+            "week11": {
+                "opponent": "HOU",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-11-20",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week12": {
+                "opponent": "ATL",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-11-27",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week13": {
+                "opponent": "NYG",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-12-04",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week15": {
+                "opponent": "NYG",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-12-18",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week16": {
+                "opponent": "SF",
+                "home-away": "Away",
+                "day": "Sat",
+                "date": "2022-12-24",
+                "time": "4:05PM",
+                "status": "pregame"
+            },
+            "week17": {
+                "opponent": "CLE",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2023-01-01",
+                "time": "1:00PM",
+                "status": "pregame"
+            },
+            "week18": {
+                "opponent": "DAL",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2023-01-08",
+                "time": "1:00PM",
+                "status": "pregame"
+            }
+        }
+    }
 }

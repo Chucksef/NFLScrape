@@ -11,14 +11,13 @@ import json
 # load the 2022 season into a dict
 seasonFile = open('season_2022.json')
 dot = json.load(seasonFile)
-for team in dot:
-    print(dot[team]['location'] + " " + dot[team]['nickname'])
 
 # load the translate file into a dict
 transFile = open('translate.json')
 translate = json.load(transFile)
+transFile.close()
 
-# load the 
+# load the target webpage for scraping 
 html_text = requests.get("https://www.pro-football-reference.com/years/2022/games.htm").text
 soup = BeautifulSoup(html_text, 'html.parser')
 
@@ -32,20 +31,49 @@ for row in rows:
     if len(columns) == 0:
         # The week is finished. Continue to next row and proceed.
         continue
-    
+
     # first, check if the game is concluded...
     gameStatus = "final" if (columns[6].text == "boxscore") else "pregame"
 
-    # second, process the game differently depending on the game status
+    # second, process the game depending on the game status
     if (gameStatus == "pregame"):
-        game = {
-            "week"            : row.find('th').text,
+        # determine the home and away team keys
+        homeTeamKey = translate[columns[5].text.split()[-1].upper()]
+        awayTeamKey = translate[columns[3].text.split()[-1].upper()]
+
+        # store the week number
+        weekNumber = row.find('th').text
+
+        # build two versions of each game to save to both teams' schedules
+        homeGame = {
+            "opponent"        : awayTeamKey,
+            "home-away"       : "Home",
             "day"             : columns[0].text,
             "date"            : columns[1].text,
             "time"            : columns[2].text,
             "status"          : gameStatus
         }
+
+        awayGame = {
+            "opponent"        : homeTeamKey,
+            "home-away"       : "Away",
+            "day"             : columns[0].text,
+            "date"            : columns[1].text,
+            "time"            : columns[2].text,
+            "status"          : gameStatus
+        }
+
+        # add this info to each team's dictionary record
+        dot[homeTeamKey]["schedule"]["week"+weekNumber] = homeGame
+        dot[awayTeamKey]["schedule"]["week"+weekNumber] = awayGame
     
+# output new data back to the season file
+with open("season_2022.json", 'w') as seasonFile:
+    new_json = json.dumps(dot, indent=4)
+    seasonFile.write(new_json)
+
+seasonFile.close()
+
 
 
     #### Below Text is useful for reference!!! ####
