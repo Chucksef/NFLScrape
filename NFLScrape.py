@@ -5,13 +5,18 @@ import json
 # GOALS: 
 #   1) COMPLETED -- Create a JSON file with NFL teams and basic club info
 #   2) COMPLETED -- Load the JSON into a dictionary of teams (DOT) at the start of the program
-#   3) Fill out schedule info in the DOT as we iterate through the page
+#   3) COMPLETED -- Create a "translate" dictionary that allows conversion of team names to a team KEY
+#   4) Fill out schedule info in the DOT as we iterate through the page
 
-# load the 2022 season into a Python dictionary
-file = open('season_2022.json')
-dot = json.load(file)
+# load the 2022 season into a dict
+seasonFile = open('season_2022.json')
+dot = json.load(seasonFile)
 for team in dot:
     print(dot[team]['location'] + " " + dot[team]['nickname'])
+
+# load the translate file into a dict
+transFile = open('translate.json')
+translate = json.load(transFile)
 
 # load the 
 html_text = requests.get("https://www.pro-football-reference.com/years/2022/games.htm").text
