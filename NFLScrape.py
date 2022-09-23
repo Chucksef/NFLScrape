@@ -3,10 +3,17 @@ import requests
 import json
 
 # GOALS: 
-#   1) Create a JSON file with NFL teams and basic club info -- COMPLETED!
-#   2) Load the JSON into a dictionary of teams (DOT) at the start of the program
+#   1) COMPLETED -- Create a JSON file with NFL teams and basic club info
+#   2) COMPLETED -- Load the JSON into a dictionary of teams (DOT) at the start of the program
 #   3) Fill out schedule info in the DOT as we iterate through the page
 
+# load the 2022 season into a Python dictionary
+file = open('season_2022.json')
+dot = json.load(file)
+for team in dot:
+    print(dot[team]['location'] + " " + dot[team]['nickname'])
+
+# load the 
 html_text = requests.get("https://www.pro-football-reference.com/years/2022/games.htm").text
 soup = BeautifulSoup(html_text, 'html.parser')
 

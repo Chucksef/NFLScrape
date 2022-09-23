@@ -1,290 +1,258 @@
-{"teams": [
-    {
+{
+    "ARI":{
         "location":"Arizona",
         "nickname":"Cardinals",
-        "abbreviation":"ARI",
         "conference":"NFC",
         "division":"West",
         "colors":["#97233F","#000000","#FFB612"],
         "schedule":[]
     },
-    {
+    "ATL":{
         "location":"Atlanta",
         "nickname":"Falcons",
-        "abbreviation":"ATL",
         "conference":"NFC",
         "division":"South",
         "colors":["#A71930","#000000","#A5ACAF"],
         "schedule":[]
     },
-    {
+    "BAL":{
         "location":"Baltimore",
         "nickname":"Ravens",
-        "abbreviation":"BAL",
         "conference":"AFC",
         "division":"North",
         "colors":["#241773","#000000","#9E7C0C","#C60C30"],
         "schedule":[]
     },
-    {
+    "BUF":{
         "location":"Buffalo",
         "nickname":"Bills",
-        "abbreviation":"BUF",
         "conference":"NFC",
         "division":"West",
         "colors":["#00338D","#C60C30"],
         "schedule":[]
     },
-    {
+    "CAR":{
         "location":"Carolina",
         "nickname":"Panthers",
-        "abbreviation":"CAR",
         "conference":"NFC",
         "division":"South",
         "colors":["#0085CA","#101820","#BFC0BF"],
         "schedule":[]
     },
-    {
+    "CHI":{
         "location":"Chicago",
         "nickname":"Bears",
-        "abbreviation":"CHI",
         "conference":"NFC",
         "division":"North",
         "colors":["#0B162A","#C83803"],
         "schedule":[]
     },
-    {
+    "CIN":{
         "location":"Cincinnati",
         "nickname":"Bengals",
-        "abbreviation":"CIN",
         "conference":"AFC",
         "division":"North",
         "colors":["#FB4F14","#000000"],
         "schedule":[]
     },
-    {
+    "CLE":{
         "location":"Cleveland",
         "nickname":"Browns",
-        "abbreviation":"CLE",
         "conference":"AFC",
         "division":"North",
         "colors":["#311D00","#FF3C00"],
         "schedule":[]
     },
-    {
+    "DAL":{
         "location":"Dallas",
         "nickname":"Cowboys",
-        "abbreviation":"DAL",
         "conference":"NFC",
         "division":"East",
         "colors":["#041E42","#869397","#7F9695","#003594"],
         "schedule":[]
     },
-    {
+    "DEN":{
         "location":"Denver",
         "nickname":"Broncos",
-        "abbreviation":"DEN",
         "conference":"AFC",
         "division":"West",
         "colors":["#FB4F14","#002244"],
         "schedule":[]
     },
-    {
+    "DET":{
         "location":"Detroit",
         "nickname":"Lions",
-        "abbreviation":"DET",
         "conference":"NFC",
         "division":"North",
         "colors":["#0076B6","#B0B7BC"],
         "schedule":[]
     },
-    {
+    "GB":{
         "location":"Green Bay",
         "nickname":"Packers",
-        "abbreviation":"GB",
         "conference":"NFC",
         "division":"North",
         "colors":["#203731","#FFB612"],
         "schedule":[]
     },
-    {
+    "HOU":{
         "location":"Houston",
         "nickname":"Texans",
-        "abbreviation":"HOU",
         "conference":"AFC",
         "division":"South",
         "colors":["#03202F","#A71930"],
         "schedule":[]
     },
-    {
+    "IND":{
         "location":"Indianapolis",
         "nickname":"Colts",
-        "abbreviation":"IND",
         "conference":"AFC",
         "division":"South",
         "colors":["#002C5F","#A2AAAD"],
         "schedule":[]
     },
-    {
+    "JAX":{
         "location":"Jacksonville",
         "nickname":"Jaguars",
-        "abbreviation":"JAX",
         "conference":"AFC",
         "division":"South",
         "colors":["#006558","#D7A22A","#9F792C","#101820"],
         "schedule":[]
     },
-    {
+    "KC":{
         "location":"Kansas City",
         "nickname":"Chiefs",
-        "abbreviation":"KC",
         "conference":"AFC",
         "division":"West",
         "colors":["#E31837","#FFB81C"],
         "schedule":[]
     },
-    {
+    "LV":{
         "location":"Las Vegas",
         "nickname":"Raiders",
-        "abbreviation":"LV",
         "conference":"AFC",
         "division":"West",
         "colors":["#A5ACAF","#000000"],
         "schedule":[]
     },
-    {
+    "LAC":{
         "location":"Los Angeles",
         "nickname":"Chargers",
-        "abbreviation":"LAC",
         "conference":"AFC",
         "division":"West",
         "colors":["#0080C6","#FFC20E"],
         "schedule":[]
     },
-    {
+    "LAR":{
         "location":"Los Angeles",
         "nickname":"Rams",
-        "abbreviation":"LAR",
         "conference":"NFC",
         "division":"West",
         "colors":["#003594","#FFA300","#FF8200","#FFD100"],
         "schedule":[]
     },
-    {
+    "MIA":{
         "location":"Miami",
         "nickname":"Dolphins",
-        "abbreviation":"MIA",
         "conference":"AFC",
         "division":"East",
         "colors":["#008E97","#FC4C02","#005778"],
         "schedule":[]
     },
-    {
+    "MIN":{
         "location":"Minnesota",
         "nickname":"Vikings",
-        "abbreviation":"MIN",
         "conference":"NFC",
         "division":"North",
         "colors":["#4F2683","#FFC62F"],
         "schedule":[]
     },
-    {
+    "NE":{
         "location":"New England",
         "nickname":"Patriots",
-        "abbreviation":"NE",
         "conference":"AFC",
         "division":"East",
         "colors":["#002244","#C60C30","#B0B7BC"],
         "schedule":[]
     },
-    {
+    "NO":{
         "location":"New Orleans",
         "nickname":"Saints",
-        "abbreviation":"NO",
         "conference":"NFC",
         "division":"South",
         "colors":["#D3BC8D","#101820"],
         "schedule":[]
     },
-    {
+    "NYG":{
         "location":"New York",
         "nickname":"Giants",
-        "abbreviation":"NYG",
         "conference":"NFC",
         "division":"East",
         "colors":["#0B2265","#A71930","#A5ACAF"],
         "schedule":[]
     },
-    {
+    "NYJ":{
         "location":"New York",
         "nickname":"Jets",
-        "abbreviation":"NYJ",
         "conference":"AFC",
         "division":"East",
         "colors":["#125740","#000000"],
         "schedule":[]
     },
-    {
+    "PHI":{
         "location":"Philadelphia",
         "nickname":"Eagles",
-        "abbreviation":"PHI",
         "conference":"NFC",
         "division":"East",
         "colors":["#004C54","#A5ACAF","#000000"],
         "schedule":[]
     },
-    {
+    "PIT":{
         "location":"Pittsburgh",
         "nickname":"Steelers",
-        "abbreviation":"PIT",
         "conference":"AFC",
         "division":"North",
         "colors":["#FFB612","#101820"],
         "schedule":[]
     },
-    {
+    "SF":{
         "location":"San Francisco",
         "nickname":"49ers",
-        "abbreviation":"SF",
         "conference":"NFC",
         "division":"West",
         "colors":["#AA0000","#B3995D"],
         "schedule":[]
     },
-    {
+    "SEA":{
         "location":"Seattle",
         "nickname":"Seahawks",
-        "abbreviation":"SEA",
         "conference":"NFC",
         "division":"West",
         "colors":["#002244","#69BE28","#A5ACAF"],
         "schedule":[]
     },
-    {
+    "TB":{
         "location":"Tampa Bay",
         "nickname":"Buccaneers",
-        "abbreviation":"TB",
         "conference":"NFC",
         "division":"South",
         "colors":["#D50A0A","#FF7900","#0A0A08","#B1BABF","#34302B"],
         "schedule":[]
     },
-    {
+    "TEN":{
         "location":"Tennessee",
         "nickname":"Titans",
-        "abbreviation":"TEN",
         "conference":"AFC",
         "division":"South",
         "colors":["#0C2340","#4B92DB","#8A8D8F","#54585A"],
         "schedule":[]
     },
-    {
+    "WAS":{
         "location":"Washington",
         "nickname":"Commanders",
-        "abbreviation":"WAS",
         "conference":"NFC",
         "division":"East",
         "colors":["#5A1414","#FFB612"],
         "schedule":[]
     }    
-]}
+}
