@@ -129,6 +129,36 @@
                 "date": "2023-01-08",
                 "time": "1:00PM",
                 "status": "pregame"
+            },
+            "week1": {
+                "opponent": "KC",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-09-11",
+                "time": "4:25PM",
+                "status": "final",
+                "result": "L",
+                "points": 21,
+                "yards": 282,
+                "turnovers": 0,
+                "opp-points": 44,
+                "opp-yards": 488,
+                "opp-turnovers": 1
+            },
+            "week2": {
+                "opponent": "LV",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-09-18",
+                "time": "4:25PM",
+                "status": "final",
+                "result": "W",
+                "points": 29,
+                "yards": 413,
+                "turnovers": 1,
+                "opp-points": 23,
+                "opp-yards": 324,
+                "opp-turnovers": 1
             }
         }
     },
@@ -262,6 +292,36 @@
                 "date": "2023-01-08",
                 "time": "1:00PM",
                 "status": "pregame"
+            },
+            "week1": {
+                "opponent": "NO",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-09-11",
+                "time": "1:00PM",
+                "status": "final",
+                "result": "L",
+                "points": 26,
+                "yards": 416,
+                "turnovers": 2,
+                "opp-points": 27,
+                "opp-yards": 385,
+                "opp-turnovers": 1
+            },
+            "week2": {
+                "opponent": "LAR",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-09-18",
+                "time": "4:05PM",
+                "status": "final",
+                "result": "L",
+                "points": 27,
+                "yards": 261,
+                "turnovers": 3,
+                "opp-points": 31,
+                "opp-yards": 337,
+                "opp-turnovers": 3
             }
         }
     },
@@ -396,6 +456,36 @@
                 "date": "2023-01-08",
                 "time": "1:00PM",
                 "status": "pregame"
+            },
+            "week1": {
+                "opponent": "NYJ",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-09-11",
+                "time": "1:00PM",
+                "status": "final",
+                "result": "W",
+                "points": 24,
+                "yards": 274,
+                "turnovers": 1,
+                "opp-points": 9,
+                "opp-yards": 380,
+                "opp-turnovers": 2
+            },
+            "week2": {
+                "opponent": "MIA",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-09-18",
+                "time": "1:00PM",
+                "status": "final",
+                "result": "L",
+                "points": 38,
+                "yards": 473,
+                "turnovers": 0,
+                "opp-points": 42,
+                "opp-yards": 547,
+                "opp-turnovers": 2
             }
         }
     },
@@ -528,6 +618,36 @@
                 "date": "2023-01-08",
                 "time": "1:00PM",
                 "status": "pregame"
+            },
+            "week1": {
+                "opponent": "LAR",
+                "home-away": "Away",
+                "day": "Thu",
+                "date": "2022-09-08",
+                "time": "8:20PM",
+                "status": "final",
+                "result": "W",
+                "points": 31,
+                "yards": 413,
+                "turnovers": 4,
+                "opp-points": 10,
+                "opp-yards": 243,
+                "opp-turnovers": 3
+            },
+            "week2": {
+                "opponent": "TEN",
+                "home-away": "Home",
+                "day": "Mon",
+                "date": "2022-09-19",
+                "time": "7:15PM",
+                "status": "final",
+                "result": "W",
+                "points": 41,
+                "yards": 414,
+                "turnovers": 0,
+                "opp-points": 7,
+                "opp-yards": 187,
+                "opp-turnovers": 4
             }
         }
     },
@@ -661,6 +781,36 @@
                 "date": "2023-01-08",
                 "time": "1:00PM",
                 "status": "pregame"
+            },
+            "week1": {
+                "opponent": "CLE",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-09-11",
+                "time": "1:00PM",
+                "status": "final",
+                "result": "L",
+                "points": 24,
+                "yards": 261,
+                "turnovers": 1,
+                "opp-points": 26,
+                "opp-yards": 355,
+                "opp-turnovers": 0
+            },
+            "week2": {
+                "opponent": "NYG",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-09-18",
+                "time": "1:00PM",
+                "status": "final",
+                "result": "L",
+                "points": 16,
+                "yards": 275,
+                "turnovers": 2,
+                "opp-points": 19,
+                "opp-yards": 265,
+                "opp-turnovers": 0
             }
         }
     },
@@ -793,6 +943,36 @@
                 "date": "2023-01-08",
                 "time": "1:00PM",
                 "status": "pregame"
+            },
+            "week1": {
+                "opponent": "SF",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-09-11",
+                "time": "1:00PM",
+                "status": "final",
+                "result": "W",
+                "points": 19,
+                "yards": 204,
+                "turnovers": 1,
+                "opp-points": 10,
+                "opp-yards": 331,
+                "opp-turnovers": 2
+            },
+            "week2": {
+                "opponent": "GB",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-09-18",
+                "time": "8:20PM",
+                "status": "final",
+                "result": "L",
+                "points": 10,
+                "yards": 228,
+                "turnovers": 1,
+                "opp-points": 27,
+                "opp-yards": 414,
+                "opp-turnovers": 1
             }
         }
     },
@@ -925,6 +1105,36 @@
                 "date": "2023-01-08",
                 "time": "1:00PM",
                 "status": "pregame"
+            },
+            "week1": {
+                "opponent": "PIT",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-09-11",
+                "time": "1:00PM",
+                "status": "final",
+                "result": "L",
+                "points": 20,
+                "yards": 432,
+                "turnovers": 5,
+                "opp-points": 23,
+                "opp-yards": 267,
+                "opp-turnovers": 0
+            },
+            "week2": {
+                "opponent": "DAL",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-09-18",
+                "time": "4:25PM",
+                "status": "final",
+                "result": "L",
+                "points": 17,
+                "yards": 254,
+                "turnovers": 0,
+                "opp-points": 20,
+                "opp-yards": 337,
+                "opp-turnovers": 1
             }
         }
     },
@@ -1049,6 +1259,51 @@
                 "date": "2023-01-08",
                 "time": "1:00PM",
                 "status": "pregame"
+            },
+            "week1": {
+                "opponent": "CAR",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-09-11",
+                "time": "1:00PM",
+                "status": "final",
+                "result": "W",
+                "points": 26,
+                "yards": 355,
+                "turnovers": 0,
+                "opp-points": 24,
+                "opp-yards": 261,
+                "opp-turnovers": 1
+            },
+            "week2": {
+                "opponent": "NYJ",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-09-18",
+                "time": "1:00PM",
+                "status": "final",
+                "result": "L",
+                "points": 30,
+                "yards": 405,
+                "turnovers": 1,
+                "opp-points": 31,
+                "opp-yards": 402,
+                "opp-turnovers": 1
+            },
+            "week3": {
+                "opponent": "PIT",
+                "home-away": "Home",
+                "day": "Thu",
+                "date": "2022-09-22",
+                "time": "8:15PM",
+                "status": "final",
+                "result": "W",
+                "points": 29,
+                "yards": 376,
+                "turnovers": 0,
+                "opp-points": 17,
+                "opp-yards": 308,
+                "opp-turnovers": 1
             }
         }
     },
@@ -1183,6 +1438,36 @@
                 "date": "2023-01-08",
                 "time": "1:00PM",
                 "status": "pregame"
+            },
+            "week1": {
+                "opponent": "TB",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-09-11",
+                "time": "8:20PM",
+                "status": "final",
+                "result": "L",
+                "points": 3,
+                "yards": 244,
+                "turnovers": 1,
+                "opp-points": 19,
+                "opp-yards": 347,
+                "opp-turnovers": 1
+            },
+            "week2": {
+                "opponent": "CIN",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-09-18",
+                "time": "4:25PM",
+                "status": "final",
+                "result": "W",
+                "points": 20,
+                "yards": 337,
+                "turnovers": 1,
+                "opp-points": 17,
+                "opp-yards": 254,
+                "opp-turnovers": 0
             }
         }
     },
@@ -1315,6 +1600,36 @@
                 "date": "2023-01-08",
                 "time": "1:00PM",
                 "status": "pregame"
+            },
+            "week1": {
+                "opponent": "SEA",
+                "home-away": "Away",
+                "day": "Mon",
+                "date": "2022-09-12",
+                "time": "8:20PM",
+                "status": "final",
+                "result": "L",
+                "points": 16,
+                "yards": 433,
+                "turnovers": 2,
+                "opp-points": 17,
+                "opp-yards": 253,
+                "opp-turnovers": 1
+            },
+            "week2": {
+                "opponent": "HOU",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-09-18",
+                "time": "4:25PM",
+                "status": "final",
+                "result": "W",
+                "points": 16,
+                "yards": 350,
+                "turnovers": 1,
+                "opp-points": 9,
+                "opp-yards": 234,
+                "opp-turnovers": 0
             }
         }
     },
@@ -1447,6 +1762,36 @@
                 "date": "2023-01-08",
                 "time": "1:00PM",
                 "status": "pregame"
+            },
+            "week1": {
+                "opponent": "PHI",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-09-11",
+                "time": "1:00PM",
+                "status": "final",
+                "result": "L",
+                "points": 35,
+                "yards": 386,
+                "turnovers": 1,
+                "opp-points": 38,
+                "opp-yards": 455,
+                "opp-turnovers": 0
+            },
+            "week2": {
+                "opponent": "WAS",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-09-18",
+                "time": "1:00PM",
+                "status": "final",
+                "result": "W",
+                "points": 36,
+                "yards": 425,
+                "turnovers": 0,
+                "opp-points": 27,
+                "opp-yards": 396,
+                "opp-turnovers": 1
             }
         }
     },
@@ -1579,6 +1924,36 @@
                 "date": "2023-01-08",
                 "time": "1:00PM",
                 "status": "pregame"
+            },
+            "week1": {
+                "opponent": "MIN",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-09-11",
+                "time": "4:25PM",
+                "status": "final",
+                "result": "L",
+                "points": 7,
+                "yards": 338,
+                "turnovers": 2,
+                "opp-points": 23,
+                "opp-yards": 395,
+                "opp-turnovers": 0
+            },
+            "week2": {
+                "opponent": "CHI",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-09-18",
+                "time": "8:20PM",
+                "status": "final",
+                "result": "W",
+                "points": 27,
+                "yards": 414,
+                "turnovers": 1,
+                "opp-points": 10,
+                "opp-yards": 228,
+                "opp-turnovers": 1
             }
         }
     },
@@ -1711,6 +2086,36 @@
                 "date": "2023-01-08",
                 "time": "1:00PM",
                 "status": "pregame"
+            },
+            "week1": {
+                "opponent": "IND",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-09-11",
+                "time": "1:00PM",
+                "status": "final",
+                "result": "T",
+                "points": 20,
+                "yards": 299,
+                "turnovers": 1,
+                "opp-points": 20,
+                "opp-yards": 517,
+                "opp-turnovers": 2
+            },
+            "week2": {
+                "opponent": "DEN",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-09-18",
+                "time": "4:25PM",
+                "status": "final",
+                "result": "L",
+                "points": 9,
+                "yards": 234,
+                "turnovers": 0,
+                "opp-points": 16,
+                "opp-yards": 350,
+                "opp-turnovers": 1
             }
         }
     },
@@ -1843,6 +2248,36 @@
                 "date": "2023-01-08",
                 "time": "1:00PM",
                 "status": "pregame"
+            },
+            "week1": {
+                "opponent": "HOU",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-09-11",
+                "time": "1:00PM",
+                "status": "final",
+                "result": "T",
+                "points": 20,
+                "yards": 517,
+                "turnovers": 2,
+                "opp-points": 20,
+                "opp-yards": 299,
+                "opp-turnovers": 1
+            },
+            "week2": {
+                "opponent": "JAX",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-09-18",
+                "time": "1:00PM",
+                "status": "final",
+                "result": "L",
+                "points": 0,
+                "yards": 218,
+                "turnovers": 3,
+                "opp-points": 24,
+                "opp-yards": 331,
+                "opp-turnovers": 0
             }
         }
     },
@@ -1977,6 +2412,36 @@
                 "date": "2023-01-08",
                 "time": "1:00PM",
                 "status": "pregame"
+            },
+            "week1": {
+                "opponent": "WAS",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-09-11",
+                "time": "1:00PM",
+                "status": "final",
+                "result": "L",
+                "points": 22,
+                "yards": 383,
+                "turnovers": 1,
+                "opp-points": 28,
+                "opp-yards": 390,
+                "opp-turnovers": 3
+            },
+            "week2": {
+                "opponent": "IND",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-09-18",
+                "time": "1:00PM",
+                "status": "final",
+                "result": "W",
+                "points": 24,
+                "yards": 331,
+                "turnovers": 0,
+                "opp-points": 0,
+                "opp-yards": 218,
+                "opp-turnovers": 3
             }
         }
     },
@@ -2109,6 +2574,36 @@
                 "date": "2023-01-08",
                 "time": "1:00PM",
                 "status": "pregame"
+            },
+            "week1": {
+                "opponent": "ARI",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-09-11",
+                "time": "4:25PM",
+                "status": "final",
+                "result": "W",
+                "points": 44,
+                "yards": 488,
+                "turnovers": 1,
+                "opp-points": 21,
+                "opp-yards": 282,
+                "opp-turnovers": 0
+            },
+            "week2": {
+                "opponent": "LAC",
+                "home-away": "Home",
+                "day": "Thu",
+                "date": "2022-09-15",
+                "time": "8:15PM",
+                "status": "final",
+                "result": "W",
+                "points": 27,
+                "yards": 319,
+                "turnovers": 0,
+                "opp-points": 24,
+                "opp-yards": 401,
+                "opp-turnovers": 1
             }
         }
     },
@@ -2241,6 +2736,36 @@
                 "date": "2023-01-08",
                 "time": "1:00PM",
                 "status": "pregame"
+            },
+            "week1": {
+                "opponent": "LAC",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-09-11",
+                "time": "4:25PM",
+                "status": "final",
+                "result": "L",
+                "points": 19,
+                "yards": 320,
+                "turnovers": 3,
+                "opp-points": 24,
+                "opp-yards": 355,
+                "opp-turnovers": 0
+            },
+            "week2": {
+                "opponent": "ARI",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-09-18",
+                "time": "4:25PM",
+                "status": "final",
+                "result": "L",
+                "points": 23,
+                "yards": 324,
+                "turnovers": 1,
+                "opp-points": 29,
+                "opp-yards": 413,
+                "opp-turnovers": 1
             }
         }
     },
@@ -2373,6 +2898,36 @@
                 "date": "2023-01-08",
                 "time": "1:00PM",
                 "status": "pregame"
+            },
+            "week1": {
+                "opponent": "LV",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-09-11",
+                "time": "4:25PM",
+                "status": "final",
+                "result": "W",
+                "points": 24,
+                "yards": 355,
+                "turnovers": 0,
+                "opp-points": 19,
+                "opp-yards": 320,
+                "opp-turnovers": 3
+            },
+            "week2": {
+                "opponent": "KC",
+                "home-away": "Away",
+                "day": "Thu",
+                "date": "2022-09-15",
+                "time": "8:15PM",
+                "status": "final",
+                "result": "L",
+                "points": 24,
+                "yards": 401,
+                "turnovers": 1,
+                "opp-points": 27,
+                "opp-yards": 319,
+                "opp-turnovers": 0
             }
         }
     },
@@ -2507,6 +3062,36 @@
                 "date": "2023-01-08",
                 "time": "1:00PM",
                 "status": "pregame"
+            },
+            "week1": {
+                "opponent": "BUF",
+                "home-away": "Home",
+                "day": "Thu",
+                "date": "2022-09-08",
+                "time": "8:20PM",
+                "status": "final",
+                "result": "L",
+                "points": 10,
+                "yards": 243,
+                "turnovers": 3,
+                "opp-points": 31,
+                "opp-yards": 413,
+                "opp-turnovers": 4
+            },
+            "week2": {
+                "opponent": "ATL",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-09-18",
+                "time": "4:05PM",
+                "status": "final",
+                "result": "W",
+                "points": 31,
+                "yards": 337,
+                "turnovers": 3,
+                "opp-points": 27,
+                "opp-yards": 261,
+                "opp-turnovers": 3
             }
         }
     },
@@ -2640,6 +3225,36 @@
                 "date": "2023-01-08",
                 "time": "1:00PM",
                 "status": "pregame"
+            },
+            "week1": {
+                "opponent": "NE",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-09-11",
+                "time": "1:00PM",
+                "status": "final",
+                "result": "W",
+                "points": 20,
+                "yards": 307,
+                "turnovers": 0,
+                "opp-points": 7,
+                "opp-yards": 271,
+                "opp-turnovers": 3
+            },
+            "week2": {
+                "opponent": "BAL",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-09-18",
+                "time": "1:00PM",
+                "status": "final",
+                "result": "W",
+                "points": 42,
+                "yards": 547,
+                "turnovers": 2,
+                "opp-points": 38,
+                "opp-yards": 473,
+                "opp-turnovers": 0
             }
         }
     },
@@ -2772,6 +3387,36 @@
                 "date": "2023-01-08",
                 "time": "1:00PM",
                 "status": "pregame"
+            },
+            "week1": {
+                "opponent": "GB",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-09-11",
+                "time": "4:25PM",
+                "status": "final",
+                "result": "W",
+                "points": 23,
+                "yards": 395,
+                "turnovers": 0,
+                "opp-points": 7,
+                "opp-yards": 338,
+                "opp-turnovers": 2
+            },
+            "week2": {
+                "opponent": "PHI",
+                "home-away": "Away",
+                "day": "Mon",
+                "date": "2022-09-19",
+                "time": "8:30PM",
+                "status": "final",
+                "result": "L",
+                "points": 7,
+                "yards": 264,
+                "turnovers": 3,
+                "opp-points": 24,
+                "opp-yards": 486,
+                "opp-turnovers": 1
             }
         }
     },
@@ -2905,6 +3550,36 @@
                 "date": "2023-01-08",
                 "time": "1:00PM",
                 "status": "pregame"
+            },
+            "week1": {
+                "opponent": "MIA",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-09-11",
+                "time": "1:00PM",
+                "status": "final",
+                "result": "L",
+                "points": 7,
+                "yards": 271,
+                "turnovers": 3,
+                "opp-points": 20,
+                "opp-yards": 307,
+                "opp-turnovers": 0
+            },
+            "week2": {
+                "opponent": "PIT",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-09-18",
+                "time": "1:00PM",
+                "status": "final",
+                "result": "W",
+                "points": 17,
+                "yards": 376,
+                "turnovers": 1,
+                "opp-points": 14,
+                "opp-yards": 243,
+                "opp-turnovers": 2
             }
         }
     },
@@ -3037,6 +3712,36 @@
                 "date": "2023-01-08",
                 "time": "1:00PM",
                 "status": "pregame"
+            },
+            "week1": {
+                "opponent": "ATL",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-09-11",
+                "time": "1:00PM",
+                "status": "final",
+                "result": "W",
+                "points": 27,
+                "yards": 385,
+                "turnovers": 1,
+                "opp-points": 26,
+                "opp-yards": 416,
+                "opp-turnovers": 2
+            },
+            "week2": {
+                "opponent": "TB",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-09-18",
+                "time": "1:00PM",
+                "status": "final",
+                "result": "L",
+                "points": 10,
+                "yards": 308,
+                "turnovers": 5,
+                "opp-points": 20,
+                "opp-yards": 260,
+                "opp-turnovers": 1
             }
         }
     },
@@ -3170,6 +3875,36 @@
                 "date": "2023-01-08",
                 "time": "1:00PM",
                 "status": "pregame"
+            },
+            "week1": {
+                "opponent": "TEN",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-09-11",
+                "time": "4:25PM",
+                "status": "final",
+                "result": "W",
+                "points": 21,
+                "yards": 394,
+                "turnovers": 2,
+                "opp-points": 20,
+                "opp-yards": 359,
+                "opp-turnovers": 1
+            },
+            "week2": {
+                "opponent": "CAR",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-09-18",
+                "time": "1:00PM",
+                "status": "final",
+                "result": "W",
+                "points": 19,
+                "yards": 265,
+                "turnovers": 0,
+                "opp-points": 16,
+                "opp-yards": 275,
+                "opp-turnovers": 2
             }
         }
     },
@@ -3302,6 +4037,36 @@
                 "date": "2023-01-08",
                 "time": "1:00PM",
                 "status": "pregame"
+            },
+            "week1": {
+                "opponent": "BAL",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-09-11",
+                "time": "1:00PM",
+                "status": "final",
+                "result": "L",
+                "points": 9,
+                "yards": 380,
+                "turnovers": 2,
+                "opp-points": 24,
+                "opp-yards": 274,
+                "opp-turnovers": 1
+            },
+            "week2": {
+                "opponent": "CLE",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-09-18",
+                "time": "1:00PM",
+                "status": "final",
+                "result": "W",
+                "points": 31,
+                "yards": 402,
+                "turnovers": 1,
+                "opp-points": 30,
+                "opp-yards": 405,
+                "opp-turnovers": 1
             }
         }
     },
@@ -3435,6 +4200,36 @@
                 "date": "2023-01-08",
                 "time": "1:00PM",
                 "status": "pregame"
+            },
+            "week1": {
+                "opponent": "DET",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-09-11",
+                "time": "1:00PM",
+                "status": "final",
+                "result": "W",
+                "points": 38,
+                "yards": 455,
+                "turnovers": 0,
+                "opp-points": 35,
+                "opp-yards": 386,
+                "opp-turnovers": 1
+            },
+            "week2": {
+                "opponent": "MIN",
+                "home-away": "Home",
+                "day": "Mon",
+                "date": "2022-09-19",
+                "time": "8:30PM",
+                "status": "final",
+                "result": "W",
+                "points": 24,
+                "yards": 486,
+                "turnovers": 1,
+                "opp-points": 7,
+                "opp-yards": 264,
+                "opp-turnovers": 3
             }
         }
     },
@@ -3559,6 +4354,51 @@
                 "date": "2023-01-08",
                 "time": "1:00PM",
                 "status": "pregame"
+            },
+            "week1": {
+                "opponent": "CIN",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-09-11",
+                "time": "1:00PM",
+                "status": "final",
+                "result": "W",
+                "points": 23,
+                "yards": 267,
+                "turnovers": 0,
+                "opp-points": 20,
+                "opp-yards": 432,
+                "opp-turnovers": 5
+            },
+            "week2": {
+                "opponent": "NE",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-09-18",
+                "time": "1:00PM",
+                "status": "final",
+                "result": "L",
+                "points": 14,
+                "yards": 243,
+                "turnovers": 2,
+                "opp-points": 17,
+                "opp-yards": 376,
+                "opp-turnovers": 1
+            },
+            "week3": {
+                "opponent": "CLE",
+                "home-away": "Away",
+                "day": "Thu",
+                "date": "2022-09-22",
+                "time": "8:15PM",
+                "status": "final",
+                "result": "L",
+                "points": 17,
+                "yards": 308,
+                "turnovers": 1,
+                "opp-points": 29,
+                "opp-yards": 376,
+                "opp-turnovers": 0
             }
         }
     },
@@ -3691,6 +4531,36 @@
                 "date": "2023-01-08",
                 "time": "1:00PM",
                 "status": "pregame"
+            },
+            "week1": {
+                "opponent": "CHI",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-09-11",
+                "time": "1:00PM",
+                "status": "final",
+                "result": "L",
+                "points": 10,
+                "yards": 331,
+                "turnovers": 2,
+                "opp-points": 19,
+                "opp-yards": 204,
+                "opp-turnovers": 1
+            },
+            "week2": {
+                "opponent": "SEA",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-09-18",
+                "time": "4:05PM",
+                "status": "final",
+                "result": "W",
+                "points": 27,
+                "yards": 373,
+                "turnovers": 0,
+                "opp-points": 7,
+                "opp-yards": 216,
+                "opp-turnovers": 3
             }
         }
     },
@@ -3824,6 +4694,36 @@
                 "date": "2023-01-08",
                 "time": "1:00PM",
                 "status": "pregame"
+            },
+            "week1": {
+                "opponent": "DEN",
+                "home-away": "Home",
+                "day": "Mon",
+                "date": "2022-09-12",
+                "time": "8:20PM",
+                "status": "final",
+                "result": "W",
+                "points": 17,
+                "yards": 253,
+                "turnovers": 1,
+                "opp-points": 16,
+                "opp-yards": 433,
+                "opp-turnovers": 2
+            },
+            "week2": {
+                "opponent": "SF",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-09-18",
+                "time": "4:05PM",
+                "status": "final",
+                "result": "L",
+                "points": 7,
+                "yards": 216,
+                "turnovers": 3,
+                "opp-points": 27,
+                "opp-yards": 373,
+                "opp-turnovers": 0
             }
         }
     },
@@ -3959,6 +4859,36 @@
                 "date": "2023-01-08",
                 "time": "1:00PM",
                 "status": "pregame"
+            },
+            "week1": {
+                "opponent": "DAL",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-09-11",
+                "time": "8:20PM",
+                "status": "final",
+                "result": "W",
+                "points": 19,
+                "yards": 347,
+                "turnovers": 1,
+                "opp-points": 3,
+                "opp-yards": 244,
+                "opp-turnovers": 1
+            },
+            "week2": {
+                "opponent": "NO",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-09-18",
+                "time": "1:00PM",
+                "status": "final",
+                "result": "W",
+                "points": 20,
+                "yards": 260,
+                "turnovers": 1,
+                "opp-points": 10,
+                "opp-yards": 308,
+                "opp-turnovers": 5
             }
         }
     },
@@ -4093,6 +5023,36 @@
                 "date": "2023-01-08",
                 "time": "1:00PM",
                 "status": "pregame"
+            },
+            "week1": {
+                "opponent": "NYG",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-09-11",
+                "time": "4:25PM",
+                "status": "final",
+                "result": "L",
+                "points": 20,
+                "yards": 359,
+                "turnovers": 1,
+                "opp-points": 21,
+                "opp-yards": 394,
+                "opp-turnovers": 2
+            },
+            "week2": {
+                "opponent": "BUF",
+                "home-away": "Away",
+                "day": "Mon",
+                "date": "2022-09-19",
+                "time": "7:15PM",
+                "status": "final",
+                "result": "L",
+                "points": 7,
+                "yards": 187,
+                "turnovers": 4,
+                "opp-points": 41,
+                "opp-yards": 414,
+                "opp-turnovers": 0
             }
         }
     },
@@ -4225,6 +5185,36 @@
                 "date": "2023-01-08",
                 "time": "1:00PM",
                 "status": "pregame"
+            },
+            "week1": {
+                "opponent": "JAX",
+                "home-away": "Home",
+                "day": "Sun",
+                "date": "2022-09-11",
+                "time": "1:00PM",
+                "status": "final",
+                "result": "W",
+                "points": 28,
+                "yards": 390,
+                "turnovers": 3,
+                "opp-points": 22,
+                "opp-yards": 383,
+                "opp-turnovers": 1
+            },
+            "week2": {
+                "opponent": "DET",
+                "home-away": "Away",
+                "day": "Sun",
+                "date": "2022-09-18",
+                "time": "1:00PM",
+                "status": "final",
+                "result": "L",
+                "points": 27,
+                "yards": 396,
+                "turnovers": 1,
+                "opp-points": 36,
+                "opp-yards": 425,
+                "opp-turnovers": 0
             }
         }
     }

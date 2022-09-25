@@ -6,7 +6,9 @@ import json
 #   1) COMPLETED -- Create a JSON file with NFL teams and basic club info
 #   2) COMPLETED -- Load the JSON into a dictionary of teams (DOT) at the start of the program
 #   3) COMPLETED -- Create a "translate" dictionary that allows conversion of team names to a team KEY
-#   4) Fill out schedule info in the DOT as we iterate through the page
+#   4) COMPLETED -- Fill out schedule info in the DOT as we iterate through the page
+#   5) Write Logic for completed games
+#   6) Refactor code and container-ize as much as possible
 
 # load the 2022 season into a dict
 seasonFile = open('season_2022.json')
@@ -35,14 +37,14 @@ for row in rows:
     # first, check if the game is concluded...
     gameStatus = "final" if (columns[6].text == "boxscore") else "pregame"
 
-    # second, process the game depending on the game status
+    # store the week number
+    weekNumber = row.find('th').text
+
+    # second, process all games that still haven't occurred
     if (gameStatus == "pregame"):
         # determine the home and away team keys
         homeTeamKey = translate[columns[5].text.split()[-1].upper()]
         awayTeamKey = translate[columns[3].text.split()[-1].upper()]
-
-        # store the week number
-        weekNumber = row.find('th').text
 
         # build two versions of each game to save to both teams' schedules
         homeGame = {
@@ -63,9 +65,119 @@ for row in rows:
             "status"          : gameStatus
         }
 
-        # add this info to each team's dictionary record
-        dot[homeTeamKey]["schedule"]["week"+weekNumber] = homeGame
-        dot[awayTeamKey]["schedule"]["week"+weekNumber] = awayGame
+    # third, process all finished games
+    else:
+        # determine if the game was a tie
+        isTie = True if (columns[7].text == columns[8].text) else False
+
+        # build game objects
+        if (columns[4].text != "@"):
+            # get home/away team keys
+            homeTeamKey = translate[columns[3].text.split()[-1].upper()]
+            awayTeamKey = translate[columns[5].text.split()[-1].upper()]
+
+            # determine if the home team won
+            isHomeTeamWin = True if (int(columns[7].text) > int(columns[8].text)) else False
+
+            # determine game result for home/away teams
+            if (isTie):
+                homeTeamResult = "T"
+                awayTeamResult = "T"
+            elif (isHomeTeamWin):
+                homeTeamResult = "W"
+                awayTeamResult = "L"
+            else:
+                homeTeamResult = "L"
+                awayTeamResult = "W"
+
+            # build the game object
+            homeGame = {
+                "opponent"        : awayTeamKey,
+                "home-away"       : "Home",
+                "day"             : columns[0].text,
+                "date"            : columns[1].text,
+                "time"            : columns[2].text,
+                "status"          : gameStatus,
+                "result"          : homeTeamResult,
+                "points"          : int(columns[7].text),
+                "yards"           : int(columns[9].text),
+                "turnovers"       : int(columns[10].text),
+                "opp-points"      : int(columns[8].text),
+                "opp-yards"       : int(columns[11].text),
+                "opp-turnovers"   : int(columns[12].text)
+            }
+
+            awayGame = {
+                "opponent"        : homeTeamKey,
+                "home-away"       : "Away",
+                "day"             : columns[0].text,
+                "date"            : columns[1].text,
+                "time"            : columns[2].text,
+                "status"          : gameStatus,
+                "result"          : awayTeamResult,
+                "points"          : int(columns[8].text),
+                "yards"           : int(columns[11].text),
+                "turnovers"       : int(columns[12].text),
+                "opp-points"      : int(columns[7].text),
+                "opp-yards"       : int(columns[9].text),
+                "opp-turnovers"   : int(columns[10].text)
+            }
+
+        else:
+            # get home/away team keys
+            homeTeamKey = translate[columns[5].text.split()[-1].upper()]
+            awayTeamKey = translate[columns[3].text.split()[-1].upper()]
+
+            # determine if the home team won
+            isHomeTeamWin = True if (int(columns[8].text) > int(columns[7].text)) else False
+
+            # determine game result for home/away teams
+            if (isTie):
+                homeTeamResult = "T"
+                awayTeamResult = "T"
+            elif (isHomeTeamWin):
+                homeTeamResult = "W"
+                awayTeamResult = "L"
+            else:
+                homeTeamResult = "L"
+                awayTeamResult = "W"
+
+            # build the game object
+            homeGame = {
+                "opponent"        : awayTeamKey,
+                "home-away"       : "Home",
+                "day"             : columns[0].text,
+                "date"            : columns[1].text,
+                "time"            : columns[2].text,
+                "status"          : gameStatus,
+                "result"          : homeTeamResult,
+                "points"          : int(columns[8].text),
+                "yards"           : int(columns[11].text),
+                "turnovers"       : int(columns[12].text),
+                "opp-points"      : int(columns[7].text),
+                "opp-yards"       : int(columns[9].text),
+                "opp-turnovers"   : int(columns[10].text)
+            }
+
+            awayGame = {
+                "opponent"        : homeTeamKey,
+                "home-away"       : "Away",
+                "day"             : columns[0].text,
+                "date"            : columns[1].text,
+                "time"            : columns[2].text,
+                "status"          : gameStatus,
+                "result"          : awayTeamResult,
+                "points"          : int(columns[7].text),
+                "yards"           : int(columns[9].text),
+                "turnovers"       : int(columns[10].text),
+                "opp-points"      : int(columns[8].text),
+                "opp-yards"       : int(columns[11].text),
+                "opp-turnovers"   : int(columns[12].text)
+            }
+
+    # add this info to each team's dictionary record
+    dot[homeTeamKey]["schedule"]["week"+weekNumber] = homeGame
+    dot[awayTeamKey]["schedule"]["week"+weekNumber] = awayGame
     
 # output new data back to the season file
 with open("season_2022.json", 'w') as seasonFile:
@@ -73,20 +185,3 @@ with open("season_2022.json", 'w') as seasonFile:
     seasonFile.write(new_json)
 
 seasonFile.close()
-
-
-
-    #### Below Text is useful for reference!!! ####
-    # matchup = {
-    #     "home"            : columns[3].text,
-    #     "away"            : columns[5].text,
-    #     "home_points"     : columns[7].text,
-    #     "away_points"     : columns[8].text,
-    #     "home_yards"      : columns[9].text,
-    #     "home_turnovers"  : columns[10].text,
-    #     "away_yards"      : columns[11].text,
-    #     "away_turnovers"  : columns[12].text,
-    # }
-
-
-    
