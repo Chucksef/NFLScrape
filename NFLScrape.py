@@ -1,18 +1,32 @@
 from bs4 import BeautifulSoup
 import requests
 import json
+from json.decoder import JSONDecodeError
 
 # GOALS: 
 #   1) COMPLETED -- Create a JSON file with NFL teams and basic club info
 #   2) COMPLETED -- Load the JSON into a dictionary of teams (DOT) at the start of the program
 #   3) COMPLETED -- Create a "translate" dictionary that allows conversion of team names to a team KEY
 #   4) COMPLETED -- Fill out schedule info in the DOT as we iterate through the page
-#   5) Write Logic for completed games
-#   6) Refactor code and container-ize as much as possible
+#   5) COMPLETED -- Write Logic for completed games
+#   6) COMPLETED -- Write logic to handle Empty/Missing JSON file
+#   7) COMPLETED -- Create a new class to handle creating new JSON info
+#   10) Refactor code and container-ize as much as possible
 
 # load the 2022 season into a dict
-seasonFile = open('season_2022.json')
-dot = json.load(seasonFile)
+json_target = 'season_2022.json'
+
+try:
+    seasonFile = open(json_target)
+    dot = json.load(seasonFile)
+except JSONDecodeError:
+    print("WARNING: "+json_target+" is unexpectedly empty.")
+    print("  - Using empty JSON object instead.")
+    dot = json.load(open('league_2022.json'))
+except EnvironmentError:
+    print("WARNING: "+json_target+" cannot be found.")
+    print("  - Creating new JSON file.")
+    dot = json.load(open('league_2022.json'))
 
 # load the translate file into a dict
 transFile = open('translate.json')
