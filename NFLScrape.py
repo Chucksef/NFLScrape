@@ -12,23 +12,48 @@ from json.decoder import JSONDecodeError
 #   6) COMPLETED -- Write logic to handle Empty/Missing JSON file
 #   7) COMPLETED -- Create a new class to handle creating new JSON info
 #   8) COMPLETED -- Modify system to accept a year and create a database for that year
-#   10) Refactor code and container-ize as much as possible
+#   9) COMPLETED -- Check for league info before processing; Move data to its own folder
 
-# load the season into a dict
+def createNewSeason(target_year):
+    try:
+        newSeason = json.load(open('data/league_'+str(target_year)+'.json'))
+        for teamKey in newSeason:
+            # initialize stats zeroed-out
+            newSeason[teamKey]["stats"] = {
+                "games": 0,
+                "wins": 0,
+                "losses": 0,
+                "ties": 0,
+                "points": 0,
+                "yards": 0,
+                "turnovers": 0,
+                "opp-points": 0,
+                "opp-yards": 0,
+                "opp-turnovers": 0
+            }
+            newSeason[teamKey]["schedule"] = {}
+    except:
+        print('ERROR: No League JSON file for year: '+str(target_year))
+        print('  - Terminating Program')
+        exit
+
+    return newSeason
+
 def scrapeToJSON(target_year):
-    json_target = 'season_'+str(target_year)+'.json'
+    # set a target file for this season
+    season_target_file = 'data/season_'+str(target_year)+'.json'
 
     try:
-        seasonFile = open(json_target)
+        seasonFile = open(season_target_file)
         dot = json.load(seasonFile)
     except JSONDecodeError:
-        print("WARNING: "+json_target+" is unexpectedly empty.")
+        print("WARNING: "+season_target_file+" is unexpectedly empty.")
         print("  - Using empty JSON object instead.")
-        dot = json.load(open('league_'+str(target_year)+'.json'))
+        dot = createNewSeason(target_year)
     except EnvironmentError:
-        print("WARNING: "+json_target+" cannot be found.")
+        print("WARNING: "+season_target_file+" cannot be found.")
         print("  - Creating new JSON file.")
-        dot = json.load(open('league_'+str(target_year)+'.json'))
+        dot = createNewSeason(target_year)
 
     # load the translate file into a dict
     transFile = open('translate.json')
@@ -60,7 +85,7 @@ def scrapeToJSON(target_year):
 
         # store the week number
         weekNumber = row.find('th').text
-        if (weekNumber.isnumeric):
+        if (not(weekNumber.isnumeric())):
             continue
 
         # second, process all games that still haven't occurred
@@ -203,7 +228,7 @@ def scrapeToJSON(target_year):
         dot[awayTeamKey]["schedule"]["week"+weekNumber] = awayGame
         
     # output new data back to the season file
-    with open(json_target, 'w') as seasonFile:
+    with open(season_target_file, 'w') as seasonFile:
         new_json = json.dumps(dot, indent=4)
         seasonFile.write(new_json)
 
