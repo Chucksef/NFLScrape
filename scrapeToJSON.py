@@ -3,16 +3,12 @@ import requests
 import json
 from json.decoder import JSONDecodeError
 
-# GOALS: 
-#   1) COMPLETED -- Create a JSON file with NFL teams and basic club info
-#   2) COMPLETED -- Load the JSON into a dictionary of teams (DOT) at the start of the program
-#   3) COMPLETED -- Create a "translate" dictionary that allows conversion of team names to a team KEY
-#   4) COMPLETED -- Fill out schedule info in the DOT as we iterate through the page
-#   5) COMPLETED -- Write Logic for completed games
-#   6) COMPLETED -- Write logic to handle Empty/Missing JSON file
-#   7) COMPLETED -- Create a new class to handle creating new JSON info
-#   8) COMPLETED -- Modify system to accept a year and create a database for that year
-#   9) COMPLETED -- Check for league info before processing; Move data to its own folder
+#####   scrapeToJSON()   #####
+#####        INFO        #####
+# This program does the main scraping process for getting NFL data from pro-football-reference.com and saves it into "season_XXXX.json" files.
+# This program is nominally callable from outside of itself. Users or programs should call it using the name scrapeToJSON(XXXX), where XXXX is
+# the year for the data that is being requested. Not all years are expected to work out of the box. No year can be scraped without a 
+# "league_XXXX.json" file located inside of the data folder. This file sets up each team's keyName and sets up a variety of other data.
 
 def createNewSeason(target_year):
     try:
@@ -101,7 +97,14 @@ def scrapeToJSON(target_year):
                 "day"             : columns[0].text,
                 "date"            : columns[1].text,
                 "time"            : columns[2].text,
-                "status"          : gameStatus
+                "status"          : gameStatus,
+                "result"          : None,
+                "points"          : 0,
+                "yards"           : 0,
+                "turnovers"       : 0,
+                "opp-points"      : 0,
+                "opp-yards"       : 0,
+                "opp-turnovers"   : 0
             }
 
             awayGame = {
@@ -110,7 +113,14 @@ def scrapeToJSON(target_year):
                 "day"             : columns[0].text,
                 "date"            : columns[1].text,
                 "time"            : columns[2].text,
-                "status"          : gameStatus
+                "status"          : gameStatus,
+                "result"          : None,
+                "points"          : 0,
+                "yards"           : 0,
+                "turnovers"       : 0,
+                "opp-points"      : 0,
+                "opp-yards"       : 0,
+                "opp-turnovers"   : 0
             }
 
         # third, process all finished games
@@ -233,6 +243,3 @@ def scrapeToJSON(target_year):
         seasonFile.write(new_json)
 
     seasonFile.close()
-
-# MAIN CODE EXECUTION BELOW:
-scrapeToJSON(2022)
