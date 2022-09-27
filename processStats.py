@@ -4,7 +4,7 @@ from json import JSONDecodeError
 
 def processStats(target_year):
     # set a target file for this target ear
-    season_target_file = 'data/season_'+str(target_year)+'.json'
+    season_target_file = 'data/seasons/'+str(target_year)+'.json'
 
     seasonFile = open(season_target_file)
     all_teams = json.load(seasonFile)
@@ -46,6 +46,3 @@ def processStats(target_year):
         seasonFile.write(new_json)
 
     seasonFile.close()
-    
-#MAIN PROCESS
-processStats(2022)

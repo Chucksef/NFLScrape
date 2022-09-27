@@ -12,7 +12,7 @@ from json.decoder import JSONDecodeError
 
 def createNewSeason(target_year):
     try:
-        newSeason = json.load(open('data/league_'+str(target_year)+'.json'))
+        newSeason = json.load(open('data/leagues/'+str(target_year)+'.json'))
         for teamKey in newSeason:
             # initialize stats zeroed-out
             newSeason[teamKey]["stats"] = {
@@ -37,7 +37,7 @@ def createNewSeason(target_year):
 
 def scrapeToJSON(target_year):
     # set a target file for this season
-    season_target_file = 'data/season_'+str(target_year)+'.json'
+    season_target_file = 'data/seasons/'+str(target_year)+'.json'
 
     try:
         seasonFile = open(season_target_file)
@@ -52,7 +52,7 @@ def scrapeToJSON(target_year):
         dot = createNewSeason(target_year)
 
     # load the translate file into a dict
-    transFile = open('translate.json')
+    transFile = open('data/translates/'+str(target_year)+'.json')
     translate = json.load(transFile)
     transFile.close()
 

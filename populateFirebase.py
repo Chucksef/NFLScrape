@@ -2,8 +2,10 @@ import json
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import db
+import os
 
-cred = credentials.Certificate('C:/Users/Charles Crouse/Documents/firebaseAdmin/nflscrape-firebase-adminsdk-dqvc3-49b861c0cc.json')
+thisPath = os.path.dirname(os.path.realpath(__file__)).replace("\\","/")
+cred = credentials.Certificate(thisPath+'/credentials/nflscrape-firebase-adminsdk-dqvc3-49b861c0cc.json')
 app = firebase_admin.initialize_app(cred, {
         'databaseURL':'https://nflscrape-default-rtdb.firebaseio.com/'
     })
