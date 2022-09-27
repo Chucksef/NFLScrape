@@ -8,18 +8,11 @@ from populateFirebase import populateFirebase
 # 3) COMPLETED -- Move firebase credentials into data folder
 # 4) COMPLETED -- Add firebase info to .gitignore
 
+years = [2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022]
+
 # MAIN CODE EXECUTION BELOW:
-# scrapeToJSON(2016)
-# scrapeToJSON(2017)
-# scrapeToJSON(2018)
-scrapeToJSON(2019)
 
-# processStats(2016)
-# processStats(2017)
-# processStats(2018)
-processStats(2019)
-
-# populateFirebase(2016)
-# populateFirebase(2017)
-# populateFirebase(2018)
-populateFirebase(2019)
+for year in years:
+    scrapeToJSON(year)
+    processStats(year)
+    populateFirebase(year)
