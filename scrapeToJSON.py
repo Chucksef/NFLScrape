@@ -50,6 +50,8 @@ def scrapeToJSON(target_year):
         print("WARNING: "+season_target_file+" cannot be found.")
         print("  - Creating new JSON file.")
         dot = createNewSeason(target_year)
+    else:
+        print("Scraping NFL data for season: "+str(target_year))
 
     # load the translate file into a dict
     transFile = open('data/translates/'+str(target_year)+'.json')
