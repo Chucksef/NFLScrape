@@ -5,7 +5,7 @@ from firebase_admin import db
 import os
 
 thisPath = os.path.dirname(os.path.realpath(__file__)).replace("\\","/")
-cred = credentials.Certificate(thisPath+'/credentials/nflscrape-firebase-adminsdk-dqvc3-49b861c0cc.json')
+cred = credentials.Certificate(thisPath+'/credentials/nflscrape-firebase-adminsdk-dqvc3-ae425d7a17.json')
 app = firebase_admin.initialize_app(cred, {
         'databaseURL':'https://nflscrape-default-rtdb.firebaseio.com/'
     })
@@ -17,5 +17,5 @@ def populateFirebase(target_year):
 
     ref = db.reference("/seasons/"+str(target_year))
 
-    print("Populating Firebase for season: "+str(target_year))
+    print("    Populating Firebase for season: "+str(target_year))
     ref.set(season_data)

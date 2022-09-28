@@ -9,7 +9,7 @@ def processStats(target_year):
     seasonFile = open(season_target_file)
     all_teams = json.load(seasonFile)
 
-    print("Processing Stats for "+str(target_year))
+    print("    Processing Stats for season: "+str(target_year))
     for team in all_teams:
         # set up all stat-variables at zero
         games=wins=losses=ties=points=yards=turnovers=oppPoints=oppYards=oppTurnovers=0

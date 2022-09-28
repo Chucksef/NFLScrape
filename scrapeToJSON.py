@@ -29,8 +29,8 @@ def createNewSeason(target_year):
             }
             newSeason[teamKey]["schedule"] = {}
     except:
-        print('ERROR: No League JSON file for year: '+str(target_year))
-        print('  - Terminating Program')
+        print('    ERROR: No League JSON file for year: '+str(target_year))
+        print('        !! - TERMINATING PROGRAM EXECUTION - !!')
         exit
 
     return newSeason
@@ -43,15 +43,15 @@ def scrapeToJSON(target_year):
         seasonFile = open(season_target_file)
         dot = json.load(seasonFile)
     except JSONDecodeError:
-        print("WARNING: "+season_target_file+" is unexpectedly empty.")
-        print("  - Using empty JSON object instead.")
+        print("    WARNING: "+season_target_file+" is unexpectedly empty")
+        print("        Using empty JSON object instead.")
         dot = createNewSeason(target_year)
     except EnvironmentError:
-        print("WARNING: "+season_target_file+" cannot be found.")
-        print("  - Creating new JSON file.")
+        print("    WARNING: "+season_target_file+" cannot be found")
+        print("        Creating new JSON file")
         dot = createNewSeason(target_year)
     else:
-        print("Scraping NFL data for season: "+str(target_year))
+        print("    Scraping NFL data for season: "+str(target_year))
 
     # load the translate file into a dict
     transFile = open('data/translates/'+str(target_year)+'.json')
@@ -68,7 +68,8 @@ def scrapeToJSON(target_year):
         table = soup.find('table').find('tbody')
         rows = table.find_all('tr')
     except:
-        print('ERROR: Invalid data returned from website. Check URL or try again later.')
+        print('    ERROR: Invalid data returned from URL: '+target_website)
+        print('        !! - TERMINATING PROGRAM - !!')
         exit()
 
     # iterate over each row in the table
