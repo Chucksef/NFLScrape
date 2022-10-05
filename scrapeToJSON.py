@@ -87,11 +87,14 @@ def scrapeToJSON(target_year):
         if (not(weekNumber.isnumeric())):
             continue
 
-        # second, process all games that still haven't occurred
+        # next, process all games that still haven't occurred
         if (gameStatus == "pregame"):
             # determine the home and away team keys
             homeTeamKey = translate[columns[5].text.split()[-1].upper()]
             awayTeamKey = translate[columns[3].text.split()[-1].upper()]
+            
+            #construct and id value for this game 
+            id = "week"+weekNumber+homeTeamKey+awayTeamKey
 
             # build two versions of each game to save to both teams' schedules
             homeGame = {
@@ -107,7 +110,8 @@ def scrapeToJSON(target_year):
                 "turnovers"       : 0,
                 "opp-points"      : 0,
                 "opp-yards"       : 0,
-                "opp-turnovers"   : 0
+                "opp-turnovers"   : 0,
+                "id"              : id
             }
 
             awayGame = {
@@ -123,7 +127,8 @@ def scrapeToJSON(target_year):
                 "turnovers"       : 0,
                 "opp-points"      : 0,
                 "opp-yards"       : 0,
-                "opp-turnovers"   : 0
+                "opp-turnovers"   : 0,
+                "id"              : id
             }
 
         # third, process all finished games
@@ -136,6 +141,9 @@ def scrapeToJSON(target_year):
                 # get home/away team keys
                 homeTeamKey = translate[columns[3].text.split()[-1].upper()]
                 awayTeamKey = translate[columns[5].text.split()[-1].upper()]
+
+                #construct and id value for this game 
+                id = "week"+weekNumber+homeTeamKey+awayTeamKey
 
                 # determine if the home team won
                 isHomeTeamWin = True if (int(columns[7].text) > int(columns[8].text)) else False
@@ -165,7 +173,8 @@ def scrapeToJSON(target_year):
                     "turnovers"       : int(columns[10].text),
                     "opp-points"      : int(columns[8].text),
                     "opp-yards"       : int(columns[11].text),
-                    "opp-turnovers"   : int(columns[12].text)
+                    "opp-turnovers"   : int(columns[12].text),
+                    "id"              : id
                 }
 
                 awayGame = {
@@ -181,13 +190,17 @@ def scrapeToJSON(target_year):
                     "turnovers"       : int(columns[12].text),
                     "opp-points"      : int(columns[7].text),
                     "opp-yards"       : int(columns[9].text),
-                    "opp-turnovers"   : int(columns[10].text)
+                    "opp-turnovers"   : int(columns[10].text),
+                    "id"              : id
                 }
 
             else:
                 # get home/away team keys
                 homeTeamKey = translate[columns[5].text.split()[-1].upper()]
                 awayTeamKey = translate[columns[3].text.split()[-1].upper()]
+
+                #construct and id value for this game 
+                id = "week"+weekNumber+homeTeamKey+awayTeamKey
 
                 # determine if the home team won
                 isHomeTeamWin = True if (int(columns[8].text) > int(columns[7].text)) else False
@@ -217,7 +230,8 @@ def scrapeToJSON(target_year):
                     "turnovers"       : int(columns[12].text),
                     "opp-points"      : int(columns[7].text),
                     "opp-yards"       : int(columns[9].text),
-                    "opp-turnovers"   : int(columns[10].text)
+                    "opp-turnovers"   : int(columns[10].text),
+                    "id"              : id
                 }
 
                 awayGame = {
@@ -233,7 +247,8 @@ def scrapeToJSON(target_year):
                     "turnovers"       : int(columns[10].text),
                     "opp-points"      : int(columns[8].text),
                     "opp-yards"       : int(columns[11].text),
-                    "opp-turnovers"   : int(columns[12].text)
+                    "opp-turnovers"   : int(columns[12].text),
+                    "id"              : id
                 }
 
         # add this info to each team's dictionary record
@@ -246,3 +261,5 @@ def scrapeToJSON(target_year):
         seasonFile.write(new_json)
 
     seasonFile.close()
+
+scrapeToJSON(2022)

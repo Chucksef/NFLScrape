@@ -8,7 +8,8 @@
             "#97233F",
             "#000000",
             "#FFB612"
-        ]
+        ],
+        "id": "team-ARI2013"
     },
     "ATL": {
         "location": "Atlanta",
@@ -19,7 +20,8 @@
             "#A71930",
             "#000000",
             "#A5ACAF"
-        ]
+        ],
+        "id": "team-ATL2013"
     },
     "BAL": {
         "location": "Baltimore",
@@ -31,7 +33,8 @@
             "#000000",
             "#9E7C0C",
             "#C60C30"
-        ]
+        ],
+        "id": "team-BAL2013"
     },
     "BUF": {
         "location": "Buffalo",
@@ -41,7 +44,8 @@
         "colors": [
             "#00338D",
             "#C60C30"
-        ]
+        ],
+        "id": "team-BUF2013"
     },
     "CAR": {
         "location": "Carolina",
@@ -52,7 +56,8 @@
             "#0085CA",
             "#101820",
             "#BFC0BF"
-        ]
+        ],
+        "id": "team-CAR2013"
     },
     "CHI": {
         "location": "Chicago",
@@ -62,7 +67,8 @@
         "colors": [
             "#0B162A",
             "#C83803"
-        ]
+        ],
+        "id": "team-CHI2013"
     },
     "CIN": {
         "location": "Cincinnati",
@@ -72,7 +78,8 @@
         "colors": [
             "#FB4F14",
             "#000000"
-        ]
+        ],
+        "id": "team-CIN2013"
     },
     "CLE": {
         "location": "Cleveland",
@@ -82,7 +89,8 @@
         "colors": [
             "#311D00",
             "#FF3C00"
-        ]
+        ],
+        "id": "team-CLE2013"
     },
     "DAL": {
         "location": "Dallas",
@@ -94,7 +102,8 @@
             "#869397",
             "#7F9695",
             "#003594"
-        ]
+        ],
+        "id": "team-DAL2013"
     },
     "DEN": {
         "location": "Denver",
@@ -104,7 +113,8 @@
         "colors": [
             "#FB4F14",
             "#002244"
-        ]
+        ],
+        "id": "team-DEN2013"
     },
     "DET": {
         "location": "Detroit",
@@ -114,7 +124,8 @@
         "colors": [
             "#0076B6",
             "#B0B7BC"
-        ]
+        ],
+        "id": "team-DET2013"
     },
     "GB": {
         "location": "Green Bay",
@@ -124,7 +135,8 @@
         "colors": [
             "#203731",
             "#FFB612"
-        ]
+        ],
+        "id": "team-GB2013"
     },
     "HOU": {
         "location": "Houston",
@@ -134,7 +146,8 @@
         "colors": [
             "#03202F",
             "#A71930"
-        ]
+        ],
+        "id": "team-HOU2013"
     },
     "IND": {
         "location": "Indianapolis",
@@ -144,7 +157,8 @@
         "colors": [
             "#002C5F",
             "#A2AAAD"
-        ]
+        ],
+        "id": "team-IND2013"
     },
     "JAX": {
         "location": "Jacksonville",
@@ -156,7 +170,8 @@
             "#D7A22A",
             "#9F792C",
             "#101820"
-        ]
+        ],
+        "id": "team-JAX2013"
     },
     "KC": {
         "location": "Kansas City",
@@ -166,7 +181,8 @@
         "colors": [
             "#E31837",
             "#FFB81C"
-        ]
+        ],
+        "id": "team-KC2013"
     },
     "OAK": {
         "location": "Oakland",
@@ -176,7 +192,8 @@
         "colors": [
             "#A5ACAF",
             "#000000"
-        ]
+        ],
+        "id": "team-OAK2013"
     },
     "LAC": {
         "location": "Los Angeles",
@@ -186,7 +203,8 @@
         "colors": [
             "#0080C6",
             "#FFC20E"
-        ]
+        ],
+        "id": "team-LAC2013"
     },
     "LAR": {
         "location": "Los Angeles",
@@ -198,7 +216,8 @@
             "#FFA300",
             "#FF8200",
             "#FFD100"
-        ]
+        ],
+        "id": "team-LAR2013"
     },
     "MIA": {
         "location": "Miami",
@@ -209,7 +228,8 @@
             "#008E97",
             "#FC4C02",
             "#005778"
-        ]
+        ],
+        "id": "team-MIA2013"
     },
     "MIN": {
         "location": "Minnesota",
@@ -219,7 +239,8 @@
         "colors": [
             "#4F2683",
             "#FFC62F"
-        ]
+        ],
+        "id": "team-MIN2013"
     },
     "NE": {
         "location": "New England",
@@ -230,7 +251,8 @@
             "#002244",
             "#C60C30",
             "#B0B7BC"
-        ]
+        ],
+        "id": "team-NE2013"
     },
     "NO": {
         "location": "New Orleans",
@@ -240,7 +262,8 @@
         "colors": [
             "#D3BC8D",
             "#101820"
-        ]
+        ],
+        "id": "team-NO2013"
     },
     "NYG": {
         "location": "New York",
@@ -251,7 +274,8 @@
             "#0B2265",
             "#A71930",
             "#A5ACAF"
-        ]
+        ],
+        "id": "team-NYG2013"
     },
     "NYJ": {
         "location": "New York",
@@ -261,7 +285,8 @@
         "colors": [
             "#125740",
             "#000000"
-        ]
+        ],
+        "id": "team-NYJ2013"
     },
     "PHI": {
         "location": "Philadelphia",
@@ -272,7 +297,8 @@
             "#004C54",
             "#A5ACAF",
             "#000000"
-        ]
+        ],
+        "id": "team-PHI2013"
     },
     "PIT": {
         "location": "Pittsburgh",
@@ -282,7 +308,8 @@
         "colors": [
             "#FFB612",
             "#101820"
-        ]
+        ],
+        "id": "team-PIT2013"
     },
     "SF": {
         "location": "San Francisco",
@@ -292,7 +319,8 @@
         "colors": [
             "#AA0000",
             "#B3995D"
-        ]
+        ],
+        "id": "team-SF2013"
     },
     "SEA": {
         "location": "Seattle",
@@ -303,7 +331,8 @@
             "#002244",
             "#69BE28",
             "#A5ACAF"
-        ]
+        ],
+        "id": "team-SEA2013"
     },
     "TB": {
         "location": "Tampa Bay",
@@ -316,7 +345,8 @@
             "#0A0A08",
             "#B1BABF",
             "#34302B"
-        ]
+        ],
+        "id": "team-TB2013"
     },
     "TEN": {
         "location": "Tennessee",
@@ -328,7 +358,8 @@
             "#4B92DB",
             "#8A8D8F",
             "#54585A"
-        ]
+        ],
+        "id": "team-TEN2013"
     },
     "WAS": {
         "location": "Washington",
@@ -338,6 +369,7 @@
         "colors": [
             "#5A1414",
             "#FFB612"
-        ]
+        ],
+        "id": "team-WAS2013"
     }
 }
