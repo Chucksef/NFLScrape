@@ -261,5 +261,3 @@ def scrapeToJSON(target_year):
         seasonFile.write(new_json)
 
     seasonFile.close()
-
-scrapeToJSON(2022)

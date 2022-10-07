@@ -7,6 +7,8 @@
         "colors": [
             "#97233F",
             "#000000",
+            "#000000",
+            "#97233F",
             "#FFB612"
         ],
         "id": "team-ARI2021"
@@ -19,6 +21,8 @@
         "colors": [
             "#A71930",
             "#000000",
+            "#000000",
+            "#A71930",
             "#A5ACAF"
         ],
         "id": "team-ATL2021"
@@ -30,7 +34,9 @@
         "division": "North",
         "colors": [
             "#241773",
+            "#FFFFFF",
             "#000000",
+            "#9E7C0C",
             "#9E7C0C",
             "#C60C30"
         ],
@@ -43,7 +49,9 @@
         "division": "West",
         "colors": [
             "#00338D",
-            "#C60C30"
+            "#FFFFFF",
+            "#C60C30",
+            "#FFFFFF"
         ],
         "id": "team-BUF2021"
     },
@@ -54,7 +62,9 @@
         "division": "South",
         "colors": [
             "#0085CA",
+            "#000000",
             "#101820",
+            "#FFFFFF",
             "#BFC0BF"
         ],
         "id": "team-CAR2021"
@@ -66,7 +76,9 @@
         "division": "North",
         "colors": [
             "#0B162A",
-            "#C83803"
+            "#FFFFFF",
+            "#C83803",
+            "#0B162A"
         ],
         "id": "team-CHI2021"
     },
@@ -77,7 +89,9 @@
         "division": "North",
         "colors": [
             "#FB4F14",
-            "#000000"
+            "#000000",
+            "#000000",
+            "#FB4F14"
         ],
         "id": "team-CIN2021"
     },
@@ -87,8 +101,10 @@
         "conference": "AFC",
         "division": "North",
         "colors": [
+            "#FF3C00",
+            "#FFFFFF",
             "#311D00",
-            "#FF3C00"
+            "#FFFFFF"
         ],
         "id": "team-CLE2021"
     },
@@ -99,9 +115,11 @@
         "division": "East",
         "colors": [
             "#041E42",
+            "#FFFFFF",
             "#869397",
-            "#7F9695",
-            "#003594"
+            "#FFFFFF",
+            "#003594",
+            "#7F9695"
         ],
         "id": "team-DAL2021"
     },
@@ -111,8 +129,10 @@
         "conference": "AFC",
         "division": "West",
         "colors": [
+            "#002244",
+            "#FFFFFF",
             "#FB4F14",
-            "#002244"
+            "#FFFFFF"
         ],
         "id": "team-DEN2021"
     },
@@ -123,7 +143,10 @@
         "division": "North",
         "colors": [
             "#0076B6",
-            "#B0B7BC"
+            "#FFFFFF",
+            "#B0B7BC",
+            "#000000",
+            "#000000"
         ],
         "id": "team-DET2021"
     },
@@ -134,7 +157,9 @@
         "division": "North",
         "colors": [
             "#203731",
-            "#FFB612"
+            "#FFFFFF",
+            "#FFB612",
+            "#000000"
         ],
         "id": "team-GB2021"
     },
@@ -145,7 +170,9 @@
         "division": "South",
         "colors": [
             "#03202F",
-            "#A71930"
+            "#FFFFFF",
+            "#A71930",
+            "#FFFFFF"
         ],
         "id": "team-HOU2021"
     },
@@ -156,7 +183,9 @@
         "division": "South",
         "colors": [
             "#002C5F",
-            "#A2AAAD"
+            "#FFFFFF",
+            "#A2AAAD",
+            "#000000"
         ],
         "id": "team-IND2021"
     },
@@ -167,7 +196,9 @@
         "division": "South",
         "colors": [
             "#006558",
+            "#FFFFFF",
             "#D7A22A",
+            "#101820",
             "#9F792C",
             "#101820"
         ],
@@ -180,7 +211,9 @@
         "division": "West",
         "colors": [
             "#E31837",
-            "#FFB81C"
+            "#FFFFFF",
+            "#FFB81C",
+            "#000000"
         ],
         "id": "team-KC2021"
     },
@@ -191,7 +224,9 @@
         "division": "West",
         "colors": [
             "#A5ACAF",
-            "#000000"
+            "#000000",
+            "#000000",
+            "#A5ACAF"
         ],
         "id": "team-LV2021"
     },
@@ -202,7 +237,9 @@
         "division": "West",
         "colors": [
             "#0080C6",
-            "#FFC20E"
+            "#FFFFFF",
+            "#FFC20E",
+            "#000000"
         ],
         "id": "team-LAC2021"
     },
@@ -213,7 +250,9 @@
         "division": "West",
         "colors": [
             "#003594",
+            "#FFFFFF",
             "#FFA300",
+            "#000000",
             "#FF8200",
             "#FFD100"
         ],
@@ -226,7 +265,9 @@
         "division": "East",
         "colors": [
             "#008E97",
+            "#FFFFFF",
             "#FC4C02",
+            "#FFFFFF",
             "#005778"
         ],
         "id": "team-MIA2021"
@@ -238,7 +279,9 @@
         "division": "North",
         "colors": [
             "#4F2683",
-            "#FFC62F"
+            "#FFFFFF",
+            "#FFC62F",
+            "#000000"
         ],
         "id": "team-MIN2021"
     },
@@ -249,7 +292,9 @@
         "division": "East",
         "colors": [
             "#002244",
+            "#FFFFFF",
             "#C60C30",
+            "#FFFFFF",
             "#B0B7BC"
         ],
         "id": "team-NE2021"
@@ -261,7 +306,9 @@
         "division": "South",
         "colors": [
             "#D3BC8D",
-            "#101820"
+            "#101820",
+            "#101820",
+            "#FFFFFF"
         ],
         "id": "team-NO2021"
     },
@@ -272,7 +319,9 @@
         "division": "East",
         "colors": [
             "#0B2265",
+            "#FFFFFF",
             "#A71930",
+            "#FFFFFF",
             "#A5ACAF"
         ],
         "id": "team-NYG2021"
@@ -284,7 +333,9 @@
         "division": "East",
         "colors": [
             "#125740",
-            "#000000"
+            "#FFFFFF",
+            "#000000",
+            "#FFFFFF"
         ],
         "id": "team-NYJ2021"
     },
@@ -295,8 +346,11 @@
         "division": "East",
         "colors": [
             "#004C54",
+            "#FFFFFF",
             "#A5ACAF",
-            "#000000"
+            "#000000",
+            "#ACC0C6",
+            "#565A5C"
         ],
         "id": "team-PHI2021"
     },
@@ -307,7 +361,12 @@
         "division": "North",
         "colors": [
             "#FFB612",
-            "#101820"
+            "#101820",
+            "#101820",
+            "#FFFFFF",
+            "#A5ACAF",
+            "#C60C30",
+            "#003087"
         ],
         "id": "team-PIT2021"
     },
@@ -318,7 +377,9 @@
         "division": "West",
         "colors": [
             "#AA0000",
-            "#B3995D"
+            "#FFFFFF",
+            "#B3995D",
+            "#FFFFFF"
         ],
         "id": "team-SF2021"
     },
@@ -329,7 +390,9 @@
         "division": "West",
         "colors": [
             "#002244",
+            "#FFFFFF",
             "#69BE28",
+            "#000000",
             "#A5ACAF"
         ],
         "id": "team-SEA2021"
@@ -341,10 +404,12 @@
         "division": "South",
         "colors": [
             "#D50A0A",
+            "#FFFFFF",
+            "#34302B",
+            "#FFFFFF",
             "#FF7900",
             "#0A0A08",
-            "#B1BABF",
-            "#34302B"
+            "#B1BABF"
         ],
         "id": "team-TB2021"
     },
@@ -355,9 +420,13 @@
         "division": "South",
         "colors": [
             "#0C2340",
+            "#FFFFFF",
             "#4B92DB",
+            "#FFFFFF",
+            "#C8102E",
             "#8A8D8F",
-            "#54585A"
+            "#54585A",
+            "#A2AAAD"
         ],
         "id": "team-TEN2021"
     },
@@ -368,7 +437,9 @@
         "division": "East",
         "colors": [
             "#5A1414",
-            "#FFB612"
+            "#FFFFFF",
+            "#FFB612",
+            "#000000"
         ],
         "id": "team-WAS2021"
     }
