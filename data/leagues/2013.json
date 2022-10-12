@@ -45,8 +45,8 @@
     "BUF": {
         "location": "Buffalo",
         "nickname": "Bills",
-        "conference": "NFC",
-        "division": "West",
+        "conference": "AFC",
+        "division": "East",
         "colors": [
             "#00338D",
             "#FFFFFF",
