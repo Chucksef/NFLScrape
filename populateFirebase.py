@@ -11,11 +11,28 @@ app = firebase_admin.initialize_app(cred, {
     })
 
 def populateFirebase(target_year):
+    # Save the season data to the Seasons node
     # First, open the target season
     with open("data/seasons/"+str(target_year)+".json", "r") as season:
         season_data = json.load(season)
 
-    ref = db.reference("/seasons/"+str(target_year))
+    # Second, set the reference for the season
+    seasonRef = db.reference("/seasons/"+str(target_year))
 
+    # Third, save the data to the DB
     print("    Populating Firebase for season: "+str(target_year))
-    ref.set(season_data)
+    seasonRef.set(season_data)
+
+
+    # Save the schedule data to the Schedules node
+    # First, open the target schedule
+    with open("data/schedules/"+str(target_year)+".json", "r") as schedule:
+        schedule_data = json.load(schedule)
+
+    # Second, set the reference for the schedule node
+    scheduleRef = db.reference("/schedules/"+str(target_year))
+
+    # Third, save the data to the DB
+    print("    Populating Firebase for schedule: "+str(target_year))
+    scheduleRef.set(schedule_data)
+

@@ -1,0 +1,1126 @@
+{
+    "week1": {
+        "week1-BUF@LAR": {
+            "score": "31@10",
+            "status": "final"
+        },
+        "week1-NO@ATL": {
+            "score": "27@26",
+            "status": "final"
+        },
+        "week1-CLE@CAR": {
+            "score": "26@24",
+            "status": "final"
+        },
+        "week1-SF@CHI": {
+            "score": "10@19",
+            "status": "final"
+        },
+        "week1-PIT@CIN": {
+            "score": "23@20",
+            "status": "final"
+        },
+        "week1-IND@HOU": {
+            "score": "20@20",
+            "status": "final"
+        },
+        "week1-PHI@DET": {
+            "score": "38@35",
+            "status": "final"
+        },
+        "week1-JAX@WAS": {
+            "score": "22@28",
+            "status": "final"
+        },
+        "week1-NE@MIA": {
+            "score": "7@20",
+            "status": "final"
+        },
+        "week1-BAL@NYJ": {
+            "score": "24@9",
+            "status": "final"
+        },
+        "week1-KC@ARI": {
+            "score": "44@21",
+            "status": "final"
+        },
+        "week1-GB@MIN": {
+            "score": "7@23",
+            "status": "final"
+        },
+        "week1-NYG@TEN": {
+            "score": "21@20",
+            "status": "final"
+        },
+        "week1-LV@LAC": {
+            "score": "19@24",
+            "status": "final"
+        },
+        "week1-TB@DAL": {
+            "score": "19@3",
+            "status": "final"
+        },
+        "week1-DEN@SEA": {
+            "score": "16@17",
+            "status": "final"
+        }
+    },
+    "week2": {
+        "week2-LAC@KC": {
+            "score": "24@27",
+            "status": "final"
+        },
+        "week2-CAR@NYG": {
+            "score": "16@19",
+            "status": "final"
+        },
+        "week2-NYJ@CLE": {
+            "score": "31@30",
+            "status": "final"
+        },
+        "week2-IND@JAX": {
+            "score": "0@24",
+            "status": "final"
+        },
+        "week2-WAS@DET": {
+            "score": "27@36",
+            "status": "final"
+        },
+        "week2-MIA@BAL": {
+            "score": "42@38",
+            "status": "final"
+        },
+        "week2-TB@NO": {
+            "score": "20@10",
+            "status": "final"
+        },
+        "week2-NE@PIT": {
+            "score": "17@14",
+            "status": "final"
+        },
+        "week2-ATL@LAR": {
+            "score": "27@31",
+            "status": "final"
+        },
+        "week2-SEA@SF": {
+            "score": "7@27",
+            "status": "final"
+        },
+        "week2-CIN@DAL": {
+            "score": "17@20",
+            "status": "final"
+        },
+        "week2-ARI@LV": {
+            "score": "29@23",
+            "status": "final"
+        },
+        "week2-HOU@DEN": {
+            "score": "9@16",
+            "status": "final"
+        },
+        "week2-CHI@GB": {
+            "score": "10@27",
+            "status": "final"
+        },
+        "week2-TEN@BUF": {
+            "score": "7@41",
+            "status": "final"
+        },
+        "week2-MIN@PHI": {
+            "score": "7@24",
+            "status": "final"
+        }
+    },
+    "week3": {
+        "week3-PIT@CLE": {
+            "score": "17@29",
+            "status": "final"
+        },
+        "week3-BUF@MIA": {
+            "score": "19@21",
+            "status": "final"
+        },
+        "week3-NO@CAR": {
+            "score": "14@22",
+            "status": "final"
+        },
+        "week3-HOU@CHI": {
+            "score": "20@23",
+            "status": "final"
+        },
+        "week3-CIN@NYJ": {
+            "score": "27@12",
+            "status": "final"
+        },
+        "week3-KC@IND": {
+            "score": "17@20",
+            "status": "final"
+        },
+        "week3-DET@MIN": {
+            "score": "24@28",
+            "status": "final"
+        },
+        "week3-BAL@NE": {
+            "score": "37@26",
+            "status": "final"
+        },
+        "week3-LV@TEN": {
+            "score": "22@24",
+            "status": "final"
+        },
+        "week3-PHI@WAS": {
+            "score": "24@8",
+            "status": "final"
+        },
+        "week3-JAX@LAC": {
+            "score": "38@10",
+            "status": "final"
+        },
+        "week3-ATL@SEA": {
+            "score": "27@23",
+            "status": "final"
+        },
+        "week3-LAR@ARI": {
+            "score": "20@12",
+            "status": "final"
+        },
+        "week3-GB@TB": {
+            "score": "14@12",
+            "status": "final"
+        },
+        "week3-SF@DEN": {
+            "score": "10@11",
+            "status": "final"
+        },
+        "week3-DAL@NYG": {
+            "score": "23@16",
+            "status": "final"
+        }
+    },
+    "week4": {
+        "week4-MIA@CIN": {
+            "score": "15@27",
+            "status": "final"
+        },
+        "week4-MIN@NO": {
+            "score": "28@25",
+            "status": "final"
+        },
+        "week4-CLE@ATL": {
+            "score": "20@23",
+            "status": "final"
+        },
+        "week4-BUF@BAL": {
+            "score": "23@20",
+            "status": "final"
+        },
+        "week4-CHI@NYG": {
+            "score": "12@20",
+            "status": "final"
+        },
+        "week4-TEN@IND": {
+            "score": "24@17",
+            "status": "final"
+        },
+        "week4-WAS@DAL": {
+            "score": "10@25",
+            "status": "final"
+        },
+        "week4-SEA@DET": {
+            "score": "48@45",
+            "status": "final"
+        },
+        "week4-LAC@HOU": {
+            "score": "34@24",
+            "status": "final"
+        },
+        "week4-JAX@PHI": {
+            "score": "21@29",
+            "status": "final"
+        },
+        "week4-NYJ@PIT": {
+            "score": "24@20",
+            "status": "final"
+        },
+        "week4-ARI@CAR": {
+            "score": "26@16",
+            "status": "final"
+        },
+        "week4-DEN@LV": {
+            "score": "23@32",
+            "status": "final"
+        },
+        "week4-NE@GB": {
+            "score": "24@27",
+            "status": "final"
+        },
+        "week4-KC@TB": {
+            "score": "41@31",
+            "status": "final"
+        },
+        "week4-LAR@SF": {
+            "score": "9@24",
+            "status": "final"
+        }
+    },
+    "week5": {
+        "week5-IND@DEN": {
+            "score": "12@9",
+            "status": "final"
+        },
+        "week5-NYG@GB": {
+            "score": "27@22",
+            "status": "final"
+        },
+        "week5-ATL@TB": {
+            "score": "15@21",
+            "status": "final"
+        },
+        "week5-PIT@BUF": {
+            "score": "3@38",
+            "status": "final"
+        },
+        "week5-CHI@MIN": {
+            "score": "22@29",
+            "status": "final"
+        },
+        "week5-LAC@CLE": {
+            "score": "30@28",
+            "status": "final"
+        },
+        "week5-DET@NE": {
+            "score": "0@29",
+            "status": "final"
+        },
+        "week5-HOU@JAX": {
+            "score": "13@6",
+            "status": "final"
+        },
+        "week5-MIA@NYJ": {
+            "score": "17@40",
+            "status": "final"
+        },
+        "week5-SEA@NO": {
+            "score": "32@39",
+            "status": "final"
+        },
+        "week5-TEN@WAS": {
+            "score": "21@17",
+            "status": "final"
+        },
+        "week5-SF@CAR": {
+            "score": "37@15",
+            "status": "final"
+        },
+        "week5-PHI@ARI": {
+            "score": "20@17",
+            "status": "final"
+        },
+        "week5-DAL@LAR": {
+            "score": "22@10",
+            "status": "final"
+        },
+        "week5-CIN@BAL": {
+            "score": "17@19",
+            "status": "final"
+        },
+        "week5-LV@KC": {
+            "score": "29@30",
+            "status": "final"
+        }
+    },
+    "week6": {
+        "week6-WAS@CHI": {
+            "score": "12@7",
+            "status": "final"
+        },
+        "week6-SF@ATL": {
+            "score": "14@28",
+            "status": "final"
+        },
+        "week6-CIN@NO": {
+            "score": "30@26",
+            "status": "final"
+        },
+        "week6-NE@CLE": {
+            "score": "38@15",
+            "status": "final"
+        },
+        "week6-JAX@IND": {
+            "score": "27@34",
+            "status": "final"
+        },
+        "week6-NYJ@GB": {
+            "score": "27@10",
+            "status": "final"
+        },
+        "week6-MIN@MIA": {
+            "score": "24@16",
+            "status": "final"
+        },
+        "week6-BAL@NYG": {
+            "score": "20@24",
+            "status": "final"
+        },
+        "week6-TB@PIT": {
+            "score": "18@20",
+            "status": "final"
+        },
+        "week6-CAR@LAR": {
+            "score": "10@24",
+            "status": "final"
+        },
+        "week6-ARI@SEA": {
+            "score": "9@19",
+            "status": "final"
+        },
+        "week6-BUF@KC": {
+            "score": "24@20",
+            "status": "final"
+        },
+        "week6-DAL@PHI": {
+            "score": "17@26",
+            "status": "final"
+        },
+        "week6-DEN@LAC": {
+            "score": "16@19",
+            "status": "final"
+        }
+    },
+    "week7": {
+        "week7-NO@ARI": {
+            "score": "34@42",
+            "status": "final"
+        },
+        "week7-ATL@CIN": {
+            "score": "17@35",
+            "status": "final"
+        },
+        "week7-TB@CAR": {
+            "score": "3@21",
+            "status": "final"
+        },
+        "week7-CLE@BAL": {
+            "score": "20@23",
+            "status": "final"
+        },
+        "week7-IND@TEN": {
+            "score": "10@19",
+            "status": "final"
+        },
+        "week7-DET@DAL": {
+            "score": "6@24",
+            "status": "final"
+        },
+        "week7-GB@WAS": {
+            "score": "21@23",
+            "status": "final"
+        },
+        "week7-NYG@JAX": {
+            "score": "23@17",
+            "status": "final"
+        },
+        "week7-HOU@LV": {
+            "score": "20@38",
+            "status": "final"
+        },
+        "week7-NYJ@DEN": {
+            "score": "16@9",
+            "status": "final"
+        },
+        "week7-KC@SF": {
+            "score": "44@23",
+            "status": "final"
+        },
+        "week7-SEA@LAC": {
+            "score": "37@23",
+            "status": "final"
+        },
+        "week7-PIT@MIA": {
+            "score": "10@16",
+            "status": "final"
+        },
+        "week7-CHI@NE": {
+            "score": "33@14",
+            "status": "final"
+        }
+    },
+    "week8": {
+        "week8-BAL@TB": {
+            "score": "27@22",
+            "status": "final"
+        },
+        "week8-DEN@JAX": {
+            "score": "21@17",
+            "status": "final"
+        },
+        "week8-MIA@DET": {
+            "score": "31@27",
+            "status": "final"
+        },
+        "week8-PIT@PHI": {
+            "score": "13@35",
+            "status": "final"
+        },
+        "week8-CAR@ATL": {
+            "score": "34@37",
+            "status": "final"
+        },
+        "week8-CHI@DAL": {
+            "score": "29@49",
+            "status": "final"
+        },
+        "week8-ARI@MIN": {
+            "score": "26@34",
+            "status": "final"
+        },
+        "week8-LV@NO": {
+            "score": "0@24",
+            "status": "final"
+        },
+        "week8-NE@NYJ": {
+            "score": "22@17",
+            "status": "final"
+        },
+        "week8-TEN@HOU": {
+            "score": "17@10",
+            "status": "final"
+        },
+        "week8-SF@LAR": {
+            "score": "31@14",
+            "status": "final"
+        },
+        "week8-WAS@IND": {
+            "score": "17@16",
+            "status": "final"
+        },
+        "week8-NYG@SEA": {
+            "score": "13@27",
+            "status": "final"
+        },
+        "week8-GB@BUF": {
+            "score": "17@27",
+            "status": "final"
+        },
+        "week8-CIN@CLE": {
+            "score": "13@32",
+            "status": "final"
+        }
+    },
+    "week9": {
+        "week9-PHI@HOU": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week9-BUF@NYJ": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week9-CAR@CIN": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week9-IND@NE": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week9-GB@DET": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week9-MIA@CHI": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week9-MIN@WAS": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week9-LV@JAX": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week9-LAC@ATL": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week9-SEA@ARI": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week9-LAR@TB": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week9-TEN@KC": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week9-BAL@NO": {
+            "score": "",
+            "status": "pregame"
+        }
+    },
+    "week10": {
+        "week10-ATL@CAR": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week10-SEA@TB": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week10-CLE@MIA": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week10-DEN@TEN": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week10-DET@CHI": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week10-HOU@NYG": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week10-JAX@KC": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week10-MIN@BUF": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week10-NO@PIT": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week10-IND@LV": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week10-ARI@LAR": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week10-DAL@GB": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week10-LAC@SF": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week10-WAS@PHI": {
+            "score": "",
+            "status": "pregame"
+        }
+    },
+    "week11": {
+        "week11-TEN@GB": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week11-CAR@BAL": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week11-CHI@ATL": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week11-CLE@BUF": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week11-DET@NYG": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week11-NYJ@NE": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week11-PHI@IND": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week11-LAR@NO": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week11-WAS@HOU": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week11-LV@DEN": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week11-DAL@MIN": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week11-KC@LAC": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week11-CIN@PIT": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week11-SF@ARI": {
+            "score": "",
+            "status": "pregame"
+        }
+    },
+    "week12": {
+        "week12-BUF@DET": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week12-NYG@DAL": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week12-NE@MIN": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week12-ATL@WAS": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week12-CHI@NYJ": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week12-CIN@TEN": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week12-DEN@CAR": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week12-HOU@MIA": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week12-BAL@JAX": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week12-TB@CLE": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week12-LV@SEA": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week12-LAC@ARI": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week12-NO@SF": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week12-LAR@KC": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week12-GB@PHI": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week12-PIT@IND": {
+            "score": "",
+            "status": "pregame"
+        }
+    },
+    "week13": {
+        "week13-BUF@NE": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week13-CLE@HOU": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week13-DEN@BAL": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week13-GB@CHI": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week13-JAX@DET": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week13-NYJ@MIN": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week13-TEN@PHI": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week13-PIT@ATL": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week13-WAS@NYG": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week13-MIA@SF": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week13-SEA@LAR": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week13-KC@CIN": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week13-LAC@LV": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week13-IND@DAL": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week13-NO@TB": {
+            "score": "",
+            "status": "pregame"
+        }
+    },
+    "week14": {
+        "week14-LV@LAR": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week14-CLE@CIN": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week14-HOU@DAL": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week14-JAX@TEN": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week14-MIN@DET": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week14-NYJ@BUF": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week14-PHI@NYG": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week14-BAL@PIT": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week14-MIA@LAC": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week14-CAR@SEA": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week14-TB@SF": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week14-KC@DEN": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week14-NE@ARI": {
+            "score": "",
+            "status": "pregame"
+        }
+    },
+    "week15": {
+        "week15-SF@SEA": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week15-ATL@NO": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week15-IND@MIN": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week15-DAL@JAX": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week15-DET@NYJ": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week15-KC@HOU": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week15-MIA@BUF": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week15-NYG@WAS": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week15-PHI@CHI": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week15-PIT@CAR": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week15-BAL@CLE": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week15-ARI@DEN": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week15-CIN@TB": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week15-TEN@LAC": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week15-NE@LV": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week15-LAR@GB": {
+            "score": "",
+            "status": "pregame"
+        }
+    },
+    "week16": {
+        "week16-JAX@NYJ": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week16-ATL@BAL": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week16-BUF@CHI": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week16-CIN@NE": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week16-DET@CAR": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week16-HOU@TEN": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week16-NO@CLE": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week16-NYG@MIN": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week16-SEA@KC": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week16-WAS@SF": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week16-PHI@DAL": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week16-LV@PIT": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week16-GB@MIA": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week16-DEN@LAR": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week16-TB@ARI": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week16-LAC@IND": {
+            "score": "",
+            "status": "pregame"
+        }
+    },
+    "week17": {
+        "week17-DAL@TEN": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week17-CAR@TB": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week17-CHI@DET": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week17-CLE@WAS": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week17-IND@NYG": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week17-ARI@ATL": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week17-DEN@KC": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week17-JAX@HOU": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week17-MIA@NE": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week17-NO@PHI": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week17-PIT@BAL": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week17-NYJ@SEA": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week17-SF@LV": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week17-MIN@GB": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week17-LAR@LAC": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week17-BUF@CIN": {
+            "score": "",
+            "status": "pregame"
+        }
+    },
+    "week18": {
+        "week18-CAR@NO": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week18-CLE@PIT": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week18-ARI@SF": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week18-DAL@WAS": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week18-DET@GB": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week18-HOU@IND": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week18-KC@LV": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week18-MIN@CHI": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week18-NE@BUF": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week18-NYG@PHI": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week18-NYJ@MIA": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week18-TEN@JAX": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week18-LAR@SEA": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week18-BAL@CIN": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week18-LAC@DEN": {
+            "score": "",
+            "status": "pregame"
+        },
+        "week18-TB@ATL": {
+            "score": "",
+            "status": "pregame"
+        }
+    }
+}

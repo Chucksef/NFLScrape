@@ -9,6 +9,7 @@ def processStats(target_year):
     seasonFile = open(season_target_file)
     all_teams = json.load(seasonFile)
 
+    # process all weekly stats for saving to "Seasons" database
     print("    Processing Stats for season: "+str(target_year))
     for team in all_teams:
         # set up all stat-variables at zero

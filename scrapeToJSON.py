@@ -38,10 +38,12 @@ def createNewSeason(target_year):
 def scrapeToJSON(target_year):
     # set a target file for this season
     season_target_file = 'data/seasons/'+str(target_year)+'.json'
+    schedule_target_file = 'data/schedules/'+str(target_year)+'.json'
 
     try:
         seasonFile = open(season_target_file)
         dot = json.load(seasonFile)
+        seasonSchedule = {}
     except JSONDecodeError:
         print("    WARNING: "+season_target_file+" is unexpectedly empty")
         print("        Using empty JSON object instead.")
@@ -94,7 +96,7 @@ def scrapeToJSON(target_year):
             awayTeamKey = translate[columns[3].text.split()[-1].upper()]
             
             #construct and id value for this game 
-            id = "week"+weekNumber+homeTeamKey+awayTeamKey
+            id = "week"+weekNumber+"-"+awayTeamKey+"@"+homeTeamKey
 
             # build two versions of each game to save to both teams' schedules
             homeGame = {
@@ -143,7 +145,7 @@ def scrapeToJSON(target_year):
                 awayTeamKey = translate[columns[5].text.split()[-1].upper()]
 
                 #construct and id value for this game 
-                id = "week"+weekNumber+homeTeamKey+awayTeamKey
+                id = "week"+weekNumber+"-"+awayTeamKey+"@"+homeTeamKey
 
                 # determine if the home team won
                 isHomeTeamWin = True if (int(columns[7].text) > int(columns[8].text)) else False
@@ -200,7 +202,7 @@ def scrapeToJSON(target_year):
                 awayTeamKey = translate[columns[3].text.split()[-1].upper()]
 
                 #construct and id value for this game 
-                id = "week"+weekNumber+homeTeamKey+awayTeamKey
+                id = "week"+weekNumber+"-"+awayTeamKey+"@"+homeTeamKey
 
                 # determine if the home team won
                 isHomeTeamWin = True if (int(columns[8].text) > int(columns[7].text)) else False
@@ -254,10 +256,27 @@ def scrapeToJSON(target_year):
         # add this info to each team's dictionary record
         dot[homeTeamKey]["schedule"]["week"+weekNumber] = homeGame
         dot[awayTeamKey]["schedule"]["week"+weekNumber] = awayGame
+
+        # New code for saving to "Schedules" DB
+        if not("week"+weekNumber in seasonSchedule.keys()):
+            seasonSchedule['week'+weekNumber] = {}
+        seasonSchedule['week'+weekNumber][id] = {
+                "score"           : '' if homeGame['status'] == 'pregame' else str(homeGame['opp-points'])+"@"+str(homeGame['points']),
+                "status"          : homeGame['status']
+            }
+
         
-    # output new data back to the season file
+        
+    # output new season data back to the season file
     with open(season_target_file, 'w') as seasonFile:
         new_json = json.dumps(dot, indent=4)
         seasonFile.write(new_json)
 
     seasonFile.close()
+    
+    # output new schedule data back to the schedule file
+    with open(schedule_target_file, 'w') as scheduleFile:
+        new_json = json.dumps(seasonSchedule, indent=4)
+        scheduleFile.write(new_json)
+
+    scheduleFile.close()
