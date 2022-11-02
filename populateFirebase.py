@@ -49,7 +49,7 @@ def updateWeek(year, day, hour):
     if (day > 2 and hour >= 19):
         weekEnabled = False
     # Fourth, write these two things out to the "Schedules" root node
-    scheduleRef = db.reference("/schedules/")
+    scheduleRef = db.reference("/schedules/status/")
     currentWeekData = {
         "currentPickable": weekEnabled,
         "currentWeek"    : currentWeek
