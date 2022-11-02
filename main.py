@@ -1,6 +1,8 @@
 from scrapeToJSON import scrapeToJSON
 from processStats import processStats
 from populateFirebase import populateFirebase
+from populateFirebase import updateSchedule
+from populateFirebase import updateWeek
 from datetime import date, datetime
 import argparse
 
@@ -18,10 +20,13 @@ if (args.season):
     scrapeToJSON(args.season)
     processStats(args.season)
     populateFirebase(args.season)
+    updateSchedule(args.season)
 else:
     # otherwise, just process like normal for the current year
     today = date.today()
+    day = today.day
     now = str(datetime.now()).split('.')[0] # chop off fractions of seconds
+    hour = now.split(' ')[1].split(':')[0]
     month = today.month
     year = today.year
 
@@ -29,8 +34,10 @@ else:
     print(now + " ---- Running NFLScrape")
 
     # if it is not yet May, revert to previous year
-    if (month < 5): year -= 1
+    if (month < 9): year -= 1
 
     scrapeToJSON(year)
     processStats(year)
     populateFirebase(year)
+    updateSchedule(year)
+    updateWeek(year, day, hour)
