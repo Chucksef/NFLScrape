@@ -34,4 +34,3 @@ else:
     scrapeToJSON(year)
     processStats(year)
     populateFirebase(year)
-    updateSchedules(year)
