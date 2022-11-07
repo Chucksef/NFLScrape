@@ -45,8 +45,8 @@ def updateWeek(year, day, hour):
         if any([True for k,v in schedule_data[week].items() if v == {'score':'','status':'pregame'}]):
             currentWeek = str(year)+"-"+week
             break
-    # Third, disable picking this week if it is past 6:30PM on Thursday
-    if (day > 2 and hour >= 19):
+    # Third, disable picking this week if it is past 6:30PM on Thursday; or Friday Sat or Sun; or Monday
+    if (int(day) == 3 and int(hour) >= 19) or (int(day) > 3) or (int(day) == 0):
         weekEnabled = False
     # Fourth, write these two things out to the "Schedules" root node
     scheduleRef = db.reference("/schedules/status/")
