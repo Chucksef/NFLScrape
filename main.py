@@ -3,8 +3,11 @@ from processStats import processStats
 from populateFirebase import populateFirebase
 from populateFirebase import updateSchedule
 from populateFirebase import updateWeek
+from populateFirebase import updateLeagues
+from populateFirebase import updateScores
 from datetime import date, datetime
 import argparse
+import json
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-s', '--season', type=int)
@@ -37,7 +40,7 @@ if (args.season):
 else:
     # First, get all date/time info to feed into the scheduler
     today = date.today()
-    day = today.day
+    day = datetime.now().weekday()
     now = str(datetime.now()).split('.')[0] # chop off fractions of seconds
     hour = now.split(' ')[1].split(':')[0]
     month = today.month
@@ -53,8 +56,16 @@ else:
     # if it is not yet May, revert to previous year
     if (month < 9): year -= 1
 
+    # get the current week from the current JSON schedule
+    with open("data/schedules/"+str(year)+".json", "r") as schedule:
+        schedule_data = json.load(schedule)
+    
+    week = schedule_data['status']['currentWeek']
+
     scrapeToJSON(year)
     processStats(year)
     populateFirebase(year)
     updateSchedule(year)
     updateWeek(year, day, hour)
+    updateScores(year, week)
+    updateLeagues(year, week)

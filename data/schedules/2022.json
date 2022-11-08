@@ -513,52 +513,52 @@
             "status": "final"
         },
         "week9-BUF@NYJ": {
-            "score": "",
-            "status": "pregame"
-        },
-        "week9-CAR@CIN": {
-            "score": "",
-            "status": "pregame"
-        },
-        "week9-IND@NE": {
-            "score": "",
-            "status": "pregame"
+            "score": "17@20",
+            "status": "final"
         },
         "week9-GB@DET": {
-            "score": "",
-            "status": "pregame"
-        },
-        "week9-MIA@CHI": {
-            "score": "",
-            "status": "pregame"
+            "score": "9@15",
+            "status": "final"
         },
         "week9-MIN@WAS": {
-            "score": "",
-            "status": "pregame"
-        },
-        "week9-LV@JAX": {
-            "score": "",
-            "status": "pregame"
+            "score": "20@17",
+            "status": "final"
         },
         "week9-LAC@ATL": {
-            "score": "",
-            "status": "pregame"
+            "score": "20@17",
+            "status": "final"
+        },
+        "week9-CAR@CIN": {
+            "score": "21@42",
+            "status": "final"
+        },
+        "week9-MIA@CHI": {
+            "score": "35@32",
+            "status": "final"
+        },
+        "week9-IND@NE": {
+            "score": "3@26",
+            "status": "final"
+        },
+        "week9-LV@JAX": {
+            "score": "20@27",
+            "status": "final"
         },
         "week9-SEA@ARI": {
-            "score": "",
-            "status": "pregame"
+            "score": "31@21",
+            "status": "final"
         },
         "week9-LAR@TB": {
-            "score": "",
-            "status": "pregame"
+            "score": "13@16",
+            "status": "final"
         },
         "week9-TEN@KC": {
-            "score": "",
-            "status": "pregame"
+            "score": "17@20",
+            "status": "final"
         },
         "week9-BAL@NO": {
-            "score": "",
-            "status": "pregame"
+            "score": "27@13",
+            "status": "final"
         }
     },
     "week10": {
@@ -1122,5 +1122,9 @@
             "score": "",
             "status": "pregame"
         }
+    },
+    "status": {
+        "currentPickable": true,
+        "currentWeek": "2022-week10"
     }
 }
