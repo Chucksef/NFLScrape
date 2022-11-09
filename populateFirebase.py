@@ -157,4 +157,4 @@ def updateLeagues(year, week):
                 
             # Update the league database with the score information for this user
             updateRef = db.reference('/leagues/'+leagueKey+'/users/'+userKey)
-            updateRef.update({week:results['picks'][str(year)][week]['score'],'total':userTotal,'name':results['name']})
+            updateRef.update({week:results['picks'][str(year)][week]['score'],'total':userTotal,'name':results['email']})
