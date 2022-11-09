@@ -67,13 +67,13 @@ def updateWeek(year, day, hour):
     scheduleFile.close()
 
 
-def checkPrediction(year, week, matchupID, prediction):
+def checkPrediction(year, weekID, matchupID, prediction):
     predictedWinner = prediction.split("@")[0]
     predictionValue = prediction.split("@")[1]
     # load the schedule DB from file
     with open("data/schedules/"+year+".json", "r") as schedule:
         scheduleData = json.load(schedule)
-        matchup = scheduleData[week][matchupID]
+        matchup = scheduleData[weekID][matchupID]
         awayScore = int(matchup['score'].split('@')[0])
         homeScore = int(matchup['score'].split('@')[1])
         windex = 0 if awayScore > homeScore else 1
@@ -86,14 +86,14 @@ def checkPrediction(year, week, matchupID, prediction):
     
 
 ### FUNCTION FOR UPDATING ALL WEEKLY SCORE DATA IN USER PROFILES & IN LEAGUES
-def updateScores(year, week):
+def updateScores(year, weekID):
     # Get all user data from DB
     userRef = db.reference('/accounts/users/')
     allUsers = userRef.get()
     year = str(year)
-    week = str(week)
+    weekID = str(weekID)
 
-    print("    Updating Firebase User Scores for season: "+week)
+    print("    Updating Firebase User Scores for weekID: "+weekID)
 
     # Iterate through each user
     for userKey in allUsers:
@@ -101,17 +101,18 @@ def updateScores(year, week):
         # Check if they have picks for current week
         if 'picks' in userData:
             if year in userData['picks']:
-                if week in userData['picks'][year]:
+                if weekID in userData['picks'][year]:
                     # If so, get the Current Week's picks
                     weekScore = 0
-                    weekPicks = userData['picks'][year][week]
+                    weekPicks = userData['picks'][year][weekID]
                     for key in weekPicks:
                         if key == 'score':
                             continue
                         else:
                             prediction = weekPicks[key]
-                            earnedPoints = checkPrediction(year, week, key, prediction)
+                            earnedPoints = checkPrediction(year, weekID, key, prediction)
                             weekScore += earnedPoints
+                            week = weekID.split("-")[1]
                     # Update the database with the score information for this user
                     updateRef = db.reference('/accounts/users/'+userKey+'/picks/'+str(year)+'/'+week)
                     updateRef.update({'score':str(weekScore)})
@@ -119,10 +120,12 @@ def updateScores(year, week):
 
 
 ### FUNCTION FOR UPDATING ALL LEAGUE SCORES IN LEAGUES DATABASE
-def updateLeagues(year, week):
+def updateLeagues(year, weekID):
     # Get all league data from DB
     leaguesRef = db.reference('/leagues/')
     allLeagues = leaguesRef.get()
+    week = weekID.split("-")[1]
+    year = str(year)
 
     print("    Updating Firebase League Scores for season: "+str(year))
 
@@ -146,7 +149,10 @@ def updateLeagues(year, week):
             # queryRef = db.reference('/accounts/users/'+userKey+'/picks/'+str(year)+'/'+week+'/score')
             queryRef = db.reference('/accounts/users/'+userKey)
             results = queryRef.get()
-            tempLeagueUser[week] = results['picks'][str(year)][week]['score']
+            try:
+                tempLeagueUser[week] = results['picks'][year][week]['score']
+            except:
+                tempLeagueUser[week] = '0'
 
             # calculate the total score for this user in this League
             userTotal = 0
@@ -156,7 +162,8 @@ def updateLeagues(year, week):
                 if int(weekNum) < int(leagueStartWeekNum): continue
                 weekScore = int(tempLeagueUser[key])
                 userTotal += weekScore
-                
+            
+
             # Update the league database with the score information for this user
             updateRef = db.reference('/leagues/'+leagueKey+'/users/'+userKey)
-            updateRef.update({week:results['picks'][str(year)][week]['score'],'total':userTotal,'name':results['email']})
+            updateRef.update({week:tempLeagueUser[week],'total':userTotal,'name':results['email']})

@@ -60,12 +60,12 @@ else:
     with open("data/schedules/"+str(year)+".json", "r") as schedule:
         schedule_data = json.load(schedule)
     
-    week = schedule_data['status']['currentWeek']
+    weekID = schedule_data['status']['currentWeek']
 
     scrapeToJSON(year)
     processStats(year)
     populateFirebase(year)
     updateSchedule(year)
     updateWeek(year, day, hour)
-    updateScores(year, week)
-    updateLeagues(year, week)
+    updateScores(year, weekID)
+    updateLeagues(year, weekID)
