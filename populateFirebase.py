@@ -91,7 +91,7 @@ def updateScores(year, week):
     userRef = db.reference('/accounts/users/')
     allUsers = userRef.get()
 
-    print("    Updating Firebase User Scores for season: "+str(year)+"-"+week)
+    print("    Updating Firebase User Scores for season: "+week)
 
     # Iterate through each user
     for userKey in allUsers:
@@ -129,7 +129,7 @@ def updateLeagues(year, week):
         leagueData = allLeagues[leagueKey]
 
         # skip this league if the year or week are out of bounds
-        if leagueData['season'] != year: 
+        if int(leagueData['season']) != int(year): 
             continue
         if int(leagueData['startWeek'].replace('week','')) > int(week.replace('week','')): 
             continue
@@ -141,9 +141,10 @@ def updateLeagues(year, week):
         for userKey in leagueUsers:
             tempLeagueUser = leagueUsers[userKey]
             # query the DB for this user's score @ this year & week
-            queryRef = db.reference('/accounts/users/'+userKey+'/picks/'+str(year)+'/'+week+'/score')
+            # queryRef = db.reference('/accounts/users/'+userKey+'/picks/'+str(year)+'/'+week+'/score')
+            queryRef = db.reference('/accounts/users/'+userKey)
             results = queryRef.get()
-            tempLeagueUser[week] = results
+            tempLeagueUser[week] = results['picks'][str(year)][week]['score']
 
             # calculate the total score for this user in this League
             userTotal = 0
@@ -156,4 +157,4 @@ def updateLeagues(year, week):
                 
             # Update the league database with the score information for this user
             updateRef = db.reference('/leagues/'+leagueKey+'/users/'+userKey)
-            updateRef.update({week:results,'total':userTotal})
+            updateRef.update({week:results['picks'][str(year)][week]['score'],'total':userTotal,'name':results['name']})
