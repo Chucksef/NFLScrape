@@ -120,6 +120,7 @@ def updateScores(year, weekID):
 
 
 ### FUNCTION FOR UPDATING ALL LEAGUE SCORES IN LEAGUES DATABASE
+### NO LONGER NEEDED. LOGIC MOVED TO FRONT-END ON LEAGUE VIEW ###
 def updateLeagues(year, weekID):
     # Get all league data from DB
     leaguesRef = db.reference('/leagues/')

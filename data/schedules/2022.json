@@ -563,8 +563,8 @@
     },
     "week10": {
         "week10-ATL@CAR": {
-            "score": "",
-            "status": "pregame"
+            "score": "15@25",
+            "status": "final"
         },
         "week10-SEA@TB": {
             "score": "",
@@ -1124,7 +1124,7 @@
         }
     },
     "status": {
-        "currentPickable": true,
+        "currentPickable": false,
         "currentWeek": "2022-week10"
     }
 }

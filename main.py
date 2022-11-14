@@ -68,4 +68,3 @@ else:
     updateSchedule(year)
     updateWeek(year, day, hour)
     updateScores(year, weekID)
-    updateLeagues(year, weekID)
