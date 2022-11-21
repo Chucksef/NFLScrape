@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 from utilities import getTodayInfo
 import requests
+from populateFirebase import updateFirebase
 import json
 from json.decoder import JSONDecodeError
 
@@ -70,16 +71,40 @@ def scrapeLiveScores():
         jsonMatchup = schedJSON[currWeek][matchupID]
         print(jsonMatchup)
         # Update if status != "final"
+        ref = '/schedules/'+str(dateInfo['season'])+'/'+currWeek+'/'+matchupID+'/'
+        updateData = {}
         if jsonMatchup['status'] != 'final':
-            schedJSON[currWeek][matchupID]['status'] = gameState
+            if schedJSON[currWeek][matchupID]['status'] == gameState and schedJSON[currWeek][matchupID]['score'] == awayTeamScore+"@"+homeTeamScore:
+                # do nothing
+                pass
+            else:
+                schedJSON[currWeek][matchupID]['status'] = gameState
+                # send to firebase...
+                updateData['status'] = gameState
+                updateFirebase(ref, updateData)
             if gameState == 'pregame':
-                schedJSON[currWeek][matchupID]['odds'] = odds.text
-                schedJSON[currWeek][matchupID]['date'] = gameDate
+                if schedJSON[currWeek][matchupID]['odds'] == odds.text and schedJSON[currWeek][matchupID]['date'] == gameDate:
+                    # do nothing
+                    pass
+                else:
+                    # update schedJSON
+                    schedJSON[currWeek][matchupID]['odds'] = odds.text
+                    schedJSON[currWeek][matchupID]['date'] = gameDate
+                    # send to firebase...
+                    updateData['odds'] = odds.text
+                    updateData['date'] = gameDate
+                    updateFirebase(ref, updateData)
             else:
                 homeTeamScore = teamScores[1]
                 awayTeamScore = teamScores[0]
-                schedJSON[currWeek][matchupID]['score'] = awayTeamScore+"@"+homeTeamScore
-                # If so, also write out to Firebase
+                if schedJSON[currWeek][matchupID]['score'] == awayTeamScore+"@"+homeTeamScore:
+                    # do nothing
+                    pass
+                else:
+                    schedJSON[currWeek][matchupID]['score'] = awayTeamScore+"@"+homeTeamScore
+                    # send to firebase...
+                    updateData['score'] = awayTeamScore+"@"+homeTeamScore
+                    updateFirebase(ref, updateData)
     print(schedJSON)
         
     # 

@@ -10,6 +10,10 @@ app = firebase_admin.initialize_app(cred, {
         'databaseURL':'https://nflscrape-default-rtdb.firebaseio.com/'
     })
 
+def updateFirebase(ref, updateData):
+    updateRef = db.reference(ref)
+    updateRef.update(updateData)
+
 def populateFirebase(target_year):
     # Save the season data to the Seasons node
     # First, open the target season
