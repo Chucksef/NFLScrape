@@ -5,9 +5,8 @@ from populateFirebase import updateSchedule
 from populateFirebase import updateWeek
 from populateFirebase import updateLeagues
 from populateFirebase import updateScores
-from datetime import date, datetime
+from utilities import getTodayInfo
 import argparse
-import json
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-s', '--season', type=int)
@@ -35,36 +34,15 @@ if (args.season):
     # run the three programs for just this year
     scrapeToJSON(args.season)
     processStats(args.season)
-    populateFirebase(args.season)
-    updateSchedule(args.season)
+    # populateFirebase(args.season)
+    # updateSchedule(args.season)
 else:
     # First, get all date/time info to feed into the scheduler
-    today = date.today()
-    day = datetime.now().weekday()
-    now = str(datetime.now()).split('.')[0] # chop off fractions of seconds
-    hour = now.split(' ')[1].split(':')[0]
-    month = today.month
-    year = today.year
+    today = getTodayInfo.getTodayInfo()
 
-    # Second, send this data to the scheduler, which will return a list of tasks
-
-    # Third, iterate over this list of tasks and log the results of each operation
-
-    # output to console for logging
-    print(now + " ---- Running NFLScrape")
-
-    # if it is not yet May, revert to previous year
-    if (month < 9): year -= 1
-
-    # get the current week from the current JSON schedule
-    with open("data/schedules/"+str(year)+".json", "r") as schedule:
-        schedule_data = json.load(schedule)
-    
-    weekID = schedule_data['status']['currentWeek']
-
-    scrapeToJSON(year)
-    processStats(year)
-    populateFirebase(year)
-    updateSchedule(year)
-    updateWeek(year, day, hour)
-    updateScores(year, weekID)
+    scrapeToJSON(today['year'])
+    processStats(today['year'])
+    populateFirebase(today['year'])
+    updateSchedule(today['year'])
+    updateWeek(today['year'], today['day'], today['hour'])
+    updateScores(today['year'], today['weekID'])
