@@ -5,18 +5,9 @@ from populateFirebase import updateFirebase
 import json
 from json.decoder import JSONDecodeError
 
-#####   scrapeToJSON()   #####
-#####        INFO        #####
-# This program does the main scraping process for getting NFL data from pro-football-reference.com and saves it into "season_XXXX.json" files.
-# This program is nominally callable from outside of itself. Users or programs should call it using the name scrapeToJSON(XXXX), where XXXX is
-# the year for the data that is being requested. Not all years are expected to work out of the box. No year can be scraped without a 
-# "league_XXXX.json" file located inside of the data folder. This file sets up each team's keyName and sets up a variety of other data.
+#####   ScrapeLiveScores()   #####
 
-
-
-def scrapeLiveScores():
-    # get today
-    dateInfo = getTodayInfo.getTodayInfo()
+def scrapeLiveScores(dateInfo):
     currWeek = dateInfo['weekID'].split("-")[1]
 
     # open the schedule for comparison
@@ -58,7 +49,6 @@ def scrapeLiveScores():
             else:
                 # If it doesn't, game is ongoing
                 gameState = "live"
-        print(gameState+" game:")
         # Get the contents of div.ScoreCell__TeamName => each team's name
         teamNames = [tn.text for tn in matchup.find_all("div", class_="ScoreCell__TeamName")]
         # Get the contents of div.ScoreCell__Score => each team's score
@@ -69,12 +59,11 @@ def scrapeLiveScores():
         matchupID += awayTeamKey+"@"+homeTeamKey
         # Look up the game status in the schedJSON
         jsonMatchup = schedJSON[currWeek][matchupID]
-        print(jsonMatchup)
         # Update if status != "final"
         ref = '/schedules/'+str(dateInfo['season'])+'/'+currWeek+'/'+matchupID+'/'
         updateData = {}
         if jsonMatchup['status'] != 'final':
-            if schedJSON[currWeek][matchupID]['status'] == gameState and schedJSON[currWeek][matchupID]['score'] == awayTeamScore+"@"+homeTeamScore:
+            if schedJSON[currWeek][matchupID]['status'] == gameState:
                 # do nothing
                 pass
             else:
@@ -83,15 +72,25 @@ def scrapeLiveScores():
                 updateData['status'] = gameState
                 updateFirebase(ref, updateData)
             if gameState == 'pregame':
-                if schedJSON[currWeek][matchupID]['odds'] == odds.text and schedJSON[currWeek][matchupID]['date'] == gameDate:
-                    # do nothing
-                    pass
+                lineData = odds.contents[0].split(": ")[1]
+                if 'odds' in schedJSON[currWeek][matchupID] and 'date' in schedJSON[currWeek][matchupID]:
+                    if schedJSON[currWeek][matchupID]['odds'] == lineData and schedJSON[currWeek][matchupID]['date'] == gameDate:
+                        # do nothing
+                        pass
+                    else:
+                        # update schedJSON
+                        schedJSON[currWeek][matchupID]['odds'] = lineData
+                        schedJSON[currWeek][matchupID]['date'] = gameDate
+                        # send to firebase...
+                        updateData['odds'] = lineData
+                        updateData['date'] = gameDate
+                        updateFirebase(ref, updateData)
                 else:
                     # update schedJSON
-                    schedJSON[currWeek][matchupID]['odds'] = odds.text
+                    schedJSON[currWeek][matchupID]['odds'] = lineData
                     schedJSON[currWeek][matchupID]['date'] = gameDate
                     # send to firebase...
-                    updateData['odds'] = odds.text
+                    updateData['odds'] = lineData
                     updateData['date'] = gameDate
                     updateFirebase(ref, updateData)
             else:
@@ -105,14 +104,8 @@ def scrapeLiveScores():
                     # send to firebase...
                     updateData['score'] = awayTeamScore+"@"+homeTeamScore
                     updateFirebase(ref, updateData)
-    print(schedJSON)
-        
-    # 
-        
 
-    # outputFile = 'schedules/dateInfo['season'].json'
-    # with open(outputFile, 'w') as outFile:
-    #     new_json = json.dumps(schedJSON, indent=4)
-    #     outFile.write(new_json)
-
-scrapeLiveScores()
+    outputFile = 'data/schedules/'+str(dateInfo['season'])+'.json'
+    with open(outputFile, 'w') as outFile:
+        new_json = json.dumps(schedJSON, indent=4)
+        outFile.write(new_json)

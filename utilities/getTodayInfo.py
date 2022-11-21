@@ -1,4 +1,5 @@
 from datetime import date, datetime
+import time
 import json
 
 def getTodayInfo():
@@ -25,6 +26,9 @@ def getTodayInfo():
     
     weekID = schedule_data['status']['currentWeek']
 
+    # get the number of seconds in this epoch
+    epochSecs = int(time.time())
+
     return {
         'today': today,
         'day': day,
@@ -33,5 +37,6 @@ def getTodayInfo():
         'month': month,
         'season': season,
         'year': currYear,
-        'weekID': weekID
+        'weekID': weekID,
+        'epochSecs': epochSecs
     }

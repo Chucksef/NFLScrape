@@ -6,13 +6,12 @@ from populateFirebase import updateWeek
 from populateFirebase import updateLeagues
 from populateFirebase import updateScores
 from utilities import getTodayInfo
-import argparse
-
-parser = argparse.ArgumentParser()
-parser.add_argument('-s', '--season', type=int)
-args = parser.parse_args()
+from scrapeLiveScores import scrapeLiveScores
+import time
 
 # Program Description:
+# This program is designed to run every minute on a schedule.
+#
 # The NFLScrape package maintains and updates the NFLScrape database on Google Firebase, which
 # hosts all of the data needed to run the Gridiron Pickem' webapp. This program is usually
 # going to be run on a schedule, which is governed by Crontab. When run this way, it will be
@@ -30,19 +29,31 @@ args = parser.parse_args()
 # the most consistent and predictable, so should break very rarely.
 
 # MAIN CODE EXECUTION BELOW:
-if (args.season):
-    # run the three programs for just this year
-    scrapeToJSON(args.season)
-    processStats(args.season)
-    # populateFirebase(args.season)
-    # updateSchedule(args.season)
-else:
-    # First, get all date/time info to feed into the scheduler
-    today = getTodayInfo.getTodayInfo()
+# 1) get all date/time info to feed into the scheduler
+dateInfo = getTodayInfo.getTodayInfo()
+currTime = dateInfo['epochSecs']
+endTime = currTime + 45
+waitSeconds = 5
 
-    scrapeToJSON(today['year'])
-    processStats(today['year'])
-    populateFirebase(today['year'])
-    updateSchedule(today['year'])
-    updateWeek(today['year'], today['day'], today['hour'])
-    updateScores(today['year'], today['weekID'])
+# 2) begin processing loop
+while currTime < endTime:
+    # 3) read the programSchedule
+    command = "scrapeLiveScores"
+
+    # 4) execute the returned command
+    if command == "scrapeToJSON":
+        scrapeToJSON(dateInfo['season'])
+    if command == "scrapeLiveScores":
+        scrapeLiveScores(dateInfo)
+    elif command == "processStats":
+        processStats(dateInfo['season'])
+    elif command == "populateFirebase":
+        populateFirebase(dateInfo['season'])
+    elif command == "updateWeek":
+        updateWeek(dateInfo['season'], dateInfo['day'], dateInfo['hour'])
+    elif command == "updateScores":
+        updateScores(dateInfo['season'], dateInfo['weekID'])
+    elif command == "updateSchedule":
+        updateSchedule(dateInfo['season'])
+    else:
+        print("ERROR - Command Unrecognized: '"+command+"'")

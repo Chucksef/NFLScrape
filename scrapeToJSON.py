@@ -38,7 +38,6 @@ def createNewSeason(target_year):
 def scrapeToJSON(target_year):
     # set a target file for this season
     season_target_file = 'data/seasons/'+str(target_year)+'.json'
-    schedule_target_file = 'data/schedules/'+str(target_year)+'.json'
 
     try:
         seasonFile = open(season_target_file)
@@ -273,10 +272,3 @@ def scrapeToJSON(target_year):
         seasonFile.write(new_json)
 
     seasonFile.close()
-    
-    # output new schedule data back to the schedule file
-    with open(schedule_target_file, 'w') as scheduleFile:
-        new_json = json.dumps(seasonSchedule, indent=4)
-        scheduleFile.write(new_json)
-
-    scheduleFile.close()

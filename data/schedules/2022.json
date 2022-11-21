@@ -1,4 +1,8 @@
 {
+    "status": {
+        "currentPickable": false,
+        "currentWeek": "2022-week11"
+    },
     "week1": {
         "week1-BUF@LAR": {
             "score": "31@10",
@@ -660,6 +664,10 @@
             "score": "22@16",
             "status": "final"
         },
+        "week11-CIN@PIT": {
+            "score": "37@30",
+            "status": "final"
+        },
         "week11-DAL@MIN": {
             "score": "40@3",
             "status": "final"
@@ -668,13 +676,11 @@
             "score": "30@27",
             "status": "final"
         },
-        "week11-CIN@PIT": {
-            "score": "37@30",
-            "status": "final"
-        },
         "week11-SF@ARI": {
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": "SF -10.0",
+            "date": "Monday, November 21, 2022"
         }
     },
     "week12": {
@@ -1122,9 +1128,5 @@
             "score": "",
             "status": "pregame"
         }
-    },
-    "status": {
-        "currentPickable": false,
-        "currentWeek": "2022-week11"
     }
 }
