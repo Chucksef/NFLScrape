@@ -1,3 +1,23 @@
+# Tuesday @ noon---scrapeLiveScores
+# Tuesday @ 2pm---scrapeLiveScores
+# Tuesday @ 4pm---scrapeLiveScores
+# Tuesday @ 4pm---scrapePowerRankings
+# Tuesday @ 6pm---scrapeLiveScores
+# Tuesday @ 8pm---scrapeLiveScores
+# Tuesday @ 10pm---scrapeLiveScores
+# Wedneday @ 6am---scrapeLiveScores
+# Wedneday @ 8am---scrapeLiveScores
+# Wedneday @ 10am---scrapeLiveScores
+# Wedneday @ 12pm---scrapeLiveScores
+# Wedneday @ 2pm---scrapeLiveScores
+# Wedneday @ 4pm---scrapeLiveScores
+# Wedneday @ 6pm---scrapeLiveScores
+# Wedneday @ 8pm---scrapeLiveScores
+# Wedneday @ 10pm---scrapeLiveScores
+# Thursday @ 6am---scrapeLiveScores
+# Thursday @ 8am---scrapeLiveScores
+#   
+
 $ - Backup data goes after here.
 20221121183000---scrapeLiveScores
 20221121183015---scrapeLiveScores

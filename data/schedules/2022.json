@@ -1,7 +1,7 @@
 {
     "status": {
-        "currentPickable": false,
-        "currentWeek": "2022-week11"
+        "currentPickable": true,
+        "currentWeek": "2022-week12"
     },
     "week1": {
         "week1-BUF@LAR": {
@@ -685,448 +685,772 @@
     },
     "week12": {
         "week12-BUF@DET": {
+            "date": "20221124",
+            "time": "1030",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week12-NYG@DAL": {
+            "date": "20221124",
+            "time": "1430",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week12-NE@MIN": {
+            "date": "20221124",
+            "time": "1820",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week12-ATL@WAS": {
+            "date": "20221127",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week12-CHI@NYJ": {
+            "date": "20221127",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week12-CIN@TEN": {
+            "date": "20221127",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week12-DEN@CAR": {
+            "date": "20221127",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week12-HOU@MIA": {
+            "date": "20221127",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week12-BAL@JAX": {
+            "date": "20221127",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week12-TB@CLE": {
+            "date": "20221127",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week12-LV@SEA": {
+            "date": "20221127",
+            "time": "1405",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week12-LAC@ARI": {
+            "date": "20221127",
+            "time": "1405",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week12-NO@SF": {
+            "date": "20221127",
+            "time": "1425",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week12-LAR@KC": {
+            "date": "20221127",
+            "time": "1425",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week12-GB@PHI": {
+            "date": "20221127",
+            "time": "1820",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week12-PIT@IND": {
+            "date": "20221128",
+            "time": "1815",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         }
     },
     "week13": {
         "week13-BUF@NE": {
+            "date": "20221201",
+            "time": "1815",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week13-CLE@HOU": {
+            "date": "20221204",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week13-DEN@BAL": {
+            "date": "20221204",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week13-GB@CHI": {
+            "date": "20221204",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week13-JAX@DET": {
+            "date": "20221204",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week13-NYJ@MIN": {
+            "date": "20221204",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week13-TEN@PHI": {
+            "date": "20221204",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week13-PIT@ATL": {
+            "date": "20221204",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week13-WAS@NYG": {
+            "date": "20221204",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week13-MIA@SF": {
+            "date": "20221204",
+            "time": "1405",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week13-SEA@LAR": {
+            "date": "20221204",
+            "time": "1405",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week13-KC@CIN": {
+            "date": "20221204",
+            "time": "1425",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week13-LAC@LV": {
+            "date": "20221204",
+            "time": "1425",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week13-IND@DAL": {
+            "date": "20221204",
+            "time": "1820",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week13-NO@TB": {
+            "date": "20221205",
+            "time": "1815",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         }
     },
     "week14": {
         "week14-LV@LAR": {
+            "date": "20221208",
+            "time": "1815",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week14-CLE@CIN": {
+            "date": "20221211",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week14-HOU@DAL": {
+            "date": "20221211",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week14-JAX@TEN": {
+            "date": "20221211",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week14-MIN@DET": {
+            "date": "20221211",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week14-NYJ@BUF": {
+            "date": "20221211",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week14-PHI@NYG": {
+            "date": "20221211",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week14-BAL@PIT": {
+            "date": "20221211",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week14-MIA@LAC": {
+            "date": "20221211",
+            "time": "1405",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week14-CAR@SEA": {
+            "date": "20221211",
+            "time": "1425",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week14-TB@SF": {
+            "date": "20221211",
+            "time": "1425",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week14-KC@DEN": {
+            "date": "20221211",
+            "time": "1820",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week14-NE@ARI": {
+            "date": "20221212",
+            "time": "1815",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         }
     },
     "week15": {
         "week15-SF@SEA": {
+            "date": "20221215",
+            "time": "1815",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week15-ATL@NO": {
+            "date": "20221218",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week15-IND@MIN": {
+            "date": "20221218",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week15-DAL@JAX": {
+            "date": "20221218",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week15-DET@NYJ": {
+            "date": "20221218",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week15-KC@HOU": {
+            "date": "20221218",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week15-MIA@BUF": {
+            "date": "20221218",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week15-NYG@WAS": {
+            "date": "20221218",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week15-PHI@CHI": {
+            "date": "20221218",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week15-PIT@CAR": {
+            "date": "20221218",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week15-BAL@CLE": {
+            "date": "20221218",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week15-ARI@DEN": {
+            "date": "20221218",
+            "time": "1405",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week15-CIN@TB": {
+            "date": "20221218",
+            "time": "1425",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week15-TEN@LAC": {
+            "date": "20221218",
+            "time": "1425",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week15-NE@LV": {
+            "date": "20221218",
+            "time": "1820",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week15-LAR@GB": {
+            "date": "20221219",
+            "time": "1815",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         }
     },
     "week16": {
         "week16-JAX@NYJ": {
+            "date": "20221222",
+            "time": "1815",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week16-ATL@BAL": {
+            "date": "20221224",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week16-BUF@CHI": {
+            "date": "20221224",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week16-CIN@NE": {
+            "date": "20221224",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week16-DET@CAR": {
+            "date": "20221224",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week16-HOU@TEN": {
+            "date": "20221224",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week16-NO@CLE": {
+            "date": "20221224",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week16-NYG@MIN": {
+            "date": "20221224",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week16-SEA@KC": {
+            "date": "20221224",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week16-WAS@SF": {
+            "date": "20221224",
+            "time": "1405",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week16-PHI@DAL": {
+            "date": "20221224",
+            "time": "1425",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week16-LV@PIT": {
+            "date": "20221224",
+            "time": "1815",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week16-GB@MIA": {
+            "date": "20221225",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week16-DEN@LAR": {
+            "date": "20221225",
+            "time": "1430",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week16-TB@ARI": {
+            "date": "20221225",
+            "time": "1820",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week16-LAC@IND": {
+            "date": "20221226",
+            "time": "1815",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         }
     },
     "week17": {
         "week17-DAL@TEN": {
+            "date": "20221229",
+            "time": "1815",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week17-CAR@TB": {
+            "date": "20230101",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week17-CHI@DET": {
+            "date": "20230101",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week17-CLE@WAS": {
+            "date": "20230101",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week17-IND@NYG": {
+            "date": "20230101",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week17-ARI@ATL": {
+            "date": "20230101",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week17-DEN@KC": {
+            "date": "20230101",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week17-JAX@HOU": {
+            "date": "20230101",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week17-MIA@NE": {
+            "date": "20230101",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week17-NO@PHI": {
+            "date": "20230101",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week17-PIT@BAL": {
+            "date": "20230101",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week17-NYJ@SEA": {
+            "date": "20230101",
+            "time": "1405",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week17-SF@LV": {
+            "date": "20230101",
+            "time": "1405",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week17-MIN@GB": {
+            "date": "20230101",
+            "time": "1425",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week17-LAR@LAC": {
+            "date": "20230101",
+            "time": "1820",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week17-BUF@CIN": {
+            "date": "20230102",
+            "time": "1830",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         }
     },
     "week18": {
         "week18-CAR@NO": {
+            "date": "20230108",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week18-CLE@PIT": {
+            "date": "20230108",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week18-ARI@SF": {
+            "date": "20230108",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week18-DAL@WAS": {
+            "date": "20230108",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week18-DET@GB": {
+            "date": "20230108",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week18-HOU@IND": {
+            "date": "20230108",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week18-KC@LV": {
+            "date": "20230108",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week18-MIN@CHI": {
+            "date": "20230108",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week18-NE@BUF": {
+            "date": "20230108",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week18-NYG@PHI": {
+            "date": "20230108",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week18-NYJ@MIA": {
+            "date": "20230108",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week18-TEN@JAX": {
+            "date": "20230108",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week18-LAR@SEA": {
+            "date": "20230108",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week18-BAL@CIN": {
+            "date": "20230108",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week18-LAC@DEN": {
+            "date": "20230108",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         },
         "week18-TB@ATL": {
+            "date": "20230108",
+            "time": "1100",
             "score": "",
-            "status": "pregame"
+            "status": "pregame",
+            "odds": ""
         }
     }
 }

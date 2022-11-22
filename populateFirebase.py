@@ -14,7 +14,8 @@ def updateFirebase(ref, updateData):
     updateRef = db.reference(ref)
     updateRef.update(updateData)
 
-def populateFirebase(target_year):
+def populateFirebase(dateInfo):
+    target_year = dateInfo['season']
     # Save the season data to the Seasons node
     # First, open the target season
     with open("data/seasons/"+str(target_year)+".json", "r") as season:
@@ -37,23 +38,42 @@ def updateSchedule(target_year):
     scheduleRef.set(schedule_data)
 
 
-def updateWeek(year, day, hour):
+def updateWeek(dateInfo):
     # Update the current week and set whether it is editable or not in the Schedules node
-    # First, open the relevant schedule json file
+    year = dateInfo['season']
+    day = dateInfo['day']
+    hour = dateInfo['hour']
     currentWeek = ''
     weekEnabled = True
+    # First, open the relevant schedule json file
     with open("data/schedules/"+str(year)+".json", "r") as schedule:
         schedule_data = json.load(schedule)
     # Second, determine the earliest week with "pregame" games in it
+    currWeekMatchups = None
     for week in schedule_data:
-        if any([True for k,v in schedule_data[week].items() if v == {'score':'','status':'pregame'}]):
-            currentWeek = str(year)+"-"+week
+        if week == 'status': continue
+        if currentWeek != '':
+            # Create a list of all the week's matchups
+            currWeekMatchups = schedule_data[week]
             break
-    # Third, disable picking this week if it is past 6:30PM on Thursday; or Friday Sat or Sun; or Monday
+        for matchup in schedule_data[week]:
+            matchData = schedule_data[week][matchup]
+            if matchData['status'] == 'pregame':
+                currentWeek = str(year)+"-"+week
+                dateInfo['weekID'] = str(year)+"-"+week
+                break
+            
+    # Third, determine the start time (MDT) of the first game
+    earliestGame = 99999999999999
+    for matchup in currWeekMatchups:
+        matchTime = currWeekMatchups[matchup]['date']+currWeekMatchups[matchup]['time']+'00'
+        if matchTime < earliestGame: earliestGame = matchTime
+    
+    # Fourth, disable picking this week if it is past the first scheduled game for the given week
     if (int(day) == 3 and int(hour) >= 19) or (int(day) > 3) or (int(day) == 0):
         print("day: "+str(day))
         weekEnabled = False
-    # Fourth, write these two things out to the "Schedules" root node
+    # Fifth, write these two things out to the "Schedules" root node
     scheduleRef = db.reference("/schedules/status/")
     currentWeekData = {
         "currentPickable": weekEnabled,
@@ -90,7 +110,9 @@ def checkPrediction(year, weekID, matchupID, prediction):
     
 
 ### FUNCTION FOR UPDATING ALL WEEKLY SCORE DATA IN USER PROFILES & IN LEAGUES
-def updateScores(year, weekID):
+def updateScores(dateInfo):
+    year = dateInfo['season']
+    weekID = dateInfo['weekID']
     # Get all user data from DB
     userRef = db.reference('/accounts/users/')
     allUsers = userRef.get()

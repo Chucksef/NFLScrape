@@ -39,8 +39,7 @@ print("Running until "+str(endTime))
 
 # 2) begin processing loop
 while currTime < endTime:
-    # update loop variables currTime
-    currTime = int(time.time())
+    # update loop variables
     remTime = endTime - currTime
     iter += 1
     # 3) read the programSchedule
@@ -48,23 +47,24 @@ while currTime < endTime:
     print("    Running Command "+str(iter)+": '"+command+"' with "+str(remTime)+" remaining in loop.")
     # 4) execute the returned command
     if command == "scrapeToJSON":
-        scrapeToJSON(dateInfo['season'])
+        scrapeToJSON(dateInfo)
     if command == "scrapeLiveScores":
         scrapeLiveScores(dateInfo)
     elif command == "processStats":
-        processStats(dateInfo['season'])
+        processStats(dateInfo)
     elif command == "populateFirebase":
-        populateFirebase(dateInfo['season'])
+        populateFirebase(dateInfo)
     elif command == "updateWeek":
-        updateWeek(dateInfo['season'], dateInfo['day'], dateInfo['hour'])
+        updateWeek(dateInfo)
     elif command == "updateScores":
-        updateScores(dateInfo['season'], dateInfo['weekID'])
+        updateScores(dateInfo)
     elif command == "updateSchedule":
         updateSchedule(dateInfo['season'])
     else:
         print("  Finished Command "+str(iter)+": "+command)
     
     time.sleep(10)
+    currTime = int(time.time())
 
 print('End of timed program execution')
 

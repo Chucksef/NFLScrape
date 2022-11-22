@@ -2,7 +2,8 @@ import numpy as np
 import json
 from json import JSONDecodeError
 
-def processStats(target_year):
+def processStats(dateInfo):
+    target_year = dateInfo['season']
     # set a target file for this target ear
     season_target_file = 'data/seasons/'+str(target_year)+'.json'
 

@@ -1,7 +1,10 @@
 from bs4 import BeautifulSoup
 import requests
 import json
+from populateFirebase import updateFirebase
 from json.decoder import JSONDecodeError
+from utilities import getTodayInfo
+from utilities import updateData
 
 #####   scrapeToJSON()   #####
 #####        INFO        #####
@@ -35,8 +38,9 @@ def createNewSeason(target_year):
 
     return newSeason
 
-def scrapeToJSON(target_year):
+def scrapeToJSON(dateInfo):
     # set a target file for this season
+    target_year = dateInfo['season']
     season_target_file = 'data/seasons/'+str(target_year)+'.json'
 
     try:
@@ -131,6 +135,32 @@ def scrapeToJSON(target_year):
                 "opp-turnovers"   : 0,
                 "id"              : id
             }
+
+            # transform time into usable time string
+            timestr = columns[2].text
+            tmpHours = timestr.split(":")[0]
+            tmpMins = timestr.split(":")[1].replace("PM","").replace("AM","")
+            add12 = True if ('PM' in timestr) and tmpHours != '12' else False
+            if add12: tmpHours = str(int(tmpHours) + 12)
+            # transform to MDT
+            tmpHours = str(int(tmpHours) - 2).zfill(2)
+            timestr = tmpHours+tmpMins
+
+
+            # build a schedule object
+            schdEntry = {
+                "date"            : columns[1].text.replace("-",""),
+                "time"            : timestr,
+                "score"           : "",
+                "status"          : "pregame",
+                "odds"            : ""
+            }
+
+            # update firebase schedule with this data
+            updateFirebase('/schedules/'+str(target_year)+'/week'+str(weekNumber)+'/'+id, schdEntry)
+
+            # update the JSON file with this schedule info
+            updateData.updateData('schedules/2022.json', 'week'+str(weekNumber)+'/'+id, schdEntry)
 
         # third, process all finished games
         else:
@@ -272,3 +302,6 @@ def scrapeToJSON(target_year):
         seasonFile.write(new_json)
 
     seasonFile.close()
+
+di = getTodayInfo.getTodayInfo()
+scrapeToJSON(di)
