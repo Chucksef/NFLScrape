@@ -3,10 +3,10 @@ from processStats import processStats
 from populateFirebase import populateFirebase
 from populateFirebase import updateSchedule
 from populateFirebase import updateWeek
-from populateFirebase import updateLeagues
 from populateFirebase import updateScores
 from utilities import getTodayInfo
 from scrapeLiveScores import scrapeLiveScores
+from utilities import getProgramScheduleCommand
 import time
 
 # Program Description:
@@ -33,13 +33,19 @@ import time
 dateInfo = getTodayInfo.getTodayInfo()
 currTime = dateInfo['epochSecs']
 endTime = currTime + 45
-waitSeconds = 5
+
+iter = 0
+print("Running until "+str(endTime))
 
 # 2) begin processing loop
 while currTime < endTime:
+    # update loop variables currTime
+    currTime = int(time.time())
+    remTime = endTime - currTime
+    iter += 1
     # 3) read the programSchedule
-    command = "scrapeLiveScores"
-
+    command = getProgramScheduleCommand.getProgramScheduleCommand(dateInfo['timestr'])
+    print("    Running Command "+str(iter)+": '"+command+"' with "+str(remTime)+" remaining in loop.")
     # 4) execute the returned command
     if command == "scrapeToJSON":
         scrapeToJSON(dateInfo['season'])
@@ -56,4 +62,9 @@ while currTime < endTime:
     elif command == "updateSchedule":
         updateSchedule(dateInfo['season'])
     else:
-        print("ERROR - Command Unrecognized: '"+command+"'")
+        print("  Finished Command "+str(iter)+": "+command)
+    
+    time.sleep(10)
+
+print('End of timed program execution')
+

@@ -7,8 +7,12 @@ def getTodayInfo():
     day = datetime.now().weekday()
     now = str(datetime.now()).split('.')[0] # chop off fractions of seconds
     hour = now.split(' ')[1].split(':')[0]
+    mins = str(now.split(' ')[1].split(':')[1])
+    secs = str(now.split(' ')[1].split(':')[2])
     month = today.month
     currYear = today.year
+
+    timestr = str(currYear)+str(month).zfill(2)+datetime.now().strftime("%d").zfill(2)+str(hour).zfill(2)+mins.zfill(2)+secs.zfill(2)
 
     # Second, send this data to the scheduler, which will return a list of tasks
 
@@ -38,5 +42,6 @@ def getTodayInfo():
         'season': season,
         'year': currYear,
         'weekID': weekID,
-        'epochSecs': epochSecs
+        'epochSecs': epochSecs,
+        'timestr': timestr
     }
