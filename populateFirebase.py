@@ -3,6 +3,7 @@ import os
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import db
+from utilities import getTodayInfo
 
 thisPath = os.path.dirname(os.path.realpath(__file__)).replace("\\","/")
 cred = credentials.Certificate(thisPath+'/credentials/nflscrape-firebase-adminsdk-dqvc3-ae425d7a17.json')
@@ -194,3 +195,6 @@ def updateLeagues(year, weekID):
             # Update the league database with the score information for this user
             updateRef = db.reference('/leagues/'+leagueKey+'/users/'+userKey)
             updateRef.update({week:tempLeagueUser[week],'total':userTotal,'name':results['email']})
+
+di = getTodayInfo.getTodayInfo()
+populateFirebase(di)

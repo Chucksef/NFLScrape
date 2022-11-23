@@ -1,16 +1,16 @@
 from bs4 import BeautifulSoup
-from utilities import getTodayInfo
-import requests
+from utilities.getTodayInfo import getTodayInfo
 from populateFirebase import updateFirebase
 import json
 from selenium import webdriver
-
-from json.decoder import JSONDecodeError
+from selenium.webdriver.chrome.service import Service
 
 
 class MyBot:
     def __init__(self):
         user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+
+        self.sv = Service('/usr/bin/chromedriver')
 
         self.options = webdriver.ChromeOptions()
         self.options.headless = True
@@ -26,7 +26,8 @@ class MyBot:
         self.options.add_argument('--disable-dev-shm-usage')
         self.options.add_argument('--no-sandbox')
         self.driver = webdriver.Chrome(
-            executable_path='chromedriver.exe',
+            service=self.sv, # FOR LINUX
+            #executable_path='P:/Projects/NFLScrape/chromedriver10.exe', # FOR WINDOWS
             options=self.options)
 
 #####   ScrapeLiveScores()   #####
@@ -43,6 +44,10 @@ def scrapeLiveScores(dateInfo):
     currWeek = schedJSON['status']['currentWeek'].split("-")[1]
     currWeekNum = int(currWeek.replace("week",''))
 
+    # get lowest value of all dates/times in schedule
+    gameTimes = [int(schedJSON[currWeek][d]['date']+schedJSON[currWeek][d]['time']) for d in schedJSON[currWeek]]
+    firstGameStartTime = min(gameTimes)
+
     # load the translate file into a dict
     transFile = open('data/translates/'+str(dateInfo['season'])+'.json')
     translate = json.load(transFile)
@@ -54,33 +59,27 @@ def scrapeLiveScores(dateInfo):
     browser.driver.get(target_website)
     html = browser.driver.page_source
     browser.driver.close()
-    # html_text = requests.get(target_website).text
     soup = BeautifulSoup(html, 'html.parser')
     body = soup.find('body')
+
     # Get an array of all instances of 'section.Scoreboard'
     matchups = body.find_all("section", class_="Scoreboard")
     # Iterate over them:
     for matchup in matchups:
-        # Get nearest Header parent to determine day of week / time of play
-        tempParent = matchup.parent.previousSibling
-        gameDate = tempParent.get('aria-label')
         # Construct MatchupID
         matchupID = currWeek+"-"
-        # Check for existence of "Highlights" button:
+        odds = None
+        # Get the state of the game: "pregame", "final", or "live"
         gameState = ""
-        watchButton = matchup.find('section', class_='DriveChart2D')
-        if watchButton:
-            # If it does, then this game is final
-            gameState = "live"
-        else:
-            # Check for existence of 'div.Odds__Message'
+        timeCell = matchup.find('div', class_='ScoreCell__Time')
+        timeStatus = timeCell.text
+        if timeStatus == "Final":
+            gameState = 'final'
+        elif 'PM' in timeStatus or 'AM' in timeStatus:
+            gameState = 'pregame'
             odds = matchup.find('div', class_="Odds__Message")
-            if (odds):
-                # If it exists, game is pregame
-                gameState = "pregame"
-            else:
-                # If it doesn't, game is ongoing
-                gameState = "final"
+        else:
+            gameState = 'live'
         # Get the contents of div.ScoreCell__TeamName => each team's name
         teamNames = [tn.text for tn in matchup.find_all("div", class_="ScoreCell__TeamName")]
         # Get the contents of div.ScoreCell__Score => each team's score
@@ -96,33 +95,22 @@ def scrapeLiveScores(dateInfo):
         if jsonMatchup['status'] != 'final':
             updateData = {}
             if gameState == 'pregame':
-                lineData = odds.contents[0].split(": ")[1]
-                if 'odds' in schedJSON[currWeek][matchupID] and 'date' in schedJSON[currWeek][matchupID]:
-                    if schedJSON[currWeek][matchupID]['odds'] == lineData and schedJSON[currWeek][matchupID]['date'] == gameDate:
-                        # do nothing
-                        pass
+                lineData = odds.contents[0].split(": ")[1] if odds else None
+                if lineData and schedJSON[currWeek][matchupID]['odds'] != lineData:
+                    # Only update odds if the first game hasn't started yet
+                    if (int(dateInfo['timestr'][:-2]) > firstGameStartTime):
+                        pass        # do nothing...
                     else:
-                        # if (past Thursday at 6:30pm):                        <========todo
-                            # pass
-                        # else: (below block)
                         # update schedJSON for pregame game
                         schedJSON[currWeek][matchupID]['odds'] = lineData
-                        schedJSON[currWeek][matchupID]['date'] = gameDate
                         # send to firebase...
                         updateData['odds'] = lineData
-                        updateData['date'] = gameDate
                         updateFirebase(ref, updateData)
-                else:
-                    # update schedJSON
-                    schedJSON[currWeek][matchupID]['odds'] = lineData
-                    schedJSON[currWeek][matchupID]['date'] = gameDate
-                    # send to firebase...
-                    updateData['odds'] = lineData
-                    updateData['date'] = gameDate
-                    updateFirebase(ref, updateData)
             elif gameState == 'live':
                 homeTeamScore = teamScores[1]
                 awayTeamScore = teamScores[0]
+                # UPDATE SCORES
+                # only update scores if the live score is different than the JSON score
                 if schedJSON[currWeek][matchupID]['score'] == awayTeamScore+"@"+homeTeamScore:
                     # do nothing
                     pass
@@ -130,6 +118,16 @@ def scrapeLiveScores(dateInfo):
                     schedJSON[currWeek][matchupID]['score'] = awayTeamScore+"@"+homeTeamScore
                     # send to firebase...
                     updateData['score'] = awayTeamScore+"@"+homeTeamScore
+                    updateFirebase(ref, updateData)
+                # UPDATE STATUS
+                # only update game status if the live status is different than the JSON status
+                if schedJSON[currWeek][matchupID]['status'] == timeStatus:
+                    # do nothing
+                    pass
+                else:
+                    schedJSON[currWeek][matchupID]['status'] = timeStatus
+                    # send to firebase...
+                    updateData['status'] = timeStatus
                     updateFirebase(ref, updateData)
             else:
                 # gamestate = final
@@ -146,5 +144,5 @@ def scrapeLiveScores(dateInfo):
         new_json = json.dumps(schedJSON, indent=4)
         outFile.write(new_json)
 
-di = getTodayInfo.getTodayInfo()
+di = getTodayInfo()
 scrapeLiveScores(di)

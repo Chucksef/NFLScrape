@@ -1,6 +1,7 @@
 import numpy as np
 import json
 from json import JSONDecodeError
+from utilities import getTodayInfo
 
 def processStats(dateInfo):
     target_year = dateInfo['season']
@@ -48,3 +49,6 @@ def processStats(dateInfo):
         seasonFile.write(new_json)
 
     seasonFile.close()
+
+di = getTodayInfo.getTodayInfo()
+processStats(di)
