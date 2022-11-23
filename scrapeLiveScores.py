@@ -27,7 +27,7 @@ class MyBot:
         self.options.add_argument('--no-sandbox')
         self.driver = webdriver.Chrome(
             service=self.sv, # FOR LINUX
-            #executable_path='P:/Projects/NFLScrape/chromedriver10.exe', # FOR WINDOWS
+            #executable_path='chromedriver107.exe', # FOR WINDOWS
             options=self.options)
 
 #####   ScrapeLiveScores()   #####

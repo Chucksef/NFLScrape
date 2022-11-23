@@ -68,7 +68,7 @@ def updateWeek(dateInfo):
     earliestGame = 99999999999999
     for matchup in currWeekMatchups:
         matchTime = currWeekMatchups[matchup]['date']+currWeekMatchups[matchup]['time']+'00'
-        if matchTime < earliestGame: earliestGame = matchTime
+        if int(matchTime) < int(earliestGame): earliestGame = matchTime
     
     # Fourth, disable picking this week if it is past the first scheduled game for the given week
     if (int(day) == 3 and int(hour) >= 19) or (int(day) > 3) or (int(day) == 0):

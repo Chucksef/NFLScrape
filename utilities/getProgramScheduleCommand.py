@@ -33,8 +33,6 @@ def getProgramScheduleCommand(currTimeStr):
 
             return output
         else:
-            print("    curr: "+currTimeStr)
-            print("    schd: "+schedTimeStr)
             return 'nothingScheduledYet'
     else:
         return 'noOutputFound'

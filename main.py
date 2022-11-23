@@ -35,7 +35,6 @@ currTime = dateInfo['epochSecs']
 endTime = currTime + 45
 
 iter = 0
-print("Running until "+str(endTime))
 
 # 2) begin processing loop
 while currTime < endTime:
@@ -44,7 +43,7 @@ while currTime < endTime:
     iter += 1
     # 3) read the programSchedule
     command = getProgramScheduleCommand.getProgramScheduleCommand(dateInfo['timestr'])
-    print("    Running Command "+str(iter)+": '"+command+"' with "+str(remTime)+" remaining in loop.")
+    if command != "nothingScheduledYet": print("    Running Command "+str(iter)+": '"+command+"' with "+str(remTime)+"s remaining in loop.")
     # 4) execute the returned command
     if command == "scrapeToJSON":
         scrapeToJSON(dateInfo)
@@ -61,7 +60,7 @@ while currTime < endTime:
     elif command == "updateSchedule":
         updateSchedule(dateInfo['season'])
     else:
-        print("  Finished Command "+str(iter)+": "+command)
+        if command != "nothingScheduledYet": print("      Finished Command "+str(iter)+": "+command)
     
     time.sleep(10)
     currTime = int(time.time())

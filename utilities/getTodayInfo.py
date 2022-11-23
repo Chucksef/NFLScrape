@@ -14,13 +14,6 @@ def getTodayInfo():
 
     timestr = str(currYear)+str(month).zfill(2)+datetime.now().strftime("%d").zfill(2)+str(hour).zfill(2)+mins.zfill(2)+secs.zfill(2)
 
-    # Second, send this data to the scheduler, which will return a list of tasks
-
-    # Third, iterate over this list of tasks and log the results of each operation
-
-    # output to console for logging
-    print(now + " ---- Running NFLScrape")
-
     # if it is not yet May, revert to previous year
     season = (currYear - 1) if (month < 9) else currYear
 
