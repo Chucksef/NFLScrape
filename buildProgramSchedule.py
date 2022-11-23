@@ -146,6 +146,3 @@ def buildProgramSchedule(dateInfo):
     with open('programSchedule.txt', 'w') as f:
         for line in newSchedule:
             f.write(f"{line}\n")
-
-di = getTodayInfo.getTodayInfo()
-buildProgramSchedule(di)

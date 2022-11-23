@@ -143,6 +143,3 @@ def scrapeLiveScores(dateInfo):
     with open(outputFile, 'w') as outFile:
         new_json = json.dumps(schedJSON, indent=4)
         outFile.write(new_json)
-
-di = getTodayInfo()
-scrapeLiveScores(di)

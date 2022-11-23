@@ -195,6 +195,3 @@ def updateLeagues(year, weekID):
             # Update the league database with the score information for this user
             updateRef = db.reference('/leagues/'+leagueKey+'/users/'+userKey)
             updateRef.update({week:tempLeagueUser[week],'total':userTotal,'name':results['email']})
-
-di = getTodayInfo.getTodayInfo()
-populateFirebase(di)

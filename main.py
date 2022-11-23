@@ -34,6 +34,8 @@ dateInfo = getTodayInfo.getTodayInfo()
 currTime = dateInfo['epochSecs']
 endTime = currTime + 45
 
+print('Beginning of timed program execution - '+dateInfo['now'])
+
 iter = 0
 
 # 2) begin processing loop

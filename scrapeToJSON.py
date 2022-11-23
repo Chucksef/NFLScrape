@@ -302,6 +302,3 @@ def scrapeToJSON(dateInfo):
         seasonFile.write(new_json)
 
     seasonFile.close()
-
-di = getTodayInfo.getTodayInfo()
-scrapeToJSON(di)
