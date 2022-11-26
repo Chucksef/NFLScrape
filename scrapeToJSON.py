@@ -3,8 +3,8 @@ import requests
 import json
 from populateFirebase import updateFirebase
 from json.decoder import JSONDecodeError
-from utilities import getTodayInfo
-from utilities import updateData
+from utilities.getTodayInfo import getTodayInfo
+from utilities.updateData import updateData
 
 #####   scrapeToJSON()   #####
 #####        INFO        #####
@@ -160,7 +160,7 @@ def scrapeToJSON(dateInfo):
             updateFirebase('/schedules/'+str(target_year)+'/week'+str(weekNumber)+'/'+id, schdEntry)
 
             # update the JSON file with this schedule info
-            updateData.updateData('schedules/2022.json', 'week'+str(weekNumber)+'/'+id, schdEntry)
+            updateData('schedules/2022.json', 'week'+str(weekNumber)+'/'+id, schdEntry)
 
         # third, process all finished games
         else:

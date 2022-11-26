@@ -4,9 +4,10 @@ from populateFirebase import populateFirebase
 from populateFirebase import updateSchedule
 from populateFirebase import updateWeek
 from populateFirebase import updateScores
-from utilities import getTodayInfo
+from makeVegasPicks import makeVegasPicks
+from utilities.getTodayInfo import getTodayInfo
 from scrapeLiveScores import scrapeLiveScores
-from utilities import getProgramScheduleCommand
+from utilities.getProgramScheduleCommand import getProgramScheduleCommand
 import time
 
 # Program Description:
@@ -30,7 +31,7 @@ import time
 
 # MAIN CODE EXECUTION BELOW:
 # 1) get all date/time info to feed into the scheduler
-dateInfo = getTodayInfo.getTodayInfo()
+dateInfo = getTodayInfo()
 currTime = dateInfo['epochSecs']
 endTime = currTime + 45
 
@@ -44,7 +45,7 @@ while currTime < endTime:
     remTime = endTime - currTime
     iter += 1
     # 3) read the programSchedule
-    command = getProgramScheduleCommand.getProgramScheduleCommand(dateInfo['timestr'])
+    command = getProgramScheduleCommand(dateInfo['timestr'])
     if command != "nothingScheduledYet": print("    Running Command "+str(iter)+": '"+command+"' with "+str(remTime)+"s remaining in loop.")
     # 4) execute the returned command
     if command == "scrapeToJSON":
@@ -61,6 +62,8 @@ while currTime < endTime:
         updateScores(dateInfo)
     elif command == "updateSchedule":
         updateSchedule(dateInfo['season'])
+    elif command == "makeVegasPicks":
+        makeVegasPicks(dateInfo['season'])
     else:
         if command != "nothingScheduledYet": print("      Finished Command "+str(iter)+": "+command)
     

@@ -62,8 +62,8 @@ def buildProgramSchedule(dateInfo):
         schedTime = int(pref+mins+secs)
     # actually run the loop and fill out the schedule
     while schedTime >= runTime:
-        cmd = str(schedTime)+'---scrapeLiveScores'
-        newSchedule.insert(0, cmd)
+        newSchedule.insert(0, str(schedTime)+'---makeVegasPicks')
+        newSchedule.insert(0, str(schedTime)+'---scrapeLiveScores')
         schedTime = schedTime-20000
         # Correct for base-60 weirdness
         year = str(schedTime)[0:4]
