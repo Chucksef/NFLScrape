@@ -136,6 +136,7 @@ def scrapeLiveScores(dateInfo):
                 schedJSON[currWeek][matchupID]['score'] = awayTeamScore+"@"+homeTeamScore
                 # send to firebase...
                 updateData['score'] = awayTeamScore+"@"+homeTeamScore
+                updateData['status'] = 'final'
                 updateFirebase(ref, updateData)
 
 

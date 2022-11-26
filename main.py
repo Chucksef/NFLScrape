@@ -67,5 +67,5 @@ while currTime < endTime:
     time.sleep(10)
     currTime = int(time.time())
 
-print('End of timed program execution')
+print('  End of timed program execution')
 
