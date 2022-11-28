@@ -13,6 +13,29 @@ from utilities.updateData import updateData
 # the year for the data that is being requested. Not all years are expected to work out of the box. No year can be scraped without a 
 # "league_XXXX.json" file located inside of the data folder. This file sets up each team's keyName and sets up a variety of other data.
 
+def checkAndUpdate(newData, checkAgainstJSON, checkFilePath, fileRootRef, dbRef):
+    for currKey in newData:
+        currVal = newData[currKey]
+        # drill down to where fileRootRef is pointing...
+        drilled = checkAgainstJSON
+        fileRootRef = fileRootRef.strip("/")
+        fileRootRefParts = fileRootRef.split("/")
+        for part in fileRootRefParts:
+            drilled = drilled[part]
+        # check if the value at this location is already updated
+        if drilled[currKey] == currVal and currVal != '':
+            pass # don't update anything since nothing has changed (or there is no data to push)!
+        else:
+            # create some update data to save
+            firebaseUpdate = {
+                currKey: currVal
+            }
+            # update the database on file
+            updateData(checkFilePath, fileRootRef+"/"+currKey, currVal)
+            # update firebase in the cloud
+            updateFirebase(dbRef, firebaseUpdate)
+
+
 def createNewSeason(target_year):
     try:
         newSeason = json.load(open('data/leagues/'+str(target_year)+'.json'))
@@ -42,11 +65,13 @@ def scrapeToJSON(dateInfo):
     # set a target file for this season
     target_year = dateInfo['season']
     season_target_file = 'data/seasons/'+str(target_year)+'.json'
+    schedule_target_file = 'data/schedules/'+str(target_year)+'.json'
 
     try:
         seasonFile = open(season_target_file)
         dot = json.load(seasonFile)
-        seasonSchedule = {}
+        scheduleFile = open(schedule_target_file)
+        seasonSchedule = json.load(scheduleFile)
     except JSONDecodeError:
         print("    WARNING: "+season_target_file+" is unexpectedly empty")
         print("        Using empty JSON object instead.")
@@ -156,11 +181,8 @@ def scrapeToJSON(dateInfo):
                 "odds"            : ""
             }
 
-            # update firebase schedule with this data
-            updateFirebase('/schedules/'+str(target_year)+'/week'+str(weekNumber)+'/'+id, schdEntry)
+            checkAndUpdate(schdEntry, seasonSchedule, 'schedules/'+str(target_year)+'.json', 'week'+str(weekNumber)+'/'+id, '/schedules/'+str(target_year)+'/week'+str(weekNumber)+'/'+id)
 
-            # update the JSON file with this schedule info
-            updateData('schedules/2022.json', 'week'+str(weekNumber)+'/'+id, schdEntry)
 
         # third, process all finished games
         else:
@@ -282,9 +304,9 @@ def scrapeToJSON(dateInfo):
                     "id"              : id
                 }
 
-        # add this info to each team's dictionary record
-        dot[homeTeamKey]["schedule"]["week"+weekNumber] = homeGame
-        dot[awayTeamKey]["schedule"]["week"+weekNumber] = awayGame
+        # check if each bit of info is new/updated, then update if necessary
+        checkAndUpdate(homeGame, dot, 'seasons/'+str(target_year)+'.json', homeTeamKey+"/schedule/week"+weekNumber+"/", '/seasons/'+str(target_year)+'/'+homeTeamKey+'/schedule/week'+weekNumber+'/')
+        checkAndUpdate(awayGame, dot, 'seasons/'+str(target_year)+'.json', awayTeamKey+"/schedule/week"+weekNumber+"/", '/seasons/'+str(target_year)+'/'+awayTeamKey+'/schedule/week'+weekNumber+'/')
 
         # New code for saving to "Schedules" DB
         if not("week"+weekNumber in seasonSchedule.keys()):
@@ -294,11 +316,5 @@ def scrapeToJSON(dateInfo):
                 "status"          : homeGame['status']
             }
 
-        
-        
-    # output new season data back to the season file
-    with open(season_target_file, 'w') as seasonFile:
-        new_json = json.dumps(dot, indent=4)
-        seasonFile.write(new_json)
-
-    seasonFile.close()
+di = getTodayInfo()
+scrapeToJSON(di)
