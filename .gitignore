@@ -2,5 +2,8 @@
 *.swo
 *.py[cod]
 data/seasons/
+data/schedules/
+data/leagues/
+data/
 credentials/
 logs/

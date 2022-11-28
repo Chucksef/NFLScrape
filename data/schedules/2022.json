@@ -708,85 +708,85 @@
         "week12-ATL@WAS": {
             "date": "20221127",
             "time": "1100",
-            "score": "",
-            "status": "pregame",
+            "score": "13@19",
+            "status": "final",
             "odds": "WSH -4.0"
         },
         "week12-CHI@NYJ": {
             "date": "20221127",
             "time": "1100",
-            "score": "",
-            "status": "pregame",
+            "score": "10@31",
+            "status": "final",
             "odds": "NYJ -7.0"
         },
         "week12-CIN@TEN": {
             "date": "20221127",
             "time": "1100",
-            "score": "",
-            "status": "pregame",
+            "score": "20@16",
+            "status": "final",
             "odds": "CIN -1.5"
         },
         "week12-DEN@CAR": {
             "date": "20221127",
             "time": "1100",
-            "score": "",
-            "status": "pregame",
+            "score": "10@23",
+            "status": "final",
             "odds": "DEN -1.0"
         },
         "week12-HOU@MIA": {
             "date": "20221127",
             "time": "1100",
-            "score": "",
-            "status": "pregame",
+            "score": "15@30",
+            "status": "final",
             "odds": "MIA -14.0"
         },
         "week12-BAL@JAX": {
             "date": "20221127",
             "time": "1100",
-            "score": "",
-            "status": "pregame",
+            "score": "27@28",
+            "status": "final",
             "odds": "BAL -3.5"
         },
         "week12-TB@CLE": {
             "date": "20221127",
             "time": "1100",
-            "score": "",
-            "status": "pregame",
+            "score": "17@23",
+            "status": "Final/OT",
             "odds": "TB -3.0"
         },
         "week12-LV@SEA": {
             "date": "20221127",
             "time": "1405",
-            "score": "",
-            "status": "pregame",
+            "score": "40@34",
+            "status": "Final/OT",
             "odds": "SEA -4.0"
         },
         "week12-LAC@ARI": {
             "date": "20221127",
             "time": "1405",
-            "score": "",
-            "status": "pregame",
+            "score": "25@24",
+            "status": "final",
             "odds": "LAC -3.0"
         },
         "week12-NO@SF": {
             "date": "20221127",
             "time": "1425",
-            "score": "",
-            "status": "pregame",
+            "score": "0@13",
+            "status": "final",
             "odds": "SF -9.0"
         },
         "week12-LAR@KC": {
             "date": "20221127",
             "time": "1425",
-            "score": "",
-            "status": "pregame",
+            "score": "10@26",
+            "status": "final",
             "odds": "KC -15.5"
         },
         "week12-GB@PHI": {
             "date": "20221127",
             "time": "1820",
-            "score": "",
-            "status": "pregame",
+            "score": "33@40",
+            "status": "final",
             "odds": "PHI -6.5"
         },
         "week12-PIT@IND": {

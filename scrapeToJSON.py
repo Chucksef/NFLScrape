@@ -315,6 +315,3 @@ def scrapeToJSON(dateInfo):
                 "score"           : '' if homeGame['status'] == 'pregame' else str(homeGame['opp-points'])+"@"+str(homeGame['points']),
                 "status"          : homeGame['status']
             }
-
-di = getTodayInfo()
-scrapeToJSON(di)
