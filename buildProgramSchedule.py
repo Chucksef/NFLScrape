@@ -1,5 +1,5 @@
 from populateFirebase import updateWeek
-from utilities import getTodayInfo
+from utilities.getTodayInfo import getTodayInfo
 import json
 from populateFirebase import populateFirebase
 from processStats import processStats
@@ -146,3 +146,6 @@ def buildProgramSchedule(dateInfo):
     with open('programSchedule.txt', 'w') as f:
         for line in newSchedule:
             f.write(f"{line}\n")
+
+di = getTodayInfo()
+buildProgramSchedule(di)

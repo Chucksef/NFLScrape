@@ -7,3 +7,5 @@ data/leagues/
 data/
 credentials/
 logs/
+programSchedule.txt
+*.json

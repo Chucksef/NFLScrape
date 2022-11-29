@@ -95,7 +95,9 @@ def scrapeLiveScores(dateInfo):
         if jsonMatchup['status'] != 'final':
             updateData = {}
             if gameState == 'pregame':
+                print(odds.contents)
                 lineData = odds.contents[0].split(": ")[1] if odds else None
+                if lineData == 'EVEN': lineData = homeTeamKey+" -0"
                 if lineData and schedJSON[currWeek][matchupID]['odds'] != lineData:
                     # Only update odds if the first game hasn't started yet
                     if (int(dateInfo['timestr'][:-2]) > firstGameStartTime):
@@ -145,3 +147,6 @@ def scrapeLiveScores(dateInfo):
     with open(outputFile, 'w') as outFile:
         new_json = json.dumps(schedJSON, indent=4)
         outFile.write(new_json)
+
+di = getTodayInfo()
+scrapeLiveScores(di)

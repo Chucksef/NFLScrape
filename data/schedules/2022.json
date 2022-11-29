@@ -1,7 +1,7 @@
 {
     "status": {
         "currentPickable": true,
-        "currentWeek": "2022-week12"
+        "currentWeek": "2022-week13"
     },
     "week1": {
         "week1-BUF@LAR": {
@@ -803,105 +803,105 @@
             "time": "1815",
             "score": "",
             "status": "pregame",
-            "odds": ""
+            "odds": "BUF -5.0"
         },
         "week13-CLE@HOU": {
             "date": "20221204",
             "time": "1100",
             "score": "",
             "status": "pregame",
-            "odds": ""
+            "odds": "CLE -7.0"
         },
         "week13-DEN@BAL": {
             "date": "20221204",
             "time": "1100",
             "score": "",
             "status": "pregame",
-            "odds": ""
+            "odds": "BAL -8.0"
         },
         "week13-GB@CHI": {
             "date": "20221204",
             "time": "1100",
             "score": "",
             "status": "pregame",
-            "odds": ""
+            "odds": "GB -3.0"
         },
         "week13-JAX@DET": {
             "date": "20221204",
             "time": "1100",
             "score": "",
             "status": "pregame",
-            "odds": ""
+            "odds": "JAX -1.0"
         },
         "week13-NYJ@MIN": {
             "date": "20221204",
             "time": "1100",
             "score": "",
             "status": "pregame",
-            "odds": ""
+            "odds": "MIN -3.0"
         },
         "week13-TEN@PHI": {
             "date": "20221204",
             "time": "1100",
             "score": "",
             "status": "pregame",
-            "odds": ""
+            "odds": "PHI -5.5"
         },
         "week13-PIT@ATL": {
             "date": "20221204",
             "time": "1100",
             "score": "",
             "status": "pregame",
-            "odds": ""
+            "odds": "ATL 0"
         },
         "week13-WAS@NYG": {
             "date": "20221204",
             "time": "1100",
             "score": "",
             "status": "pregame",
-            "odds": ""
+            "odds": "WSH -2.5"
         },
         "week13-MIA@SF": {
             "date": "20221204",
             "time": "1405",
             "score": "",
             "status": "pregame",
-            "odds": ""
+            "odds": "SF -4.0"
         },
         "week13-SEA@LAR": {
             "date": "20221204",
             "time": "1405",
             "score": "",
             "status": "pregame",
-            "odds": ""
+            "odds": "SEA -8.0"
         },
         "week13-KC@CIN": {
             "date": "20221204",
             "time": "1425",
             "score": "",
             "status": "pregame",
-            "odds": ""
+            "odds": "KC -2.5"
         },
         "week13-LAC@LV": {
             "date": "20221204",
             "time": "1425",
             "score": "",
             "status": "pregame",
-            "odds": ""
+            "odds": "LAC -2.0"
         },
         "week13-IND@DAL": {
             "date": "20221204",
             "time": "1820",
             "score": "",
             "status": "pregame",
-            "odds": ""
+            "odds": "DAL -10.5"
         },
         "week13-NO@TB": {
             "date": "20221205",
             "time": "1815",
             "score": "",
             "status": "pregame",
-            "odds": ""
+            "odds": "TB -3.5"
         }
     },
     "week14": {
