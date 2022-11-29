@@ -1,6 +1,3 @@
-20221127110000---scrapeLiveScores
-20221127110015---scrapeLiveScores
-20221127110030---scrapeLiveScores
 20221127110045---scrapeLiveScores
 20221127110100---scrapeLiveScores
 20221127110115---scrapeLiveScores
