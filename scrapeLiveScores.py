@@ -92,12 +92,11 @@ def scrapeLiveScores(dateInfo):
         jsonMatchup = schedJSON[currWeek][matchupID]
         # Update if status != "final"
         ref = '/schedules/'+str(dateInfo['season'])+'/'+currWeek+'/'+matchupID+'/'
-        if jsonMatchup['status'] != 'final':
+        if jsonMatchup['status'] != 'final' and jsonMatchup['status'] != 'Final/OT':
             updateData = {}
             if gameState == 'pregame':
-                print(odds.contents)
                 lineData = odds.contents[0].split(": ")[1] if odds else None
-                if lineData == 'EVEN': lineData = homeTeamKey+" -0"
+                if lineData == 'EVEN': lineData = homeTeamKey+" 0"
                 if lineData and schedJSON[currWeek][matchupID]['odds'] != lineData:
                     # Only update odds if the first game hasn't started yet
                     if (int(dateInfo['timestr'][:-2]) > firstGameStartTime):
@@ -136,10 +135,10 @@ def scrapeLiveScores(dateInfo):
                 homeTeamScore = teamScores[1]
                 awayTeamScore = teamScores[0]
                 schedJSON[currWeek][matchupID]['score'] = awayTeamScore+"@"+homeTeamScore
-                schedJSON[currWeek][matchupID]['status'] = 'final'
+                schedJSON[currWeek][matchupID]['status'] = gameState
                 # send to firebase...
                 updateData['score'] = awayTeamScore+"@"+homeTeamScore
-                updateData['status'] = 'final'
+                updateData['status'] = gameState
                 updateFirebase(ref, updateData)
 
 
@@ -148,5 +147,5 @@ def scrapeLiveScores(dateInfo):
         new_json = json.dumps(schedJSON, indent=4)
         outFile.write(new_json)
 
-di = getTodayInfo()
-scrapeLiveScores(di)
+# di = getTodayInfo()
+# scrapeLiveScores(di)

@@ -36,6 +36,7 @@ def makeVegasPicks(dateInfo):
             weekHasAllOdds = False
 
     if weekHasAllOdds:
+        print("    Making Picks for Vegas@Picks")
         # sort by value
         sortedMatchups = sorted(allOdds, key=lambda d: d['val'])
         # Loop over sortedMatchups and update the DB at '/accounts/users/0vDOxwAHJEPcx6ZqZsvL5Jh4n2c2/picks/str(season)/currWeek'
@@ -49,4 +50,8 @@ def makeVegasPicks(dateInfo):
             updateFirebase(ref, update)
         pass
     else:
-        print("    Cannot generate Vegas Picks; Week does not Have All Odds.")
+        print("    Cannot generate Vegas Picks; Week does not Have All Odds")
+
+# di = getTodayInfo()
+# makeVegasPicks(di)
+    
