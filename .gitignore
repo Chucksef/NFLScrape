@@ -9,3 +9,4 @@ credentials/
 logs/
 programSchedule.txt
 *.json
+data/schedules/2022.json
