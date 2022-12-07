@@ -5,7 +5,8 @@ def getProgramScheduleCommand(currTimeStr):
 
     # temp array to use to write later
     writeLines = schedLines.copy()
-    output = ''
+    command = ''
+    argument = ''
     schedTimeStr = ''
 
     for line in schedLines:
@@ -14,16 +15,21 @@ def getProgramScheduleCommand(currTimeStr):
             writeLines.pop(0)
             continue
         elif line[0] == "$":
-            output = None
+            command = None
+            argument = None
             break
         else:
             writeLines.pop(0)
-            output = line.split("---")[1].strip()
+            command = line.split("---")[1].strip()
+            if " " in command:
+                (command, argument) = command.split(" ")
+            else:
+                argument = None
             schedTimeStr = line.split("---")[0]
             break
     
     # check if it is after the scheduled time
-    if output != '':
+    if command != '':
         if int(currTimeStr) > int(schedTimeStr):
             # write out lines
             outputFile = 'programSchedule.txt'
@@ -31,10 +37,10 @@ def getProgramScheduleCommand(currTimeStr):
                 for line in writeLines:
                     outFile.write(f"{line}")
 
-            return output
+            return (command, (argument == 'True'))
         else:
-            return 'nothingScheduledYet'
+            return ('nothingScheduledYet', None)
     else:
-        return 'noOutputFound'
+        return ('noOutputFound', None)
 
     

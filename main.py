@@ -4,6 +4,8 @@ from populateFirebase import populateFirebase
 from populateFirebase import updateSchedule
 from populateFirebase import updateWeek
 from populateFirebase import updateScores
+from buildProgramSchedule import buildProgramSchedule
+from setPickable import setPickable
 from makeVegasPicks import makeVegasPicks
 from utilities.getTodayInfo import getTodayInfo
 from scrapeLiveScores import scrapeLiveScores
@@ -43,7 +45,7 @@ while currTime < endTime:
     remTime = endTime - currTime
     iter += 1
     # 3) read the programSchedule
-    command = getProgramScheduleCommand(dateInfo['timestr'])
+    (command, arg) = getProgramScheduleCommand(dateInfo['timestr'])
     if command != "nothingScheduledYet" and command != "noOutputFound": print("    Running Command "+str(iter)+": '"+command+"' with "+str(remTime)+"s remaining in loop.")
     # 4) execute the returned command
     if command == "scrapeToJSON":
@@ -62,6 +64,10 @@ while currTime < endTime:
         updateSchedule(dateInfo['season'])
     elif command == "makeVegasPicks":
         makeVegasPicks(dateInfo['season'])
+    elif command == "buildProgramSchedule":
+        buildProgramSchedule(dateInfo)
+    elif command == "setPickable":
+        setPickable(arg)
     else:
         if command != "nothingScheduledYet" and command != "noOutputFound": print("      Finished Command "+str(iter)+": "+command)
     

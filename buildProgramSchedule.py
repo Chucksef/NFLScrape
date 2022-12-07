@@ -5,6 +5,7 @@ from populateFirebase import populateFirebase
 from processStats import processStats
 from scrapeToJSON import scrapeToJSON
 from scrapeLiveScores import scrapeLiveScores
+from setPickable import setPickable
 
 # Weekly Schedule:
 # Tuesday @ 3:30am buildProgramSchedule will be run as the last scheduled event from the previous week
@@ -19,6 +20,7 @@ def buildProgramSchedule(dateInfo):
 
     #   directly call updateWeek() to enable picking for the next week's games.
     updateWeek(dateInfo)
+    setPickable(True)
 
     #   Then scrape live scores to capture any odds information for the upcoming week
     scrapeLiveScores(dateInfo)
@@ -86,8 +88,8 @@ def buildProgramSchedule(dateInfo):
         schedTime = int(year+mnth+days+hour+mins+secs)
 
 
-    #   Schedule updateWeek() to be called exactly when the first game starts to disallow picking after the games start
-    newSchedule.append(str(gameTimeWindows[0][0])+"---updateWeek")
+    #   Schedule setPickable() to be called exactly when the first game starts to disallow picking after the games start
+    newSchedule.append(str(gameTimeWindows[0][0])+"---setPickable False")
 
     #   Set a var to hold the scrape time
     finalScrape = None
@@ -147,5 +149,5 @@ def buildProgramSchedule(dateInfo):
         for line in newSchedule:
             f.write(f"{line}\n")
 
-di = getTodayInfo()
-buildProgramSchedule(di)
+# di = getTodayInfo()
+# buildProgramSchedule(di)

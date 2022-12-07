@@ -2,7 +2,8 @@ from populateFirebase import updateFirebase
 from utilities.getTodayInfo import getTodayInfo
 from utilities.updateData import updateData
 
-def setPickable(dateInfo, pickable):
+def setPickable(pickable):
+    dateInfo = getTodayInfo()
     season = dateInfo['season']
     
     # Update data on the local JSON file
@@ -15,6 +16,5 @@ def setPickable(dateInfo, pickable):
     # Update pickable on firebase
     updateData('schedules/'+str(season)+'.json', 'status/currentPickable', pickable)
 
-# di = getTodayInfo()
-# setPickable(di, False)
+# setPickable(False)
     
