@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 from utilities.getTodayInfo import getTodayInfo
 from populateFirebase import updateFirebase
 import json
+from datetime import datetime, timedelta
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 
@@ -26,8 +27,8 @@ class MyBot:
         self.options.add_argument('--disable-dev-shm-usage')
         self.options.add_argument('--no-sandbox')
         self.driver = webdriver.Chrome(
-            service=self.sv, # FOR LINUX
-            #executable_path='chromedriver107.exe', # FOR WINDOWS
+            #service=self.sv, # FOR LINUX
+            executable_path='chromedriver107.exe', # FOR WINDOWS
             options=self.options)
 
 #####   ScrapeLiveScores()   #####
@@ -73,13 +74,6 @@ def scrapeLiveScores(dateInfo):
         gameState = ""
         timeCell = matchup.find('div', class_='ScoreCell__Time')
         timeStatus = timeCell.text
-        if timeStatus == "Final":
-            gameState = 'final'
-        elif 'PM' in timeStatus or 'AM' in timeStatus:
-            gameState = 'pregame'
-            odds = matchup.find('div', class_="Odds__Message")
-        else:
-            gameState = 'live'
         # Get the contents of div.ScoreCell__TeamName => each team's name
         teamNames = [tn.text for tn in matchup.find_all("div", class_="ScoreCell__TeamName")]
         # Get the contents of div.ScoreCell__Score => each team's score
@@ -90,23 +84,40 @@ def scrapeLiveScores(dateInfo):
         matchupID += awayTeamKey+"@"+homeTeamKey
         # Look up the game status in the schedJSON
         jsonMatchup = schedJSON[currWeek][matchupID]
-        # Update if status != "final"
+        # get some date info
+        friendlyDate = matchup.parent.previousSibling.contents[0].text
+        dateFormat = "%A, %B %d, %Y"
+        # set ref for firebase updates
         ref = '/schedules/'+str(dateInfo['season'])+'/'+currWeek+'/'+matchupID+'/'
+        if timeStatus == "Final":
+            gameState = 'final'
+        elif 'PM' in timeStatus or 'AM' in timeStatus:
+            gameState = 'pregame'
+            odds = matchup.find('div', class_="Odds__Message")
+            dateTimeFormat = "%A, %B %d, %Y %I:%M %p"
+            strippedDate = datetime.strptime(friendlyDate.lower()+" "+timeStatus, dateTimeFormat) + timedelta(hours=2)
+            strippedDateStr = str(strippedDate.year)+str(strippedDate.month)+str(strippedDate.day)
+            strippedTimeStr = str(strippedDate.hour)+str(strippedDate.minute)
+            if schedJSON[currWeek][matchupID]['date'] != strippedDateStr:
+                schedJSON[currWeek][matchupID]['date'] = strippedDateStr
+                updateFirebase(ref, {'date': strippedDateStr})
+            if schedJSON[currWeek][matchupID]['time'] != strippedTimeStr:
+                schedJSON[currWeek][matchupID]['time'] = strippedTimeStr
+                updateFirebase(ref, {'time': strippedTimeStr})
+        else:
+            gameState = 'live'
+        # Update if status != "final"
         if jsonMatchup['status'] != 'final' and jsonMatchup['status'] != 'Final/OT':
             updateData = {}
             if gameState == 'pregame':
                 lineData = odds.contents[0].split(": ")[1] if odds else None
                 if lineData == 'EVEN': lineData = homeTeamKey+" 0"
                 if lineData and schedJSON[currWeek][matchupID]['odds'] != lineData:
-                    # Only update odds if the first game hasn't started yet
-                    if (int(dateInfo['timestr'][:-2]) > firstGameStartTime):
-                        pass        # do nothing...
-                    else:
-                        # update schedJSON for pregame game
-                        schedJSON[currWeek][matchupID]['odds'] = lineData
-                        # send to firebase...
-                        updateData['odds'] = lineData
-                        updateFirebase(ref, updateData)
+                    # update schedJSON for pregame game
+                    schedJSON[currWeek][matchupID]['odds'] = lineData
+                    # send to firebase...
+                    updateData['odds'] = lineData
+                    updateFirebase(ref, updateData)
             elif gameState == 'live':
                 homeTeamScore = teamScores[1]
                 awayTeamScore = teamScores[0]
@@ -147,5 +158,5 @@ def scrapeLiveScores(dateInfo):
         new_json = json.dumps(schedJSON, indent=4)
         outFile.write(new_json)
 
-# di = getTodayInfo()
-# scrapeLiveScores(di)
+di = getTodayInfo()
+scrapeLiveScores(di)
