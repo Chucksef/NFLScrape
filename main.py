@@ -63,7 +63,7 @@ while currTime < endTime:
     elif command == "updateSchedule":
         updateSchedule(dateInfo['season'])
     elif command == "makeVegasPicks":
-        makeVegasPicks(dateInfo['season'])
+        makeVegasPicks(dateInfo)
     elif command == "buildProgramSchedule":
         buildProgramSchedule(dateInfo)
     elif command == "setPickable":

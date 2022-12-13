@@ -42,10 +42,13 @@ def makeVegasPicks(dateInfo):
         # Loop over sortedMatchups and update the DB at '/accounts/users/0vDOxwAHJEPcx6ZqZsvL5Jh4n2c2/picks/str(season)/currWeek'
         for idx, matchup in enumerate(sortedMatchups):
             pickVal = str(len(sortedMatchups) - idx)
+            pickName = matchup['pick']
+            if pickName == 'WSH': 
+                pickName = 'WAS'
             ref = '/accounts/users/0vDOxwAHJEPcx6ZqZsvL5Jh4n2c2/picks/'+str(season)+'/'+currWeek
             updateVal = matchup['matchID']
             update = {
-                updateVal: matchup['pick']+"@"+pickVal
+                updateVal: pickName+"@"+pickVal
             }
             updateFirebase(ref, update)
         pass
