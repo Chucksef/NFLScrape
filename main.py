@@ -39,6 +39,12 @@ endTime = currTime + 45
 
 iter = 0
 
+# DEBUG BLOCK
+# scrapeToJSON(dateInfo)
+# processStats(dateInfo)
+# populateFirebase(dateInfo)
+
+
 # 2) begin processing loop
 while currTime < endTime:
     # update loop variables

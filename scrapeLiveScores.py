@@ -27,8 +27,8 @@ class MyBot:
         self.options.add_argument('--disable-dev-shm-usage')
         self.options.add_argument('--no-sandbox')
         self.driver = webdriver.Chrome(
-            #service=self.sv, # FOR LINUX
-            executable_path='chromedriver107.exe', # FOR WINDOWS
+            service=self.sv, # FOR LINUX
+            #executable_path='chromedriver107.exe', # FOR WINDOWS
             options=self.options)
 
 #####   ScrapeLiveScores()   #####
@@ -158,5 +158,5 @@ def scrapeLiveScores(dateInfo):
         new_json = json.dumps(schedJSON, indent=4)
         outFile.write(new_json)
 
-di = getTodayInfo()
-scrapeLiveScores(di)
+# di = getTodayInfo()
+# scrapeLiveScores(di)

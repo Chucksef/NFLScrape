@@ -23,7 +23,7 @@ def checkAndUpdate(newData, checkAgainstJSON, checkFilePath, fileRootRef, dbRef)
         for part in fileRootRefParts:
             drilled = drilled[part]
         # check if the value at this location is already updated
-        if drilled[currKey] == currVal and currVal != '':
+        if drilled[currKey] == currVal or currVal == '':
             pass # don't update anything since nothing has changed (or there is no data to push)!
         else:
             # create some update data to save
@@ -175,7 +175,7 @@ def scrapeToJSON(dateInfo):
             # build a schedule object
             schdEntry = {
                 "date"            : columns[1].text.replace("-",""),
-                "time"            : timestr,
+                "time"            : "",
                 "score"           : "",
                 "status"          : "pregame",
                 "odds"            : ""
@@ -315,3 +315,6 @@ def scrapeToJSON(dateInfo):
                 "score"           : '' if homeGame['status'] == 'pregame' else str(homeGame['opp-points'])+"@"+str(homeGame['points']),
                 "status"          : homeGame['status']
             }
+
+# di = getTodayInfo()
+# scrapeToJSON(di)
