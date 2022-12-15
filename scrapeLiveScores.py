@@ -96,8 +96,8 @@ def scrapeLiveScores(dateInfo):
             odds = matchup.find('div', class_="Odds__Message")
             dateTimeFormat = "%A, %B %d, %Y %I:%M %p"
             strippedDate = datetime.strptime(friendlyDate.lower()+" "+timeStatus, dateTimeFormat) + timedelta(hours=2)
-            strippedDateStr = str(strippedDate.year)+str(strippedDate.month)+str(strippedDate.day)
-            strippedTimeStr = str(strippedDate.hour)+str(strippedDate.minute)
+            strippedDateStr = str(strippedDate.year).zfill(4)+str(strippedDate.month).zfill(2)+str(strippedDate.day).zfill(2)
+            strippedTimeStr = str(strippedDate.hour).zfill(2)+str(strippedDate.minute).zfill(2)
             if schedJSON[currWeek][matchupID]['date'] != strippedDateStr:
                 schedJSON[currWeek][matchupID]['date'] = strippedDateStr
                 updateFirebase(ref, {'date': strippedDateStr})
@@ -158,5 +158,5 @@ def scrapeLiveScores(dateInfo):
         new_json = json.dumps(schedJSON, indent=4)
         outFile.write(new_json)
 
-# di = getTodayInfo()
-# scrapeLiveScores(di)
+di = getTodayInfo()
+scrapeLiveScores(di)
