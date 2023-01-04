@@ -18,7 +18,7 @@ def getTodayInfo():
     season = (currYear - 1) if (month < 9) else currYear
 
     # get the current week from the current JSON schedule
-    with open("data/schedules/"+str(currYear)+".json", "r") as schedule:
+    with open("data/schedules/"+str(season)+".json", "r") as schedule:
         schedule_data = json.load(schedule)
     
     weekID = schedule_data['status']['currentWeek']
